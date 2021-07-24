@@ -3,7 +3,7 @@
 define('CRM_HOST', 'poverkapro.bitrix24.ru');
 define('CRM_WEBHOOK', 'https://'.CRM_HOST.'/rest/1/oiaath5dok7pcmdv/');
 
-$name = $_POST['name']
+$name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
 

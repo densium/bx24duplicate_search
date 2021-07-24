@@ -11,7 +11,7 @@ require(__DIR__ . '/libs/crest/CRestPlus.php');
 require(__DIR__ . '/libs/debugger/Debugger.php');
 define('LOG', 'log_new.txt');
 define('DOMAIN', 'https://djemdecor.bitrix24.ru'); // не забудь на тестах свой портал, в бою портал клиента
-define('USER_ID', '') // Пользователь в системе Маляр Юлия
+define('USER_ID', ''); // Пользователь в системе Маляр Юлия
 
 // Проверить передан ли параметр ID сущности, без которого не получится поиск
 if (empty($_REQUEST['ID']) or $_REQUEST['ID'] == 0) {
@@ -74,7 +74,7 @@ function getCrmEntity($entityId, $entityTypeId) {
 function parseEmails($entityObject) {
 	$emailsArr = array(); 	
 	
-	foreach ($result['result']['EMAIL'] as $email) {
+	foreach ($entityObject['result']['EMAIL'] as $email) {
 		array_push($emailsArr, $email['VALUE']);
 	}
 	
@@ -89,7 +89,7 @@ function parseEmails($entityObject) {
 function parsePhones($entityObject) {
 	$phonesArr = array(); 	
 	
-	foreach ($result['result']['PHONE'] as $phone) {
+	foreach ($entityObject['result']['PHONE'] as $phone) {
 		array_push($phonesArr, substr(preg_replace('~[^0-9]+~', '', $phone['VALUE']), -10));
 	}
 	
@@ -111,7 +111,7 @@ function parsePhones($entityObject) {
 #Получение дублей с таким же номером
 ### Выбирает не больше 20 ###
 function findDuplicatesByPhone($phonesArr) {
-	foreach ($phones as $k => $v) {
+	foreach ($phonesArr as $k => $v) {
 		$getDuplicates = CRestPlus::call('crm.duplicate.findbycomm', array(
 			'type' => 'PHONE',
 			'values' => $v,
@@ -147,7 +147,7 @@ function findDuplicatesByPhone($phonesArr) {
 #Получение дублей с таким же email
 ### Выбирает не больше 20 ###
 function findDuplicatesByEmail($emailsArr) {
-	foreach ($emails as $k => $v) {
+	foreach ($emailsArr as $k => $v) {
 		$getDuplicates = CRestPlus::call('crm.duplicate.findbycomm', array(
 			'type' => 'EMAIL',
 			'values' => $v,
