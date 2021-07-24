@@ -13,6 +13,7 @@ class CRestPlus extends CRest {
 	* @var arr params - массив, параметры для списочных методов (filter, select)
 	* @return arr - массив с для batch запроса, разделенный по 50 пакетов 
 	*/
+
 	protected static function iteration ($method, $params) {
 		$tmp = parent::call ($method, $params);
 	    $iteration = intval($tmp['total'] / 50) + 1;
@@ -37,6 +38,7 @@ class CRestPlus extends CRest {
 	* @var arr params - параметры для списочных методов (filter, select)
 	* @return arr - результат метода callbatch (список сущностей) или error
 	*/
+	
 	public static function callBatchList ($method, $params) {
 		$tmp = self::iteration ($method, $params);
 		if (!empty($tmp)) {
@@ -53,6 +55,7 @@ class CRestPlus extends CRest {
 	* @var arr params - массив id ('1','2','3','n')
 	* @return arr - результат метода callbacth (данные пользователей)
 	*/
+
 	public static function callBatchUsers ($params) {
 		$return = false;
 		foreach ($params as $v) {
@@ -69,6 +72,7 @@ class CRestPlus extends CRest {
 	*
 	* @return array setting for getAppSettings()
 	*/
+
 	protected static function getSettingData ($wannaCurrentUser = false) {
 		$return = array();
 		if (file_exists(__DIR__.'/settings.json')) {
@@ -95,6 +99,7 @@ class CRestPlus extends CRest {
 	* @return mixed array|string|boolean curl-return or error
 	*
 	*/
+
 	private static function lightCurl ($arParams, $wannaCurrentUser = true) {
 		$arSettings = static::getSettingData($wannaCurrentUser);
 		if ($arSettings !== false) {
@@ -148,6 +153,7 @@ class CRestPlus extends CRest {
 	*
 	* @return arr - массив array('admin' => 'информация об админских правах', 'user' => 'данные о пользователе')
 	*/
+
 	public static function callCurrentUser () {
 		$arPostUser = array('method' => 'user.current','params' => array());
 		if(defined('C_REST_CURRENT_ENCODING')) $arPostUser[ 'params' ] = parent::changeEncoding($arPostUser[ 'params' ]);
@@ -166,6 +172,7 @@ class CRestPlus extends CRest {
 	*
 	* @return arr
 	*/
+	
 	public static function aboutActivity () {
 		$fields = parent::call ('crm.activity.fields', array())['result'];
 		$direction = parent::call ('crm.enum.activitydirection', array())['result'];

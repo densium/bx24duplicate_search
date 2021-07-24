@@ -7,6 +7,7 @@ class Debugger extends Exception {
 	*
 	* @var bool debug - 1 - выводим; 0 - нет
 	*/
+	
 	public static function displayErrors ($debug = 0) {
 		if (!$debug) {
 			ini_set('display_errors',0);
@@ -27,6 +28,7 @@ class Debugger extends Exception {
 	* @var str $path  - путь к фалу
 	* @var str $title - 
 	*/
+
 	public static function writeToLog($data, $path, $title = 'DEBUG', $bool = true) {
 		if ($bool) {
 			$log = "\n--------------------\n";
@@ -43,6 +45,7 @@ class Debugger extends Exception {
 	* Функция вывода данных на экран
 	* @var $data - выводимые данные
 	*/
+
 	public static function debug($data, $die = false, $dieMessage = 'die') {
 		echo '<pre>';
 		print_r ($data);
@@ -55,6 +58,7 @@ class Debugger extends Exception {
 	* @var $data     - данные для записи в файл
 	* @var str $path - путь к файлу
 	*/
+
 	public static function saveParams($data, $path) {
 		$config = "<?php\n";
 		$config .= "\$appsConfig = ".var_export($data, true)."\n";
@@ -67,6 +71,7 @@ class Debugger extends Exception {
 	/**
 	* тестируемый метод
 	*/
+	
 	public static function memoryTest () {
 		$str = 'Текущее использование памяти: <b>'.memory_get_usage().'</b> байт'."\n";
 		$str .= 'Пиковое значение объема памяти: <b>'.memory_get_peak_usage().'</b> байт';
