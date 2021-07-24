@@ -1,0 +1,3 @@
+<?
+$sSectionName="bx24duplicate";
+?>
