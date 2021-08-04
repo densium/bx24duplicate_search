@@ -1,6 +1,6 @@
 <?php
 
-define('C_REST_WEB_HOOK_URL','https://djemdecor.bitrix24.ru/rest/13/aqd7dvsyw1adfn8c/'); //url on create Webhook
+define('C_REST_WEB_HOOK_URL','https://it-solution.bitrix24.ru/rest/1851/y3lqg0cob6sc4y5g/'); //url on create Webhook
 
 //define('C_REST_CURRENT_ENCODING','windows-1251');
 //define('C_REST_IGNORE_SSL',true);//turn off validate ssl by curl
