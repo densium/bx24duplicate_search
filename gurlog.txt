@@ -1,0 +1,261 @@
+
+--------------------
+09.08.2021 18:30:09
+Caption: getLead
+Array
+(
+    [result] => Array
+        (
+            [ID] => 243
+            [TITLE] => 123123
+            [HONORIFIC] => 
+            [NAME] => 
+            [SECOND_NAME] => 
+            [LAST_NAME] => 
+            [COMPANY_TITLE] => 
+            [COMPANY_ID] => 0
+            [CONTACT_ID] => 
+            [IS_RETURN_CUSTOMER] => N
+            [BIRTHDATE] => 
+            [SOURCE_ID] => WEBFORM
+            [SOURCE_DESCRIPTION] => 
+            [STATUS_ID] => NEW
+            [STATUS_DESCRIPTION] => 
+            [POST] => 
+            [COMMENTS] => 
+            [CURRENCY_ID] => RUB
+            [OPPORTUNITY] => 0.00
+            [IS_MANUAL_OPPORTUNITY] => N
+            [HAS_PHONE] => Y
+            [HAS_EMAIL] => Y
+            [HAS_IMOL] => N
+            [ASSIGNED_BY_ID] => 1851
+            [CREATED_BY_ID] => 1851
+            [MODIFY_BY_ID] => 1851
+            [DATE_CREATE] => 2021-02-05T15:08:31+03:00
+            [DATE_MODIFY] => 2021-08-04T19:47:33+03:00
+            [DATE_CLOSED] => 
+            [STATUS_SEMANTIC_ID] => P
+            [OPENED] => Y
+            [ORIGINATOR_ID] => 
+            [ORIGIN_ID] => 
+            [ADDRESS] => 
+            [ADDRESS_2] => 
+            [ADDRESS_CITY] => 
+            [ADDRESS_POSTAL_CODE] => 
+            [ADDRESS_REGION] => 
+            [ADDRESS_PROVINCE] => 
+            [ADDRESS_COUNTRY] => 
+            [ADDRESS_COUNTRY_CODE] => 
+            [ADDRESS_LOC_ADDR_ID] => 
+            [UTM_SOURCE] => 
+            [UTM_MEDIUM] => 
+            [UTM_CAMPAIGN] => 
+            [UTM_CONTENT] => 
+            [UTM_TERM] => 
+            [UF_CRM_SP_UNSUBSCR] => 0
+            [UF_CRM_1538647419] => 
+            [UF_CRM_1581418338] => 
+            [UF_CRM_1581418376] => 
+            [UF_CRM_ITS_RELATED1] => custom value for show field
+            [UF_CRM_1597407280] => 
+            [UF_CRM_1600245856370] => 
+            [UF_CRM_1612527141] => 12213
+            [UF_CRM_1614353863] => 
+            [UF_CRM_603916A3BEA3B] => 
+            [UF_CRM_1614681079399] => 
+            [UF_CRM_1614681116518] => 
+            [UF_CRM_1614681130910] => 
+            [UF_CRM_1614705530] => 
+            [UF_CRM_1614706460] => 
+            [UF_CRM_1614706518] => 
+            [UF_CRM_1614706596] => 
+            [UF_CRM_1615820003612] => Array
+                (
+                )
+
+            [UF_CRM_ITS_DICT_CITY] => 
+            [UF_CRM_1617887745774] => 
+            [UF_CRM_ITS_DICT_OKVED] => 
+            [UF_CRM_ITS_DICT_PROFESSION] => 
+            [UF_CRM_LAST_CALL_DATE] => 
+            [UF_CRM_5A9EBF2E896B6] => 
+            [UF_CRM_ORDER_IDS] => 
+            [UF_CRM_PROBABILITY] => 
+            [UF_CRM_BEGINDATE] => 
+            [UF_CRM_EVENT_DATE] => 
+            [UF_CRM_ORIGINATOR_ID] => 
+            [UF_CRM_LEAD_ID] => 
+            [UF_CRM_EVENT_DESCRIPTION] => 
+            [UF_CRM_ORIGIN_ID] => 
+            [UF_CRM_CLOSEDATE] => 
+            [UF_CRM_CLOSED] => 
+            [UF_CRM_OPPORTUNITY_ACCOUNT] => 
+            [UF_CRM_ACCOUNT_CURRENCY_ID] => 
+            [UF_CRM_CONTACT_IDS] => 
+            [UF_CRM_CATEGORY_ID] => 
+            [UF_CRM_TYPE_ID] => 
+            [UF_CRM_EVENT_ID] => 
+            [UF_CRM_1551419189] => 
+            [UF_CRM_1578484533] => 
+            [UF_CRM_1557008108] => 
+            [UF_CRM_1557008119] => 
+            [UF_CRM_5E15CA0E5F680] => 
+            [UF_CRM_1595780613] => 
+            [UF_CRM_1560728821] => 
+            [UF_CRM_1551430847644] => 
+            [UF_CRM_602105FF4A726] => 
+            [UF_CRM_6021087F7EAFE] => 
+            [UF_CRM_5C384171CE6EB] => 
+            [UF_CRM_602A600530990] => 
+            [UF_CRM_1615885523] => 
+            [UF_CRM_1560875452] => 
+            [UF_CRM_1551692234] => 
+            [UF_CRM_1612955822] => 
+            [UF_CRM_1553932688] => 
+            [UF_CRM_1613377055] => 
+            [UF_CRM_1560144352] => 
+            [UF_CRM_1611304733] => 
+            [UF_CRM_1560328872] => 
+            [UF_CRM_6031218E8E304] => 
+            [UF_CRM_602104BD6B6A8] => 
+            [UF_CRM_1566189708] => 
+            [UF_CRM_5C5801DDEEB24] => 
+            [UF_CRM_1591598208] => 
+            [UF_CRM_1572293623] => 
+            [UF_CRM_1565582929] => 
+            [UF_CRM_1566212333] => 
+            [UF_CRM_1611303102] => 
+            [UF_CRM_1617260897] => 
+            [UF_CRM_1555561455] => 
+            [UF_CRM_1555561368] => 
+            [UF_CRM_1597308245526] => 
+            [UF_CRM_1560854189] => 
+            [UF_CRM_5DD4EC413EAC5] => 
+            [UF_CRM_1567680966] => 
+            [UF_CRM_1606485361524] => 
+            [UF_CRM_1553778436] => 
+            [UF_CRM_COMPANY_ID] => 
+            [UF_CRM_CONTACT_ID] => 
+            [UF_CRM_1551430886580] => 
+            [UF_CRM_1553451508] => 
+            [UF_CRM_1551080498] => 
+            [UF_CRM_1611303121] => 
+            [UF_CRM_1587980750449] => 
+            [UF_CRM_5DD4EC4092AAA] => 
+            [UF_CRM_1594019939710] => 
+            [UF_CRM_1614339040] => 
+            [UF_CRM_1554032151] => 
+            [UF_CRM_1554032126] => 
+            [UF_CRM_602EC0EE73B77] => 
+            [UF_CRM_5D975650C5AF3] => 
+            [UF_CRM_1584430071] => 
+            [UF_CRM_5D1DB552ED029] => 
+            [UF_CRM_1563263100] => 
+            [UF_CRM_1575023853] => 
+            [UF_CRM_1573578091] => 
+            [UF_CRM_1560875494] => 
+            [UF_CRM_1584430260] => 
+            [UF_CRM_5CE354C709B88] => 
+            [UF_CRM_1573481584] => 
+            [UF_CRM_1562309336] => 
+            [UF_CRM_1555485619] => 
+            [UF_CRM_1560875525] => 
+            [UF_CRM_1586943938471] => 
+            [UF_CRM_5C799367EBA93] => 
+            [UF_CRM_602104BBEC516] => 
+            [UF_CRM_1560143592] => 
+            [UF_CRM_1612957408] => 
+            [UF_CRM_STAGE_ID] => 
+            [UF_CRM_1611306143] => 
+            [UF_CRM_1560339072] => 
+            [UF_CRM_5E68F9D47A272] => 
+            [UF_CRM_1583142836] => 
+            [UF_CRM_1594020917603] => 
+            [UF_CRM_1606304984610] => 
+            [UF_CRM_1567495710] => 
+            [UF_CRM_1573579295] => 
+            [UF_CRM_1551080461] => 
+            [UF_CRM_1566189777] => 
+            [UF_CRM_1503667665] => 
+            [UF_CRM_1507891985986] => 
+            [UF_CRM_1512488738] => Array
+                (
+                )
+
+            [UF_CRM_1527523282] => https://calcus.ru/kalkulyator-ipoteki
+            [UF_CRM_1532362405] => Array
+                (
+                )
+
+            [UF_CRM_1532363145] => 
+            [UF_CRM_1532363460] => Array
+                (
+                )
+
+            [UF_CRM_1613674874] => 
+            [UF_CRM_1613675957] => 
+            [UF_CRM_1614353750] => 
+            [EMAIL] => Array
+                (
+                    [0] => Array
+                        (
+                            [ID] => 59601
+                            [VALUE_TYPE] => WORK
+                            [VALUE] => rty@tyu.ru
+                            [TYPE_ID] => EMAIL
+                        )
+
+                    [1] => Array
+                        (
+                            [ID] => 59603
+                            [VALUE_TYPE] => WORK
+                            [VALUE] => 123@tyu.ru
+                            [TYPE_ID] => EMAIL
+                        )
+
+                    [2] => Array
+                        (
+                            [ID] => 59605
+                            [VALUE_TYPE] => WORK
+                            [VALUE] => vasya@vasya.ru
+                            [TYPE_ID] => EMAIL
+                        )
+
+                )
+
+            [PHONE] => Array
+                (
+                    [0] => Array
+                        (
+                            [ID] => 59607
+                            [VALUE_TYPE] => MOBILE
+                            [VALUE] => +79339393939
+                            [TYPE_ID] => PHONE
+                        )
+
+                    [1] => Array
+                        (
+                            [ID] => 59609
+                            [VALUE_TYPE] => MOBILE
+                            [VALUE] => +79339099090
+                            [TYPE_ID] => PHONE
+                        )
+
+                )
+
+        )
+
+    [time] => Array
+        (
+            [start] => 1628522997.4308
+            [finish] => 1628522997.4681
+            [duration] => 0.037299871444702
+            [processing] => 0.018249034881592
+            [date_start] => 2021-08-09T18:29:57+03:00
+            [date_finish] => 2021-08-09T18:29:57+03:00
+        )
+
+)
+
+--------------------

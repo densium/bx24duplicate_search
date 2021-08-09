@@ -1,0 +1,2478 @@
+
+--------------------
+09.08.2021 18:26:29
+Caption: $_REQUEST
+Array
+(
+    [ID] => 243
+    [event] => ONCRMLEADADD
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: getLead
+Array
+(
+    [result] => Array
+        (
+            [ID] => 243
+            [TITLE] => 123123
+            [HONORIFIC] => 
+            [NAME] => 
+            [SECOND_NAME] => 
+            [LAST_NAME] => 
+            [COMPANY_TITLE] => 
+            [COMPANY_ID] => 0
+            [CONTACT_ID] => 
+            [IS_RETURN_CUSTOMER] => N
+            [BIRTHDATE] => 
+            [SOURCE_ID] => WEBFORM
+            [SOURCE_DESCRIPTION] => 
+            [STATUS_ID] => NEW
+            [STATUS_DESCRIPTION] => 
+            [POST] => 
+            [COMMENTS] => 
+            [CURRENCY_ID] => RUB
+            [OPPORTUNITY] => 0.00
+            [IS_MANUAL_OPPORTUNITY] => N
+            [HAS_PHONE] => Y
+            [HAS_EMAIL] => Y
+            [HAS_IMOL] => N
+            [ASSIGNED_BY_ID] => 1851
+            [CREATED_BY_ID] => 1851
+            [MODIFY_BY_ID] => 1851
+            [DATE_CREATE] => 2021-02-05T15:08:31+03:00
+            [DATE_MODIFY] => 2021-08-04T19:47:33+03:00
+            [DATE_CLOSED] => 
+            [STATUS_SEMANTIC_ID] => P
+            [OPENED] => Y
+            [ORIGINATOR_ID] => 
+            [ORIGIN_ID] => 
+            [ADDRESS] => 
+            [ADDRESS_2] => 
+            [ADDRESS_CITY] => 
+            [ADDRESS_POSTAL_CODE] => 
+            [ADDRESS_REGION] => 
+            [ADDRESS_PROVINCE] => 
+            [ADDRESS_COUNTRY] => 
+            [ADDRESS_COUNTRY_CODE] => 
+            [ADDRESS_LOC_ADDR_ID] => 
+            [UTM_SOURCE] => 
+            [UTM_MEDIUM] => 
+            [UTM_CAMPAIGN] => 
+            [UTM_CONTENT] => 
+            [UTM_TERM] => 
+            [UF_CRM_SP_UNSUBSCR] => 0
+            [UF_CRM_1538647419] => 
+            [UF_CRM_1581418338] => 
+            [UF_CRM_1581418376] => 
+            [UF_CRM_ITS_RELATED1] => custom value for show field
+            [UF_CRM_1597407280] => 
+            [UF_CRM_1600245856370] => 
+            [UF_CRM_1612527141] => 12213
+            [UF_CRM_1614353863] => 
+            [UF_CRM_603916A3BEA3B] => 
+            [UF_CRM_1614681079399] => 
+            [UF_CRM_1614681116518] => 
+            [UF_CRM_1614681130910] => 
+            [UF_CRM_1614705530] => 
+            [UF_CRM_1614706460] => 
+            [UF_CRM_1614706518] => 
+            [UF_CRM_1614706596] => 
+            [UF_CRM_1615820003612] => Array
+                (
+                )
+
+            [UF_CRM_ITS_DICT_CITY] => 
+            [UF_CRM_1617887745774] => 
+            [UF_CRM_ITS_DICT_OKVED] => 
+            [UF_CRM_ITS_DICT_PROFESSION] => 
+            [UF_CRM_LAST_CALL_DATE] => 
+            [UF_CRM_5A9EBF2E896B6] => 
+            [UF_CRM_ORDER_IDS] => 
+            [UF_CRM_PROBABILITY] => 
+            [UF_CRM_BEGINDATE] => 
+            [UF_CRM_EVENT_DATE] => 
+            [UF_CRM_ORIGINATOR_ID] => 
+            [UF_CRM_LEAD_ID] => 
+            [UF_CRM_EVENT_DESCRIPTION] => 
+            [UF_CRM_ORIGIN_ID] => 
+            [UF_CRM_CLOSEDATE] => 
+            [UF_CRM_CLOSED] => 
+            [UF_CRM_OPPORTUNITY_ACCOUNT] => 
+            [UF_CRM_ACCOUNT_CURRENCY_ID] => 
+            [UF_CRM_CONTACT_IDS] => 
+            [UF_CRM_CATEGORY_ID] => 
+            [UF_CRM_TYPE_ID] => 
+            [UF_CRM_EVENT_ID] => 
+            [UF_CRM_1551419189] => 
+            [UF_CRM_1578484533] => 
+            [UF_CRM_1557008108] => 
+            [UF_CRM_1557008119] => 
+            [UF_CRM_5E15CA0E5F680] => 
+            [UF_CRM_1595780613] => 
+            [UF_CRM_1560728821] => 
+            [UF_CRM_1551430847644] => 
+            [UF_CRM_602105FF4A726] => 
+            [UF_CRM_6021087F7EAFE] => 
+            [UF_CRM_5C384171CE6EB] => 
+            [UF_CRM_602A600530990] => 
+            [UF_CRM_1615885523] => 
+            [UF_CRM_1560875452] => 
+            [UF_CRM_1551692234] => 
+            [UF_CRM_1612955822] => 
+            [UF_CRM_1553932688] => 
+            [UF_CRM_1613377055] => 
+            [UF_CRM_1560144352] => 
+            [UF_CRM_1611304733] => 
+            [UF_CRM_1560328872] => 
+            [UF_CRM_6031218E8E304] => 
+            [UF_CRM_602104BD6B6A8] => 
+            [UF_CRM_1566189708] => 
+            [UF_CRM_5C5801DDEEB24] => 
+            [UF_CRM_1591598208] => 
+            [UF_CRM_1572293623] => 
+            [UF_CRM_1565582929] => 
+            [UF_CRM_1566212333] => 
+            [UF_CRM_1611303102] => 
+            [UF_CRM_1617260897] => 
+            [UF_CRM_1555561455] => 
+            [UF_CRM_1555561368] => 
+            [UF_CRM_1597308245526] => 
+            [UF_CRM_1560854189] => 
+            [UF_CRM_5DD4EC413EAC5] => 
+            [UF_CRM_1567680966] => 
+            [UF_CRM_1606485361524] => 
+            [UF_CRM_1553778436] => 
+            [UF_CRM_COMPANY_ID] => 
+            [UF_CRM_CONTACT_ID] => 
+            [UF_CRM_1551430886580] => 
+            [UF_CRM_1553451508] => 
+            [UF_CRM_1551080498] => 
+            [UF_CRM_1611303121] => 
+            [UF_CRM_1587980750449] => 
+            [UF_CRM_5DD4EC4092AAA] => 
+            [UF_CRM_1594019939710] => 
+            [UF_CRM_1614339040] => 
+            [UF_CRM_1554032151] => 
+            [UF_CRM_1554032126] => 
+            [UF_CRM_602EC0EE73B77] => 
+            [UF_CRM_5D975650C5AF3] => 
+            [UF_CRM_1584430071] => 
+            [UF_CRM_5D1DB552ED029] => 
+            [UF_CRM_1563263100] => 
+            [UF_CRM_1575023853] => 
+            [UF_CRM_1573578091] => 
+            [UF_CRM_1560875494] => 
+            [UF_CRM_1584430260] => 
+            [UF_CRM_5CE354C709B88] => 
+            [UF_CRM_1573481584] => 
+            [UF_CRM_1562309336] => 
+            [UF_CRM_1555485619] => 
+            [UF_CRM_1560875525] => 
+            [UF_CRM_1586943938471] => 
+            [UF_CRM_5C799367EBA93] => 
+            [UF_CRM_602104BBEC516] => 
+            [UF_CRM_1560143592] => 
+            [UF_CRM_1612957408] => 
+            [UF_CRM_STAGE_ID] => 
+            [UF_CRM_1611306143] => 
+            [UF_CRM_1560339072] => 
+            [UF_CRM_5E68F9D47A272] => 
+            [UF_CRM_1583142836] => 
+            [UF_CRM_1594020917603] => 
+            [UF_CRM_1606304984610] => 
+            [UF_CRM_1567495710] => 
+            [UF_CRM_1573579295] => 
+            [UF_CRM_1551080461] => 
+            [UF_CRM_1566189777] => 
+            [UF_CRM_1503667665] => 
+            [UF_CRM_1507891985986] => 
+            [UF_CRM_1512488738] => Array
+                (
+                )
+
+            [UF_CRM_1527523282] => https://calcus.ru/kalkulyator-ipoteki
+            [UF_CRM_1532362405] => Array
+                (
+                )
+
+            [UF_CRM_1532363145] => 
+            [UF_CRM_1532363460] => Array
+                (
+                )
+
+            [UF_CRM_1613674874] => 
+            [UF_CRM_1613675957] => 
+            [UF_CRM_1614353750] => 
+            [EMAIL] => Array
+                (
+                    [0] => Array
+                        (
+                            [ID] => 59601
+                            [VALUE_TYPE] => WORK
+                            [VALUE] => rty@tyu.ru
+                            [TYPE_ID] => EMAIL
+                        )
+
+                    [1] => Array
+                        (
+                            [ID] => 59603
+                            [VALUE_TYPE] => WORK
+                            [VALUE] => 123@tyu.ru
+                            [TYPE_ID] => EMAIL
+                        )
+
+                    [2] => Array
+                        (
+                            [ID] => 59605
+                            [VALUE_TYPE] => WORK
+                            [VALUE] => vasya@vasya.ru
+                            [TYPE_ID] => EMAIL
+                        )
+
+                )
+
+            [PHONE] => Array
+                (
+                    [0] => Array
+                        (
+                            [ID] => 59607
+                            [VALUE_TYPE] => MOBILE
+                            [VALUE] => +79339393939
+                            [TYPE_ID] => PHONE
+                        )
+
+                    [1] => Array
+                        (
+                            [ID] => 59609
+                            [VALUE_TYPE] => MOBILE
+                            [VALUE] => +79339099090
+                            [TYPE_ID] => PHONE
+                        )
+
+                )
+
+        )
+
+    [time] => Array
+        (
+            [start] => 1628522779.2241
+            [finish] => 1628522779.2608
+            [duration] => 0.036720991134644
+            [processing] => 0.018558979034424
+            [date_start] => 2021-08-09T18:26:19+03:00
+            [date_finish] => 2021-08-09T18:26:19+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: phonesArr
+Array
+(
+    [0] => 9339393939
+    [1] => 9339099090
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: emailsArr
+Array
+(
+    [0] => rty@tyu.ru
+    [1] => 123@tyu.ru
+    [2] => vasya@vasya.ru
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: respID
+1851
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: crmTask
+L_243
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: phones
+Array
+(
+    [0] => 9339393939
+    [1] => 79339393939
+    [2] => +79339393939
+    [3] => 89339393939
+    [4] => 9339099090
+    [5] => 79339099090
+    [6] => +79339099090
+    [7] => 89339099090
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: phones
+Array
+(
+    [0] => Array
+        (
+            [0] => 9339393939
+            [1] => 79339393939
+            [2] => +79339393939
+            [3] => 89339393939
+            [4] => 9339099090
+            [5] => 79339099090
+            [6] => +79339099090
+            [7] => 89339099090
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: emails
+Array
+(
+    [0] => Array
+        (
+            [0] => rty@tyu.ru
+            [1] => 123@tyu.ru
+            [2] => vasya@vasya.ru
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: getDuplicates
+Array
+(
+    [result] => Array
+        (
+            [LEAD] => Array
+                (
+                    [0] => 243
+                    [1] => 451
+                )
+
+            [CONTACT] => Array
+                (
+                    [0] => 315
+                )
+
+            [COMPANY] => Array
+                (
+                    [0] => 501
+                    [1] => 503
+                )
+
+        )
+
+    [time] => Array
+        (
+            [start] => 1628522779.3669
+            [finish] => 1628522779.3929
+            [duration] => 0.026005029678345
+            [processing] => 0.0054759979248047
+            [date_start] => 2021-08-09T18:26:19+03:00
+            [date_finish] => 2021-08-09T18:26:19+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: entityId
+243
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: v
+243
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: entityId
+243
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: v
+451
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: entityId
+243
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: v
+315
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: entityId
+243
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: v
+501
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: entityId
+243
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: v
+503
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: list
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => 451
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => 315
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => 501
+            [1] => 503
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:26:29
+Caption: nodup
+Array
+(
+    [lead] => Array
+        (
+            [0] => 451
+        )
+
+    [contact] => Array
+        (
+            [0] => 315
+        )
+
+    [company] => Array
+        (
+            [0] => 501
+            [1] => 503
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:26:30
+Caption: lead
+Array
+(
+    [result] => Array
+        (
+            [result] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 451
+                                    [TITLE] => 123123
+                                    [HONORIFIC] => 
+                                    [NAME] => 
+                                    [SECOND_NAME] => 
+                                    [LAST_NAME] => 
+                                    [COMPANY_TITLE] => 
+                                    [COMPANY_ID] => 0
+                                    [CONTACT_ID] => 
+                                    [IS_RETURN_CUSTOMER] => N
+                                    [BIRTHDATE] => 
+                                    [SOURCE_ID] => WEBFORM
+                                    [SOURCE_DESCRIPTION] => 
+                                    [STATUS_ID] => NEW
+                                    [STATUS_DESCRIPTION] => 
+                                    [POST] => 
+                                    [COMMENTS] => 
+                                    [CURRENCY_ID] => RUB
+                                    [OPPORTUNITY] => 0.00
+                                    [IS_MANUAL_OPPORTUNITY] => N
+                                    [HAS_PHONE] => Y
+                                    [HAS_EMAIL] => Y
+                                    [HAS_IMOL] => N
+                                    [ASSIGNED_BY_ID] => 1851
+                                    [CREATED_BY_ID] => 1851
+                                    [MODIFY_BY_ID] => 1851
+                                    [DATE_CREATE] => 2021-08-04T21:17:26+03:00
+                                    [DATE_MODIFY] => 2021-08-04T21:17:42+03:00
+                                    [DATE_CLOSED] => 
+                                    [STATUS_SEMANTIC_ID] => P
+                                    [OPENED] => Y
+                                    [ORIGINATOR_ID] => 
+                                    [ORIGIN_ID] => 
+                                    [ADDRESS] => 
+                                    [ADDRESS_2] => 
+                                    [ADDRESS_CITY] => 
+                                    [ADDRESS_POSTAL_CODE] => 
+                                    [ADDRESS_REGION] => 
+                                    [ADDRESS_PROVINCE] => 
+                                    [ADDRESS_COUNTRY] => 
+                                    [ADDRESS_COUNTRY_CODE] => 
+                                    [ADDRESS_LOC_ADDR_ID] => 
+                                    [UTM_SOURCE] => 
+                                    [UTM_MEDIUM] => 
+                                    [UTM_CAMPAIGN] => 
+                                    [UTM_CONTENT] => 
+                                    [UTM_TERM] => 
+                                )
+
+                        )
+
+                )
+
+            [result_error] => Array
+                (
+                )
+
+            [result_total] => Array
+                (
+                    [0] => 1
+                )
+
+            [result_next] => Array
+                (
+                )
+
+            [result_time] => Array
+                (
+                    [0] => Array
+                        (
+                            [start] => 1628522779.6569
+                            [finish] => 1628522779.6728
+                            [duration] => 0.015894889831543
+                            [processing] => 0.015829086303711
+                            [date_start] => 2021-08-09T18:26:19+03:00
+                            [date_finish] => 2021-08-09T18:26:19+03:00
+                        )
+
+                )
+
+        )
+
+    [time] => Array
+        (
+            [start] => 1628522779.639
+            [finish] => 1628522779.6728
+            [duration] => 0.033751010894775
+            [processing] => 0.015950918197632
+            [date_start] => 2021-08-09T18:26:19+03:00
+            [date_finish] => 2021-08-09T18:26:19+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:26:30
+Caption: company
+Array
+(
+    [result] => Array
+        (
+            [result] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 501
+                                    [COMPANY_TYPE] => CUSTOMER
+                                    [TITLE] => Company
+                                    [LOGO] => 
+                                    [LEAD_ID] => 
+                                    [HAS_PHONE] => Y
+                                    [HAS_EMAIL] => N
+                                    [HAS_IMOL] => N
+                                    [ASSIGNED_BY_ID] => 1851
+                                    [CREATED_BY_ID] => 1851
+                                    [MODIFY_BY_ID] => 1851
+                                    [BANKING_DETAILS] => 
+                                    [INDUSTRY] => GOVERNMENT
+                                    [REVENUE] => 0
+                                    [CURRENCY_ID] => RUB
+                                    [EMPLOYEES] => EMPLOYEES_1
+                                    [COMMENTS] => 
+                                    [DATE_CREATE] => 2021-08-05T17:17:54+03:00
+                                    [DATE_MODIFY] => 2021-08-05T17:17:55+03:00
+                                    [OPENED] => Y
+                                    [IS_MY_COMPANY] => N
+                                    [ORIGINATOR_ID] => 
+                                    [ORIGIN_ID] => 
+                                    [ORIGIN_VERSION] => 
+                                    [ADDRESS] => 
+                                    [ADDRESS_2] => 
+                                    [ADDRESS_CITY] => 
+                                    [ADDRESS_POSTAL_CODE] => 
+                                    [ADDRESS_REGION] => 
+                                    [ADDRESS_PROVINCE] => 
+                                    [ADDRESS_COUNTRY] => 
+                                    [ADDRESS_COUNTRY_CODE] => 
+                                    [ADDRESS_LOC_ADDR_ID] => 
+                                    [ADDRESS_LEGAL] => 
+                                    [REG_ADDRESS] => 
+                                    [REG_ADDRESS_2] => 
+                                    [REG_ADDRESS_CITY] => 
+                                    [REG_ADDRESS_POSTAL_CODE] => 
+                                    [REG_ADDRESS_REGION] => 
+                                    [REG_ADDRESS_PROVINCE] => 
+                                    [REG_ADDRESS_COUNTRY] => 
+                                    [REG_ADDRESS_COUNTRY_CODE] => 
+                                    [REG_ADDRESS_LOC_ADDR_ID] => 
+                                    [UTM_SOURCE] => 
+                                    [UTM_MEDIUM] => 
+                                    [UTM_CAMPAIGN] => 
+                                    [UTM_CONTENT] => 
+                                    [UTM_TERM] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [ID] => 503
+                                    [COMPANY_TYPE] => CUSTOMER
+                                    [TITLE] => ТЕСТОВАЯ КОМПАНИЯ123
+                                    [LOGO] => 
+                                    [LEAD_ID] => 
+                                    [HAS_PHONE] => Y
+                                    [HAS_EMAIL] => N
+                                    [HAS_IMOL] => N
+                                    [ASSIGNED_BY_ID] => 1851
+                                    [CREATED_BY_ID] => 1851
+                                    [MODIFY_BY_ID] => 1851
+                                    [BANKING_DETAILS] => 
+                                    [INDUSTRY] => GOVERNMENT
+                                    [REVENUE] => 0
+                                    [CURRENCY_ID] => RUB
+                                    [EMPLOYEES] => EMPLOYEES_1
+                                    [COMMENTS] => 
+                                    [DATE_CREATE] => 2021-08-09T18:20:47+03:00
+                                    [DATE_MODIFY] => 2021-08-09T18:20:48+03:00
+                                    [OPENED] => Y
+                                    [IS_MY_COMPANY] => N
+                                    [ORIGINATOR_ID] => 
+                                    [ORIGIN_ID] => 
+                                    [ORIGIN_VERSION] => 
+                                    [ADDRESS] => 
+                                    [ADDRESS_2] => 
+                                    [ADDRESS_CITY] => 
+                                    [ADDRESS_POSTAL_CODE] => 
+                                    [ADDRESS_REGION] => 
+                                    [ADDRESS_PROVINCE] => 
+                                    [ADDRESS_COUNTRY] => 
+                                    [ADDRESS_COUNTRY_CODE] => 
+                                    [ADDRESS_LOC_ADDR_ID] => 
+                                    [ADDRESS_LEGAL] => 
+                                    [REG_ADDRESS] => 
+                                    [REG_ADDRESS_2] => 
+                                    [REG_ADDRESS_CITY] => 
+                                    [REG_ADDRESS_POSTAL_CODE] => 
+                                    [REG_ADDRESS_REGION] => 
+                                    [REG_ADDRESS_PROVINCE] => 
+                                    [REG_ADDRESS_COUNTRY] => 
+                                    [REG_ADDRESS_COUNTRY_CODE] => 
+                                    [REG_ADDRESS_LOC_ADDR_ID] => 
+                                    [UTM_SOURCE] => 
+                                    [UTM_MEDIUM] => 
+                                    [UTM_CAMPAIGN] => 
+                                    [UTM_CONTENT] => 
+                                    [UTM_TERM] => 
+                                )
+
+                        )
+
+                )
+
+            [result_error] => Array
+                (
+                )
+
+            [result_total] => Array
+                (
+                    [0] => 2
+                )
+
+            [result_next] => Array
+                (
+                )
+
+            [result_time] => Array
+                (
+                    [0] => Array
+                        (
+                            [start] => 1628522779.9324
+                            [finish] => 1628522779.9433
+                            [duration] => 0.010865926742554
+                            [processing] => 0.010802030563354
+                            [date_start] => 2021-08-09T18:26:19+03:00
+                            [date_finish] => 2021-08-09T18:26:19+03:00
+                        )
+
+                )
+
+        )
+
+    [time] => Array
+        (
+            [start] => 1628522779.9156
+            [finish] => 1628522779.9433
+            [duration] => 0.027703046798706
+            [processing] => 0.010923147201538
+            [date_start] => 2021-08-09T18:26:19+03:00
+            [date_finish] => 2021-08-09T18:26:19+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:26:30
+Caption: contact
+Array
+(
+    [result] => Array
+        (
+            [result] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 315
+                                    [POST] => 
+                                    [COMMENTS] => 
+                                    [HONORIFIC] => HNR_RU_1
+                                    [NAME] => Нно
+                                    [SECOND_NAME] => 
+                                    [LAST_NAME] => 
+                                    [PHOTO] => 
+                                    [LEAD_ID] => 
+                                    [TYPE_ID] => CLIENT
+                                    [SOURCE_ID] => WEBFORM
+                                    [SOURCE_DESCRIPTION] => 
+                                    [COMPANY_ID] => 
+                                    [BIRTHDATE] => 
+                                    [EXPORT] => Y
+                                    [HAS_PHONE] => Y
+                                    [HAS_EMAIL] => N
+                                    [HAS_IMOL] => N
+                                    [DATE_CREATE] => 2021-08-05T17:17:38+03:00
+                                    [DATE_MODIFY] => 2021-08-05T17:17:40+03:00
+                                    [ASSIGNED_BY_ID] => 1851
+                                    [CREATED_BY_ID] => 1851
+                                    [MODIFY_BY_ID] => 1851
+                                    [OPENED] => Y
+                                    [ORIGINATOR_ID] => 
+                                    [ORIGIN_ID] => 
+                                    [ORIGIN_VERSION] => 
+                                    [FACE_ID] => 
+                                    [ADDRESS] => 
+                                    [ADDRESS_2] => 
+                                    [ADDRESS_CITY] => 
+                                    [ADDRESS_POSTAL_CODE] => 
+                                    [ADDRESS_REGION] => 
+                                    [ADDRESS_PROVINCE] => 
+                                    [ADDRESS_COUNTRY] => 
+                                    [ADDRESS_LOC_ADDR_ID] => 
+                                    [UTM_SOURCE] => 
+                                    [UTM_MEDIUM] => 
+                                    [UTM_CAMPAIGN] => 
+                                    [UTM_CONTENT] => 
+                                    [UTM_TERM] => 
+                                )
+
+                        )
+
+                )
+
+            [result_error] => Array
+                (
+                )
+
+            [result_total] => Array
+                (
+                    [0] => 1
+                )
+
+            [result_next] => Array
+                (
+                )
+
+            [result_time] => Array
+                (
+                    [0] => Array
+                        (
+                            [start] => 1628522780.2014
+                            [finish] => 1628522780.2165
+                            [duration] => 0.015061140060425
+                            [processing] => 0.014991998672485
+                            [date_start] => 2021-08-09T18:26:20+03:00
+                            [date_finish] => 2021-08-09T18:26:20+03:00
+                        )
+
+                )
+
+        )
+
+    [time] => Array
+        (
+            [start] => 1628522780.1818
+            [finish] => 1628522780.2165
+            [duration] => 0.034693956375122
+            [processing] => 0.01513409614563
+            [date_start] => 2021-08-09T18:26:20+03:00
+            [date_finish] => 2021-08-09T18:26:20+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:26:30
+Caption: listEmail
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => 451
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => 125
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: $_REQUEST
+Array
+(
+    [ID] => 243
+    [event] => ONCRMLEADADD
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: getLead
+Array
+(
+    [result] => Array
+        (
+            [ID] => 243
+            [TITLE] => 123123
+            [HONORIFIC] => 
+            [NAME] => 
+            [SECOND_NAME] => 
+            [LAST_NAME] => 
+            [COMPANY_TITLE] => 
+            [COMPANY_ID] => 0
+            [CONTACT_ID] => 
+            [IS_RETURN_CUSTOMER] => N
+            [BIRTHDATE] => 
+            [SOURCE_ID] => WEBFORM
+            [SOURCE_DESCRIPTION] => 
+            [STATUS_ID] => NEW
+            [STATUS_DESCRIPTION] => 
+            [POST] => 
+            [COMMENTS] => 
+            [CURRENCY_ID] => RUB
+            [OPPORTUNITY] => 0.00
+            [IS_MANUAL_OPPORTUNITY] => N
+            [HAS_PHONE] => Y
+            [HAS_EMAIL] => Y
+            [HAS_IMOL] => N
+            [ASSIGNED_BY_ID] => 1851
+            [CREATED_BY_ID] => 1851
+            [MODIFY_BY_ID] => 1851
+            [DATE_CREATE] => 2021-02-05T15:08:31+03:00
+            [DATE_MODIFY] => 2021-08-04T19:47:33+03:00
+            [DATE_CLOSED] => 
+            [STATUS_SEMANTIC_ID] => P
+            [OPENED] => Y
+            [ORIGINATOR_ID] => 
+            [ORIGIN_ID] => 
+            [ADDRESS] => 
+            [ADDRESS_2] => 
+            [ADDRESS_CITY] => 
+            [ADDRESS_POSTAL_CODE] => 
+            [ADDRESS_REGION] => 
+            [ADDRESS_PROVINCE] => 
+            [ADDRESS_COUNTRY] => 
+            [ADDRESS_COUNTRY_CODE] => 
+            [ADDRESS_LOC_ADDR_ID] => 
+            [UTM_SOURCE] => 
+            [UTM_MEDIUM] => 
+            [UTM_CAMPAIGN] => 
+            [UTM_CONTENT] => 
+            [UTM_TERM] => 
+            [UF_CRM_SP_UNSUBSCR] => 0
+            [UF_CRM_1538647419] => 
+            [UF_CRM_1581418338] => 
+            [UF_CRM_1581418376] => 
+            [UF_CRM_ITS_RELATED1] => custom value for show field
+            [UF_CRM_1597407280] => 
+            [UF_CRM_1600245856370] => 
+            [UF_CRM_1612527141] => 12213
+            [UF_CRM_1614353863] => 
+            [UF_CRM_603916A3BEA3B] => 
+            [UF_CRM_1614681079399] => 
+            [UF_CRM_1614681116518] => 
+            [UF_CRM_1614681130910] => 
+            [UF_CRM_1614705530] => 
+            [UF_CRM_1614706460] => 
+            [UF_CRM_1614706518] => 
+            [UF_CRM_1614706596] => 
+            [UF_CRM_1615820003612] => Array
+                (
+                )
+
+            [UF_CRM_ITS_DICT_CITY] => 
+            [UF_CRM_1617887745774] => 
+            [UF_CRM_ITS_DICT_OKVED] => 
+            [UF_CRM_ITS_DICT_PROFESSION] => 
+            [UF_CRM_LAST_CALL_DATE] => 
+            [UF_CRM_5A9EBF2E896B6] => 
+            [UF_CRM_ORDER_IDS] => 
+            [UF_CRM_PROBABILITY] => 
+            [UF_CRM_BEGINDATE] => 
+            [UF_CRM_EVENT_DATE] => 
+            [UF_CRM_ORIGINATOR_ID] => 
+            [UF_CRM_LEAD_ID] => 
+            [UF_CRM_EVENT_DESCRIPTION] => 
+            [UF_CRM_ORIGIN_ID] => 
+            [UF_CRM_CLOSEDATE] => 
+            [UF_CRM_CLOSED] => 
+            [UF_CRM_OPPORTUNITY_ACCOUNT] => 
+            [UF_CRM_ACCOUNT_CURRENCY_ID] => 
+            [UF_CRM_CONTACT_IDS] => 
+            [UF_CRM_CATEGORY_ID] => 
+            [UF_CRM_TYPE_ID] => 
+            [UF_CRM_EVENT_ID] => 
+            [UF_CRM_1551419189] => 
+            [UF_CRM_1578484533] => 
+            [UF_CRM_1557008108] => 
+            [UF_CRM_1557008119] => 
+            [UF_CRM_5E15CA0E5F680] => 
+            [UF_CRM_1595780613] => 
+            [UF_CRM_1560728821] => 
+            [UF_CRM_1551430847644] => 
+            [UF_CRM_602105FF4A726] => 
+            [UF_CRM_6021087F7EAFE] => 
+            [UF_CRM_5C384171CE6EB] => 
+            [UF_CRM_602A600530990] => 
+            [UF_CRM_1615885523] => 
+            [UF_CRM_1560875452] => 
+            [UF_CRM_1551692234] => 
+            [UF_CRM_1612955822] => 
+            [UF_CRM_1553932688] => 
+            [UF_CRM_1613377055] => 
+            [UF_CRM_1560144352] => 
+            [UF_CRM_1611304733] => 
+            [UF_CRM_1560328872] => 
+            [UF_CRM_6031218E8E304] => 
+            [UF_CRM_602104BD6B6A8] => 
+            [UF_CRM_1566189708] => 
+            [UF_CRM_5C5801DDEEB24] => 
+            [UF_CRM_1591598208] => 
+            [UF_CRM_1572293623] => 
+            [UF_CRM_1565582929] => 
+            [UF_CRM_1566212333] => 
+            [UF_CRM_1611303102] => 
+            [UF_CRM_1617260897] => 
+            [UF_CRM_1555561455] => 
+            [UF_CRM_1555561368] => 
+            [UF_CRM_1597308245526] => 
+            [UF_CRM_1560854189] => 
+            [UF_CRM_5DD4EC413EAC5] => 
+            [UF_CRM_1567680966] => 
+            [UF_CRM_1606485361524] => 
+            [UF_CRM_1553778436] => 
+            [UF_CRM_COMPANY_ID] => 
+            [UF_CRM_CONTACT_ID] => 
+            [UF_CRM_1551430886580] => 
+            [UF_CRM_1553451508] => 
+            [UF_CRM_1551080498] => 
+            [UF_CRM_1611303121] => 
+            [UF_CRM_1587980750449] => 
+            [UF_CRM_5DD4EC4092AAA] => 
+            [UF_CRM_1594019939710] => 
+            [UF_CRM_1614339040] => 
+            [UF_CRM_1554032151] => 
+            [UF_CRM_1554032126] => 
+            [UF_CRM_602EC0EE73B77] => 
+            [UF_CRM_5D975650C5AF3] => 
+            [UF_CRM_1584430071] => 
+            [UF_CRM_5D1DB552ED029] => 
+            [UF_CRM_1563263100] => 
+            [UF_CRM_1575023853] => 
+            [UF_CRM_1573578091] => 
+            [UF_CRM_1560875494] => 
+            [UF_CRM_1584430260] => 
+            [UF_CRM_5CE354C709B88] => 
+            [UF_CRM_1573481584] => 
+            [UF_CRM_1562309336] => 
+            [UF_CRM_1555485619] => 
+            [UF_CRM_1560875525] => 
+            [UF_CRM_1586943938471] => 
+            [UF_CRM_5C799367EBA93] => 
+            [UF_CRM_602104BBEC516] => 
+            [UF_CRM_1560143592] => 
+            [UF_CRM_1612957408] => 
+            [UF_CRM_STAGE_ID] => 
+            [UF_CRM_1611306143] => 
+            [UF_CRM_1560339072] => 
+            [UF_CRM_5E68F9D47A272] => 
+            [UF_CRM_1583142836] => 
+            [UF_CRM_1594020917603] => 
+            [UF_CRM_1606304984610] => 
+            [UF_CRM_1567495710] => 
+            [UF_CRM_1573579295] => 
+            [UF_CRM_1551080461] => 
+            [UF_CRM_1566189777] => 
+            [UF_CRM_1503667665] => 
+            [UF_CRM_1507891985986] => 
+            [UF_CRM_1512488738] => Array
+                (
+                )
+
+            [UF_CRM_1527523282] => https://calcus.ru/kalkulyator-ipoteki
+            [UF_CRM_1532362405] => Array
+                (
+                )
+
+            [UF_CRM_1532363145] => 
+            [UF_CRM_1532363460] => Array
+                (
+                )
+
+            [UF_CRM_1613674874] => 
+            [UF_CRM_1613675957] => 
+            [UF_CRM_1614353750] => 
+            [EMAIL] => Array
+                (
+                    [0] => Array
+                        (
+                            [ID] => 59601
+                            [VALUE_TYPE] => WORK
+                            [VALUE] => rty@tyu.ru
+                            [TYPE_ID] => EMAIL
+                        )
+
+                    [1] => Array
+                        (
+                            [ID] => 59603
+                            [VALUE_TYPE] => WORK
+                            [VALUE] => 123@tyu.ru
+                            [TYPE_ID] => EMAIL
+                        )
+
+                    [2] => Array
+                        (
+                            [ID] => 59605
+                            [VALUE_TYPE] => WORK
+                            [VALUE] => vasya@vasya.ru
+                            [TYPE_ID] => EMAIL
+                        )
+
+                )
+
+            [PHONE] => Array
+                (
+                    [0] => Array
+                        (
+                            [ID] => 59607
+                            [VALUE_TYPE] => MOBILE
+                            [VALUE] => +79339393939
+                            [TYPE_ID] => PHONE
+                        )
+
+                    [1] => Array
+                        (
+                            [ID] => 59609
+                            [VALUE_TYPE] => MOBILE
+                            [VALUE] => +79339099090
+                            [TYPE_ID] => PHONE
+                        )
+
+                )
+
+        )
+
+    [time] => Array
+        (
+            [start] => 1628522997.4308
+            [finish] => 1628522997.4681
+            [duration] => 0.037299871444702
+            [processing] => 0.018249034881592
+            [date_start] => 2021-08-09T18:29:57+03:00
+            [date_finish] => 2021-08-09T18:29:57+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: phonesArr
+Array
+(
+    [0] => 9339393939
+    [1] => 9339099090
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: emailsArr
+Array
+(
+    [0] => rty@tyu.ru
+    [1] => 123@tyu.ru
+    [2] => vasya@vasya.ru
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: respID
+1851
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: crmTask
+L_243
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: phones
+Array
+(
+    [0] => 9339393939
+    [1] => 79339393939
+    [2] => +79339393939
+    [3] => 89339393939
+    [4] => 9339099090
+    [5] => 79339099090
+    [6] => +79339099090
+    [7] => 89339099090
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: phones
+Array
+(
+    [0] => Array
+        (
+            [0] => 9339393939
+            [1] => 79339393939
+            [2] => +79339393939
+            [3] => 89339393939
+            [4] => 9339099090
+            [5] => 79339099090
+            [6] => +79339099090
+            [7] => 89339099090
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: emails
+Array
+(
+    [0] => Array
+        (
+            [0] => rty@tyu.ru
+            [1] => 123@tyu.ru
+            [2] => vasya@vasya.ru
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: getDuplicates
+Array
+(
+    [result] => Array
+        (
+            [LEAD] => Array
+                (
+                    [0] => 243
+                    [1] => 451
+                )
+
+            [CONTACT] => Array
+                (
+                    [0] => 315
+                )
+
+            [COMPANY] => Array
+                (
+                    [0] => 501
+                    [1] => 503
+                )
+
+        )
+
+    [time] => Array
+        (
+            [start] => 1628522997.5807
+            [finish] => 1628522997.6044
+            [duration] => 0.023685932159424
+            [processing] => 0.0050590038299561
+            [date_start] => 2021-08-09T18:29:57+03:00
+            [date_finish] => 2021-08-09T18:29:57+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: entityId
+243
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: v
+243
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: entityId
+243
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: v
+451
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: entityId
+243
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: v
+315
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: entityId
+243
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: v
+501
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: entityId
+243
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: v
+503
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: list
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => 451
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => 315
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => 501
+            [1] => 503
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:07
+Caption: nodup
+Array
+(
+    [lead] => Array
+        (
+            [0] => 451
+        )
+
+    [contact] => Array
+        (
+            [0] => 315
+        )
+
+    [company] => Array
+        (
+            [0] => 501
+            [1] => 503
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:08
+Caption: lead
+Array
+(
+    [result] => Array
+        (
+            [result] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 451
+                                    [TITLE] => 123123
+                                    [HONORIFIC] => 
+                                    [NAME] => 
+                                    [SECOND_NAME] => 
+                                    [LAST_NAME] => 
+                                    [COMPANY_TITLE] => 
+                                    [COMPANY_ID] => 0
+                                    [CONTACT_ID] => 
+                                    [IS_RETURN_CUSTOMER] => N
+                                    [BIRTHDATE] => 
+                                    [SOURCE_ID] => WEBFORM
+                                    [SOURCE_DESCRIPTION] => 
+                                    [STATUS_ID] => NEW
+                                    [STATUS_DESCRIPTION] => 
+                                    [POST] => 
+                                    [COMMENTS] => 
+                                    [CURRENCY_ID] => RUB
+                                    [OPPORTUNITY] => 0.00
+                                    [IS_MANUAL_OPPORTUNITY] => N
+                                    [HAS_PHONE] => Y
+                                    [HAS_EMAIL] => Y
+                                    [HAS_IMOL] => N
+                                    [ASSIGNED_BY_ID] => 1851
+                                    [CREATED_BY_ID] => 1851
+                                    [MODIFY_BY_ID] => 1851
+                                    [DATE_CREATE] => 2021-08-04T21:17:26+03:00
+                                    [DATE_MODIFY] => 2021-08-04T21:17:42+03:00
+                                    [DATE_CLOSED] => 
+                                    [STATUS_SEMANTIC_ID] => P
+                                    [OPENED] => Y
+                                    [ORIGINATOR_ID] => 
+                                    [ORIGIN_ID] => 
+                                    [ADDRESS] => 
+                                    [ADDRESS_2] => 
+                                    [ADDRESS_CITY] => 
+                                    [ADDRESS_POSTAL_CODE] => 
+                                    [ADDRESS_REGION] => 
+                                    [ADDRESS_PROVINCE] => 
+                                    [ADDRESS_COUNTRY] => 
+                                    [ADDRESS_COUNTRY_CODE] => 
+                                    [ADDRESS_LOC_ADDR_ID] => 
+                                    [UTM_SOURCE] => 
+                                    [UTM_MEDIUM] => 
+                                    [UTM_CAMPAIGN] => 
+                                    [UTM_CONTENT] => 
+                                    [UTM_TERM] => 
+                                )
+
+                        )
+
+                )
+
+            [result_error] => Array
+                (
+                )
+
+            [result_total] => Array
+                (
+                    [0] => 1
+                )
+
+            [result_next] => Array
+                (
+                )
+
+            [result_time] => Array
+                (
+                    [0] => Array
+                        (
+                            [start] => 1628522997.8692
+                            [finish] => 1628522997.884
+                            [duration] => 0.014811992645264
+                            [processing] => 0.014739990234375
+                            [date_start] => 2021-08-09T18:29:57+03:00
+                            [date_finish] => 2021-08-09T18:29:57+03:00
+                        )
+
+                )
+
+        )
+
+    [time] => Array
+        (
+            [start] => 1628522997.8522
+            [finish] => 1628522997.8841
+            [duration] => 0.031811952590942
+            [processing] => 0.014878988265991
+            [date_start] => 2021-08-09T18:29:57+03:00
+            [date_finish] => 2021-08-09T18:29:57+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:08
+Caption: company
+Array
+(
+    [result] => Array
+        (
+            [result] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 501
+                                    [COMPANY_TYPE] => CUSTOMER
+                                    [TITLE] => Company
+                                    [LOGO] => 
+                                    [LEAD_ID] => 
+                                    [HAS_PHONE] => Y
+                                    [HAS_EMAIL] => N
+                                    [HAS_IMOL] => N
+                                    [ASSIGNED_BY_ID] => 1851
+                                    [CREATED_BY_ID] => 1851
+                                    [MODIFY_BY_ID] => 1851
+                                    [BANKING_DETAILS] => 
+                                    [INDUSTRY] => GOVERNMENT
+                                    [REVENUE] => 0
+                                    [CURRENCY_ID] => RUB
+                                    [EMPLOYEES] => EMPLOYEES_1
+                                    [COMMENTS] => 
+                                    [DATE_CREATE] => 2021-08-05T17:17:54+03:00
+                                    [DATE_MODIFY] => 2021-08-05T17:17:55+03:00
+                                    [OPENED] => Y
+                                    [IS_MY_COMPANY] => N
+                                    [ORIGINATOR_ID] => 
+                                    [ORIGIN_ID] => 
+                                    [ORIGIN_VERSION] => 
+                                    [ADDRESS] => 
+                                    [ADDRESS_2] => 
+                                    [ADDRESS_CITY] => 
+                                    [ADDRESS_POSTAL_CODE] => 
+                                    [ADDRESS_REGION] => 
+                                    [ADDRESS_PROVINCE] => 
+                                    [ADDRESS_COUNTRY] => 
+                                    [ADDRESS_COUNTRY_CODE] => 
+                                    [ADDRESS_LOC_ADDR_ID] => 
+                                    [ADDRESS_LEGAL] => 
+                                    [REG_ADDRESS] => 
+                                    [REG_ADDRESS_2] => 
+                                    [REG_ADDRESS_CITY] => 
+                                    [REG_ADDRESS_POSTAL_CODE] => 
+                                    [REG_ADDRESS_REGION] => 
+                                    [REG_ADDRESS_PROVINCE] => 
+                                    [REG_ADDRESS_COUNTRY] => 
+                                    [REG_ADDRESS_COUNTRY_CODE] => 
+                                    [REG_ADDRESS_LOC_ADDR_ID] => 
+                                    [UTM_SOURCE] => 
+                                    [UTM_MEDIUM] => 
+                                    [UTM_CAMPAIGN] => 
+                                    [UTM_CONTENT] => 
+                                    [UTM_TERM] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [ID] => 503
+                                    [COMPANY_TYPE] => CUSTOMER
+                                    [TITLE] => ТЕСТОВАЯ КОМПАНИЯ123
+                                    [LOGO] => 
+                                    [LEAD_ID] => 
+                                    [HAS_PHONE] => Y
+                                    [HAS_EMAIL] => Y
+                                    [HAS_IMOL] => N
+                                    [ASSIGNED_BY_ID] => 1851
+                                    [CREATED_BY_ID] => 1851
+                                    [MODIFY_BY_ID] => 1851
+                                    [BANKING_DETAILS] => 
+                                    [INDUSTRY] => GOVERNMENT
+                                    [REVENUE] => 0
+                                    [CURRENCY_ID] => RUB
+                                    [EMPLOYEES] => EMPLOYEES_1
+                                    [COMMENTS] => 
+                                    [DATE_CREATE] => 2021-08-09T18:20:47+03:00
+                                    [DATE_MODIFY] => 2021-08-09T18:29:51+03:00
+                                    [OPENED] => Y
+                                    [IS_MY_COMPANY] => N
+                                    [ORIGINATOR_ID] => 
+                                    [ORIGIN_ID] => 
+                                    [ORIGIN_VERSION] => 
+                                    [ADDRESS] => 
+                                    [ADDRESS_2] => 
+                                    [ADDRESS_CITY] => 
+                                    [ADDRESS_POSTAL_CODE] => 
+                                    [ADDRESS_REGION] => 
+                                    [ADDRESS_PROVINCE] => 
+                                    [ADDRESS_COUNTRY] => 
+                                    [ADDRESS_COUNTRY_CODE] => 
+                                    [ADDRESS_LOC_ADDR_ID] => 
+                                    [ADDRESS_LEGAL] => 
+                                    [REG_ADDRESS] => 
+                                    [REG_ADDRESS_2] => 
+                                    [REG_ADDRESS_CITY] => 
+                                    [REG_ADDRESS_POSTAL_CODE] => 
+                                    [REG_ADDRESS_REGION] => 
+                                    [REG_ADDRESS_PROVINCE] => 
+                                    [REG_ADDRESS_COUNTRY] => 
+                                    [REG_ADDRESS_COUNTRY_CODE] => 
+                                    [REG_ADDRESS_LOC_ADDR_ID] => 
+                                    [UTM_SOURCE] => 
+                                    [UTM_MEDIUM] => 
+                                    [UTM_CAMPAIGN] => 
+                                    [UTM_CONTENT] => 
+                                    [UTM_TERM] => 
+                                )
+
+                        )
+
+                )
+
+            [result_error] => Array
+                (
+                )
+
+            [result_total] => Array
+                (
+                    [0] => 2
+                )
+
+            [result_next] => Array
+                (
+                )
+
+            [result_time] => Array
+                (
+                    [0] => Array
+                        (
+                            [start] => 1628522998.1776
+                            [finish] => 1628522998.1921
+                            [duration] => 0.014508962631226
+                            [processing] => 0.014410018920898
+                            [date_start] => 2021-08-09T18:29:58+03:00
+                            [date_finish] => 2021-08-09T18:29:58+03:00
+                        )
+
+                )
+
+        )
+
+    [time] => Array
+        (
+            [start] => 1628522998.1523
+            [finish] => 1628522998.1921
+            [duration] => 0.039843082427979
+            [processing] => 0.014647960662842
+            [date_start] => 2021-08-09T18:29:58+03:00
+            [date_finish] => 2021-08-09T18:29:58+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:08
+Caption: contact
+Array
+(
+    [result] => Array
+        (
+            [result] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 315
+                                    [POST] => 
+                                    [COMMENTS] => 
+                                    [HONORIFIC] => HNR_RU_1
+                                    [NAME] => Нно
+                                    [SECOND_NAME] => 
+                                    [LAST_NAME] => 
+                                    [PHOTO] => 
+                                    [LEAD_ID] => 
+                                    [TYPE_ID] => CLIENT
+                                    [SOURCE_ID] => WEBFORM
+                                    [SOURCE_DESCRIPTION] => 
+                                    [COMPANY_ID] => 
+                                    [BIRTHDATE] => 
+                                    [EXPORT] => Y
+                                    [HAS_PHONE] => Y
+                                    [HAS_EMAIL] => N
+                                    [HAS_IMOL] => N
+                                    [DATE_CREATE] => 2021-08-05T17:17:38+03:00
+                                    [DATE_MODIFY] => 2021-08-05T17:17:40+03:00
+                                    [ASSIGNED_BY_ID] => 1851
+                                    [CREATED_BY_ID] => 1851
+                                    [MODIFY_BY_ID] => 1851
+                                    [OPENED] => Y
+                                    [ORIGINATOR_ID] => 
+                                    [ORIGIN_ID] => 
+                                    [ORIGIN_VERSION] => 
+                                    [FACE_ID] => 
+                                    [ADDRESS] => 
+                                    [ADDRESS_2] => 
+                                    [ADDRESS_CITY] => 
+                                    [ADDRESS_POSTAL_CODE] => 
+                                    [ADDRESS_REGION] => 
+                                    [ADDRESS_PROVINCE] => 
+                                    [ADDRESS_COUNTRY] => 
+                                    [ADDRESS_LOC_ADDR_ID] => 
+                                    [UTM_SOURCE] => 
+                                    [UTM_MEDIUM] => 
+                                    [UTM_CAMPAIGN] => 
+                                    [UTM_CONTENT] => 
+                                    [UTM_TERM] => 
+                                )
+
+                        )
+
+                )
+
+            [result_error] => Array
+                (
+                )
+
+            [result_total] => Array
+                (
+                    [0] => 1
+                )
+
+            [result_next] => Array
+                (
+                )
+
+            [result_time] => Array
+                (
+                    [0] => Array
+                        (
+                            [start] => 1628522998.4512
+                            [finish] => 1628522998.4664
+                            [duration] => 0.015123128890991
+                            [processing] => 0.015053033828735
+                            [date_start] => 2021-08-09T18:29:58+03:00
+                            [date_finish] => 2021-08-09T18:29:58+03:00
+                        )
+
+                )
+
+        )
+
+    [time] => Array
+        (
+            [start] => 1628522998.4343
+            [finish] => 1628522998.4664
+            [duration] => 0.032104015350342
+            [processing] => 0.015178918838501
+            [date_start] => 2021-08-09T18:29:58+03:00
+            [date_finish] => 2021-08-09T18:29:58+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:08
+Caption: listEmail
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => 451
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => 125
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => 503
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:08
+Caption: nodupEmail
+Array
+(
+    [lead] => Array
+        (
+            [0] => 451
+        )
+
+    [contact] => Array
+        (
+            [0] => 125
+        )
+
+    [company] => Array
+        (
+            [0] => 503
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:09
+Caption: leadEmail
+Array
+(
+    [result] => Array
+        (
+            [result] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 451
+                                    [TITLE] => 123123
+                                    [HONORIFIC] => 
+                                    [NAME] => 
+                                    [SECOND_NAME] => 
+                                    [LAST_NAME] => 
+                                    [COMPANY_TITLE] => 
+                                    [COMPANY_ID] => 0
+                                    [CONTACT_ID] => 
+                                    [IS_RETURN_CUSTOMER] => N
+                                    [BIRTHDATE] => 
+                                    [SOURCE_ID] => WEBFORM
+                                    [SOURCE_DESCRIPTION] => 
+                                    [STATUS_ID] => NEW
+                                    [STATUS_DESCRIPTION] => 
+                                    [POST] => 
+                                    [COMMENTS] => 
+                                    [CURRENCY_ID] => RUB
+                                    [OPPORTUNITY] => 0.00
+                                    [IS_MANUAL_OPPORTUNITY] => N
+                                    [HAS_PHONE] => Y
+                                    [HAS_EMAIL] => Y
+                                    [HAS_IMOL] => N
+                                    [ASSIGNED_BY_ID] => 1851
+                                    [CREATED_BY_ID] => 1851
+                                    [MODIFY_BY_ID] => 1851
+                                    [DATE_CREATE] => 2021-08-04T21:17:26+03:00
+                                    [DATE_MODIFY] => 2021-08-04T21:17:42+03:00
+                                    [DATE_CLOSED] => 
+                                    [STATUS_SEMANTIC_ID] => P
+                                    [OPENED] => Y
+                                    [ORIGINATOR_ID] => 
+                                    [ORIGIN_ID] => 
+                                    [ADDRESS] => 
+                                    [ADDRESS_2] => 
+                                    [ADDRESS_CITY] => 
+                                    [ADDRESS_POSTAL_CODE] => 
+                                    [ADDRESS_REGION] => 
+                                    [ADDRESS_PROVINCE] => 
+                                    [ADDRESS_COUNTRY] => 
+                                    [ADDRESS_COUNTRY_CODE] => 
+                                    [ADDRESS_LOC_ADDR_ID] => 
+                                    [UTM_SOURCE] => 
+                                    [UTM_MEDIUM] => 
+                                    [UTM_CAMPAIGN] => 
+                                    [UTM_CONTENT] => 
+                                    [UTM_TERM] => 
+                                )
+
+                        )
+
+                )
+
+            [result_error] => Array
+                (
+                )
+
+            [result_total] => Array
+                (
+                    [0] => 1
+                )
+
+            [result_next] => Array
+                (
+                )
+
+            [result_time] => Array
+                (
+                    [0] => Array
+                        (
+                            [start] => 1628522998.8719
+                            [finish] => 1628522998.8847
+                            [duration] => 0.012759923934937
+                            [processing] => 0.012694120407104
+                            [date_start] => 2021-08-09T18:29:58+03:00
+                            [date_finish] => 2021-08-09T18:29:58+03:00
+                        )
+
+                )
+
+        )
+
+    [time] => Array
+        (
+            [start] => 1628522998.8557
+            [finish] => 1628522998.8847
+            [duration] => 0.02899694442749
+            [processing] => 0.012814998626709
+            [date_start] => 2021-08-09T18:29:58+03:00
+            [date_finish] => 2021-08-09T18:29:58+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:09
+Caption: companyEmail
+Array
+(
+    [result] => Array
+        (
+            [result] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 503
+                                    [COMPANY_TYPE] => CUSTOMER
+                                    [TITLE] => ТЕСТОВАЯ КОМПАНИЯ123
+                                    [LOGO] => 
+                                    [LEAD_ID] => 
+                                    [HAS_PHONE] => Y
+                                    [HAS_EMAIL] => Y
+                                    [HAS_IMOL] => N
+                                    [ASSIGNED_BY_ID] => 1851
+                                    [CREATED_BY_ID] => 1851
+                                    [MODIFY_BY_ID] => 1851
+                                    [BANKING_DETAILS] => 
+                                    [INDUSTRY] => GOVERNMENT
+                                    [REVENUE] => 0
+                                    [CURRENCY_ID] => RUB
+                                    [EMPLOYEES] => EMPLOYEES_1
+                                    [COMMENTS] => 
+                                    [DATE_CREATE] => 2021-08-09T18:20:47+03:00
+                                    [DATE_MODIFY] => 2021-08-09T18:29:51+03:00
+                                    [OPENED] => Y
+                                    [IS_MY_COMPANY] => N
+                                    [ORIGINATOR_ID] => 
+                                    [ORIGIN_ID] => 
+                                    [ORIGIN_VERSION] => 
+                                    [ADDRESS] => 
+                                    [ADDRESS_2] => 
+                                    [ADDRESS_CITY] => 
+                                    [ADDRESS_POSTAL_CODE] => 
+                                    [ADDRESS_REGION] => 
+                                    [ADDRESS_PROVINCE] => 
+                                    [ADDRESS_COUNTRY] => 
+                                    [ADDRESS_COUNTRY_CODE] => 
+                                    [ADDRESS_LOC_ADDR_ID] => 
+                                    [ADDRESS_LEGAL] => 
+                                    [REG_ADDRESS] => 
+                                    [REG_ADDRESS_2] => 
+                                    [REG_ADDRESS_CITY] => 
+                                    [REG_ADDRESS_POSTAL_CODE] => 
+                                    [REG_ADDRESS_REGION] => 
+                                    [REG_ADDRESS_PROVINCE] => 
+                                    [REG_ADDRESS_COUNTRY] => 
+                                    [REG_ADDRESS_COUNTRY_CODE] => 
+                                    [REG_ADDRESS_LOC_ADDR_ID] => 
+                                    [UTM_SOURCE] => 
+                                    [UTM_MEDIUM] => 
+                                    [UTM_CAMPAIGN] => 
+                                    [UTM_CONTENT] => 
+                                    [UTM_TERM] => 
+                                )
+
+                        )
+
+                )
+
+            [result_error] => Array
+                (
+                )
+
+            [result_total] => Array
+                (
+                    [0] => 1
+                )
+
+            [result_next] => Array
+                (
+                )
+
+            [result_time] => Array
+                (
+                    [0] => Array
+                        (
+                            [start] => 1628522999.148
+                            [finish] => 1628522999.1596
+                            [duration] => 0.011541843414307
+                            [processing] => 0.01146411895752
+                            [date_start] => 2021-08-09T18:29:59+03:00
+                            [date_finish] => 2021-08-09T18:29:59+03:00
+                        )
+
+                )
+
+        )
+
+    [time] => Array
+        (
+            [start] => 1628522999.127
+            [finish] => 1628522999.1596
+            [duration] => 0.032631874084473
+            [processing] => 0.011681079864502
+            [date_start] => 2021-08-09T18:29:59+03:00
+            [date_finish] => 2021-08-09T18:29:59+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:09
+Caption: contactEmail
+Array
+(
+    [result] => Array
+        (
+            [result] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 125
+                                    [POST] => 
+                                    [COMMENTS] => 
+                                    [HONORIFIC] => 
+                                    [NAME] => Он
+                                    [SECOND_NAME] => 
+                                    [LAST_NAME] => Оновый
+                                    [PHOTO] => 
+                                    [LEAD_ID] => 129
+                                    [TYPE_ID] => 
+                                    [SOURCE_ID] => b24hh_source
+                                    [SOURCE_DESCRIPTION] => 
+                                    [COMPANY_ID] => 79
+                                    [BIRTHDATE] => 
+                                    [EXPORT] => N
+                                    [HAS_PHONE] => Y
+                                    [HAS_EMAIL] => Y
+                                    [HAS_IMOL] => N
+                                    [DATE_CREATE] => 2020-08-21T11:20:17+03:00
+                                    [DATE_MODIFY] => 2021-02-25T20:38:52+03:00
+                                    [ASSIGNED_BY_ID] => 4
+                                    [CREATED_BY_ID] => 4
+                                    [MODIFY_BY_ID] => 1851
+                                    [OPENED] => Y
+                                    [ORIGINATOR_ID] => 
+                                    [ORIGIN_ID] => 
+                                    [ORIGIN_VERSION] => 
+                                    [FACE_ID] => 
+                                    [ADDRESS] => 
+                                    [ADDRESS_2] => 
+                                    [ADDRESS_CITY] => 
+                                    [ADDRESS_POSTAL_CODE] => 
+                                    [ADDRESS_REGION] => 
+                                    [ADDRESS_PROVINCE] => 
+                                    [ADDRESS_COUNTRY] => 
+                                    [ADDRESS_LOC_ADDR_ID] => 
+                                    [UTM_SOURCE] => 
+                                    [UTM_MEDIUM] => 
+                                    [UTM_CAMPAIGN] => 
+                                    [UTM_CONTENT] => 
+                                    [UTM_TERM] => 
+                                )
+
+                        )
+
+                )
+
+            [result_error] => Array
+                (
+                )
+
+            [result_total] => Array
+                (
+                    [0] => 1
+                )
+
+            [result_next] => Array
+                (
+                )
+
+            [result_time] => Array
+                (
+                    [0] => Array
+                        (
+                            [start] => 1628522999.4233
+                            [finish] => 1628522999.4376
+                            [duration] => 0.014284133911133
+                            [processing] => 0.014212131500244
+                            [date_start] => 2021-08-09T18:29:59+03:00
+                            [date_finish] => 2021-08-09T18:29:59+03:00
+                        )
+
+                )
+
+        )
+
+    [time] => Array
+        (
+            [start] => 1628522999.4063
+            [finish] => 1628522999.4377
+            [duration] => 0.031393051147461
+            [processing] => 0.014359951019287
+            [date_start] => 2021-08-09T18:29:59+03:00
+            [date_finish] => 2021-08-09T18:29:59+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:09
+Caption: final
+Array
+(
+    [contact] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 315
+                    [TITLE] => Контакт: Нно 
+                )
+
+        )
+
+    [company] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 501
+                    [TITLE] => Компания: Company
+                )
+
+            [1] => Array
+                (
+                    [ID] => 503
+                    [TITLE] => Компания: ТЕСТОВАЯ КОМПАНИЯ123
+                )
+
+        )
+
+    [lead] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 451
+                    [TITLE] => Лид: 123123
+                )
+
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:09
+Caption: finalEmail
+Array
+(
+    [contact] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 125
+                    [TITLE] => Контакт: Он Оновый
+                )
+
+        )
+
+    [company] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 503
+                    [TITLE] => Компания: ТЕСТОВАЯ КОМПАНИЯ123
+                )
+
+        )
+
+    [lead] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 451
+                    [TITLE] => Лид: 123123
+                )
+
+        )
+
+)
+
+--------------------
+
+--------------------
+09.08.2021 18:30:09
+Caption: taskDesc
+Дубликаты по номеру телефона:
+[url=https://it-solution.bitrix24.ru/crm/contact/details/315/]Контакт: Нно [/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/501/]Компания: Company[/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/503/]Компания: ТЕСТОВАЯ КОМПАНИЯ123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/451/]Лид: 123123[/url]
+--------------------
+
+--------------------
+09.08.2021 18:30:09
+Caption: taskDescEmail
+
+
+Дубликаты по email:
+[url=https://it-solution.bitrix24.ru/crm/contact/details/125/]Контакт: Он Оновый[/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/503/]Компания: ТЕСТОВАЯ КОМПАНИЯ123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/451/]Лид: 123123[/url]
+--------------------
+
+--------------------
+09.08.2021 18:30:09
+Caption: desc
+Дубликаты по номеру телефона:
+[url=https://it-solution.bitrix24.ru/crm/contact/details/315/]Контакт: Нно [/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/501/]Компания: Company[/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/503/]Компания: ТЕСТОВАЯ КОМПАНИЯ123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/451/]Лид: 123123[/url]
+
+Дубликаты по email:
+[url=https://it-solution.bitrix24.ru/crm/contact/details/125/]Контакт: Он Оновый[/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/503/]Компания: ТЕСТОВАЯ КОМПАНИЯ123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/451/]Лид: 123123[/url]
+--------------------
+
+--------------------
+09.08.2021 18:30:10
+Caption: taskCall
+Array
+(
+    [result] => Array
+        (
+            [task] => Array
+                (
+                    [id] => 1785
+                    [title] => Найден дубликат в базе клиентов
+                    [description] => Дубликаты по номеру телефона:
+[url=https://it-solution.bitrix24.ru/crm/contact/details/315/]Контакт: Нно [/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/501/]Компания: Company[/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/503/]Компания: ТЕСТОВАЯ КОМПАНИЯ123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/451/]Лид: 123123[/url]
+
+Дубликаты по email:
+[url=https://it-solution.bitrix24.ru/crm/contact/details/125/]Контакт: Он Оновый[/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/503/]Компания: ТЕСТОВАЯ КОМПАНИЯ123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/451/]Лид: 123123[/url]
+                    [descriptionInBbcode] => Y
+                    [declineReason] => 
+                    [priority] => 1
+                    [status] => 2
+                    [notViewed] => N
+                    [statusComplete] => 1
+                    [multitask] => N
+                    [stageId] => 0
+                    [responsibleId] => 1851
+                    [responsibleName] => Денис
+                    [responsibleLastName] => Брюхачев
+                    [responsibleSecondName] => 
+                    [responsibleLogin] => brdv@it-solution.ru
+                    [responsibleWorkPosition] => 
+                    [responsiblePhoto] => 97605
+                    [dateStart] => 
+                    [durationFact] => 
+                    [timeEstimate] => 0
+                    [timeSpentInLogs] => 
+                    [replicate] => N
+                    [deadline] => 
+                    [deadlineOrig] => 
+                    [startDatePlan] => 
+                    [endDatePlan] => 
+                    [createdBy] => 1851
+                    [createdByName] => Денис
+                    [createdByLastName] => Брюхачев
+                    [createdBySecondName] => 
+                    [createdByLogin] => brdv@it-solution.ru
+                    [createdByWorkPosition] => 
+                    [createdByPhoto] => 97605
+                    [createdDate] => 2021-08-09T18:29:59+03:00
+                    [changedBy] => 1851
+                    [changedDate] => 2021-08-09T18:29:59+03:00
+                    [statusChangedBy] => 1851
+                    [statusChangedDate] => 2021-08-09T18:29:59+03:00
+                    [closedBy] => 
+                    [closedDate] => 
+                    [activityDate] => 2021-08-09T18:29:59+03:00
+                    [guid] => {c29d5b56-9e41-48b4-9da2-6cf1f4c9c2e6}
+                    [xmlId] => 
+                    [mark] => 
+                    [allowChangeDeadline] => N
+                    [allowChangeDeadlineCount] => 
+                    [allowChangeDeadlineCountValue] => 
+                    [allowChangeDeadlineMaxtime] => 
+                    [allowChangeDeadlineMaxtimeValue] => 
+                    [allowTimeTracking] => N
+                    [matchWorkTime] => N
+                    [taskControl] => N
+                    [addInReport] => N
+                    [groupId] => 0
+                    [forumTopicId] => 
+                    [parentId] => 
+                    [commentsCount] => 
+                    [serviceCommentsCount] => 
+                    [forumId] => 
+                    [siteId] => s1
+                    [subordinate] => N
+                    [exchangeModified] => 
+                    [exchangeId] => 
+                    [outlookVersion] => 1
+                    [viewedDate] => 
+                    [deadlineCounted] => 0
+                    [forkedByTemplateId] => 
+                    [favorite] => N
+                    [sorting] => -5120.0000000
+                    [durationPlanSeconds] => 
+                    [durationTypeAll] => days
+                    [durationPlan] => 
+                    [durationType] => days
+                    [isMuted] => N
+                    [isPinned] => N
+                    [isPinnedInGroup] => N
+                    [ufCrmTask] => Array
+                        (
+                            [0] => L_243
+                        )
+
+                    [ufTaskWebdavFiles] => 
+                    [ufAuto133535995276] => 
+                    [ufAuto675763242438] => 
+                    [ufMailMessage] => 
+                    [ufAuto468830205390] => 
+                    [ufAuto698193192593] => 
+                    [auditors] => Array
+                        (
+                        )
+
+                    [accomplices] => Array
+                        (
+                        )
+
+                    [tags] => Array
+                        (
+                        )
+
+                    [checklist] => Array
+                        (
+                        )
+
+                    [files] => Array
+                        (
+                        )
+
+                    [dependsOn] => Array
+                        (
+                        )
+
+                    [group] => Array
+                        (
+                        )
+
+                    [creator] => Array
+                        (
+                            [id] => 1851
+                            [name] => Брюхачев Денис
+                            [link] => /company/personal/user/1851/
+                            [icon] => https://bitrix2.cdnvideo.ru/b1624879/resize_cache/97605/c0120a8d7c10d63c83e32398d1ec4d9e/main/e31/e31a4642a20fa86a68b44ef688293fc6/ee3562721d763f89e3144c0c310b8904.jpg?h=it-solution.bitrix24.ru
+                        )
+
+                    [responsible] => Array
+                        (
+                            [id] => 1851
+                            [name] => Брюхачев Денис
+                            [link] => /company/personal/user/1851/
+                            [icon] => https://bitrix2.cdnvideo.ru/b1624879/resize_cache/97605/c0120a8d7c10d63c83e32398d1ec4d9e/main/e31/e31a4642a20fa86a68b44ef688293fc6/ee3562721d763f89e3144c0c310b8904.jpg?h=it-solution.bitrix24.ru
+                        )
+
+                    [newCommentsCount] => 0
+                    [action] => Array
+                        (
+                            [accept] => 
+                            [decline] => 
+                            [complete] => 1
+                            [approve] => 
+                            [disapprove] => 
+                            [start] => 1
+                            [pause] => 
+                            [delegate] => 1
+                            [remove] => 1
+                            [edit] => 1
+                            [defer] => 1
+                            [renew] => 
+                            [create] => 1
+                            [changeDeadline] => 1
+                            [checklistAddItems] => 1
+                            [addFavorite] => 1
+                            [deleteFavorite] => 
+                            [rate] => 1
+                            [edit.originator] => 1
+                            [checklist.reorder] => 1
+                            [elapsedtime.add] => 1
+                            [dayplan.timer.toggle] => 
+                            [edit.plan] => 1
+                            [checklist.add] => 1
+                            [favorite.add] => 1
+                            [favorite.delete] => 
+                        )
+
+                )
+
+        )
+
+    [time] => Array
+        (
+            [start] => 1628522999.5571
+            [finish] => 1628523000.0609
+            [duration] => 0.50387001037598
+            [processing] => 0.48619985580444
+            [date_start] => 2021-08-09T18:29:59+03:00
+            [date_finish] => 2021-08-09T18:30:00+03:00
+        )
+
+)
+
+--------------------

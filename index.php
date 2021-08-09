@@ -6,7 +6,7 @@ require(__DIR__ . '/libs/crest/CRestPlus.php');
 require(__DIR__ . '/libs/debugger/Debugger.php');
 define('LOG', 'log_new.txt');
 define('DOMAIN', 'https://it-solution.bitrix24.ru'); // не забудь на тестах свой портал, в бою портал клиента
-define('USER_ID', ''); // Пользователь в системе Маляр Юлия
+define('USER_ID', '1851'); // Пользователь в системе Маляр Юлия
 
 /**
  * Получить объект сущности Лид, Контакт, Компания
@@ -88,7 +88,7 @@ function parseEmails($entityObject)
 function findDuplicates($phonesArr, $entityId, $typeOfDuplicates)
 {
 	$getDuplicates = CRestPlus::call('crm.duplicate.findbycomm', array('type' => $typeOfDuplicates, 'values' => $phonesArr[0]));
-	Debugger::writeToLog($getDuplicates, LOG, 'getDuplicates');
+	Debugger::writeToLog($getDuplicates, LOG, 'getDuplicates / typeOfDuplicates - ' . $typeOfDuplicates);
 
 	$list = array();
 
@@ -99,7 +99,7 @@ function findDuplicates($phonesArr, $entityId, $typeOfDuplicates)
 			}
 		}
 	}
-	Debugger::writeToLog($list, LOG, 'findDuplicates / тип дубликатов - ' . $typeOfDuplicates);
+	Debugger::writeToLog($list, LOG, 'findDuplicates / typeOfDuplicates - ' . $typeOfDuplicates);
 	return $list;
 }
 
@@ -124,44 +124,49 @@ function findDuplicatesByInstagram()
  */
 function makeDescription($duplicatesArr, $typeOfDuplicates)
 {
-	if ($duplicatesArr['LEAD']) $lead =       CRestPlus::call('crm.lead.list', array('filter' => array('ID' => $duplicatesArr['lead'])));
-	if ($duplicatesArr['COMPANY']) $company = CRestPlus::call('crm.company.list', array('filter' => array('ID' => $duplicatesArr['company'])));
-	if ($duplicatesArr['CONTACT']) $contact = CRestPlus::call('crm.contact.list', array('filter' => array('ID' => $duplicatesArr['contact'])));
+
+	Debugger::writeToLog($duplicatesArr, LOG, 'duplicatesArr');
+
+	if ($duplicatesArr[0]['LEAD']) $lead =       CRestPlus::call('crm.lead.list', array('filter' => array('ID' => $duplicatesArr[0]['LEAD'])));
+	if ($duplicatesArr[0]['COMPANY']) $company = CRestPlus::call('crm.company.list', array('filter' => array('ID' => $duplicatesArr[0]['COMPANY'])));
+	if ($duplicatesArr[0]['CONTACT']) $contact = CRestPlus::call('crm.contact.list', array('filter' => array('ID' => $duplicatesArr[0]['CONTACT'])));
+
+	Debugger::writeToLog($lead, LOG, 'lead list');
+	Debugger::writeToLog($company, LOG, 'company list');
+	Debugger::writeToLog($contact, LOG, 'contact list');
+
+	$final = array();
 
 	$i = 0;
-	if ($lead['result']['result']) {
-		foreach ($lead['result']['result'] as $sec) {
-			foreach ($sec as $value) {
-				$final['lead'][$i]['ID'] = $value['ID'];
-				$final['lead'][$i]['TITLE'] = 'Лид: ' . $value['TITLE'];
-				$i++;
-			}
-		}		
-	}
-	
-	$i = 0;
-	if ($contact['result']['result']) {
-		foreach ($contact['result']['result'] as $sec) {
-			foreach ($sec as $value) {
-				$final['contact'][$i]['ID'] = $value['ID'];
-				$final['contact'][$i]['TITLE'] = 'Контакт: ' . $value['NAME'] . ' ' . $value['LAST_NAME'];
-				$i++;
-			}
+	if ($lead['result']) {
+		foreach ($lead['result'] as $value) {
+			$final['lead'][$i]['ID'] = $value['ID'];
+			$final['lead'][$i]['TITLE'] = 'Лид: ' . $value['TITLE'];
+			$i++;
 		}
 	}
 	
 	$i = 0;
-	if ($company['result']['result']) {
-		foreach ($company['result']['result'] as $sec) {
-			foreach ($sec as $value) {
+	if ($contact['result']) {
+		foreach ($contact['result'] as $value) {
+				$final['contact'][$i]['ID'] = $value['ID'];
+				$final['contact'][$i]['TITLE'] = 'Контакт: ' . $value['NAME'] . ' ' . $value['LAST_NAME'];
+				$i++;
+		}
+	}
+	
+	$i = 0;
+	if ($company['result']) {
+		foreach ($company['result'] as $value) {
 				$final['company'][$i]['ID'] = $value['ID'];
 				$final['company'][$i]['TITLE'] = 'Компания: ' . $value['TITLE'];
 				$i++;
-			}
 		}
 	}
 	Debugger::writeToLog($final, LOG, 'final');
 	
+	$taskDesc = null;
+
 	foreach ($final as $key => $data) {
 		foreach ($data as $item) {
 			$taskDesc .= "\n[url=" . DOMAIN . "/crm/" . strtolower($key) . "/details/" . $item['ID'] . "/]" . $item['TITLE'] . "[/url]";
@@ -170,13 +175,13 @@ function makeDescription($duplicatesArr, $typeOfDuplicates)
 	Debugger::writeToLog($taskDesc, LOG, 'taskDesc');
 	
 	switch ($typeOfDuplicates) {
-		case 'EMAIL':
+		case 'PHONE':
 			$taskDesc = "Дубликаты по номеру телефона:" . $taskDesc;
 			break;
 			
-			case 'PHONE':
-				$taskDesc = "Дубликаты по email:" . $taskDesc;
-				break;
+		case 'EMAIL':
+			$taskDesc = "Дубликаты по email:" . $taskDesc;
+			break;
 	}
 			
 	Debugger::writeToLog($taskDesc, LOG, 'taskDesc / тип дубликатов - ' . $typeOfDuplicates);
@@ -187,7 +192,7 @@ function makeDescription($duplicatesArr, $typeOfDuplicates)
 function notifyPost($postText, $entityId, $entityTypeId)
 {
 	$postId = CRestPlus::call('crm.livefeedmessage.add', array('fields' => array(
-		'POST_TITLE' => 'Найден дубликат в базе клиентов',
+		'POST_TITLE' => 'Найдены дубликаты в базе клиентов',
 		'MESSAGE' => $postText,
 		'ENTITYTYPEID' => $entityTypeId,
 		'ENTITYID' => $entityId
@@ -196,55 +201,6 @@ function notifyPost($postText, $entityId, $entityTypeId)
 }
 
 // Создать задачи пользователю
-function postTask($taskDescription) 
-{
-	foreach ($final['lead'] as $fLValue) {
-		if ($entityId != $fLValue['ID']) {
-			#Постановка задачи
-			if ($taskDesc) {
-				$taskCall = CRestPlus::call('tasks.task.add', array('fields' => array(
-					'TITLE' => 'Найден дубликат в базе клиентов',
-					'RESPONSIBLE_ID' => $userID,
-					'DESCRIPTION' => $desc,
-					'UF_CRM_TASK' => array($crmTask)
-				)));
-				Debugger::writeToLog($taskCall, LOG, 'taskCall');
-			}
-		}
-	}
-
-	foreach ($final['company'] as $fCoValue) {
-		if ($getLead['result']['COMPANY_ID'] != $fCoValue['ID']) {
-			#Постановка задачи
-			if ($taskDesc) {
-				$desc = ((!$final) && (!$finalEmail)) ? 'Дубликаты в базе не обнаружены' : $taskDesc . $taskDescEmail;
-				Debugger::writeToLog($desc, LOG, 'desc');
-				$taskCall = CRestPlus::call('tasks.task.add', array('fields' => array(
-					'TITLE' => 'Найден дубликат в базе клиентов',
-					'RESPONSIBLE_ID' => $userID,
-					'DESCRIPTION' => $desc,
-					'UF_CRM_TASK' => array($crmTask)
-				)));
-				Debugger::writeToLog($taskCall, LOG, 'taskCall');
-			}
-		}
-	}
-	
-	foreach ($final['contact'] as $fCValue) {
-		if ($getLead['result']['CONTACT_ID'] != $fCValue['ID']) {
-
-				$desc = ((!$final) && (!$finalEmail)) ? 'Дубликаты в базе не обнаружены' : $taskDesc . $taskDescEmail;
-				Debugger::writeToLog($desc, LOG, 'desc');
-				$taskCall = CRestPlus::call('tasks.task.add', array('fields' => array(
-					'TITLE' => 'Найден дубликат в базе клиентов',
-					'RESPONSIBLE_ID' => $userID,
-					'DESCRIPTION' => $desc,
-					'UF_CRM_TASK' => array($crmTask)
-				)));
-				Debugger::writeToLog($taskCall, LOG, 'taskCall');
-			}
-		}
-}	
 
 // !--- Выполнение скрипта
 
@@ -282,9 +238,9 @@ $duplicatesPhoneList[] = findDuplicates(parsePhones($crmEntity), $crmEntity['res
 $duplicatesEmailList[] = findDuplicates(parseEmails($crmEntity), $crmEntity['result']['ID'], 'EMAIL');
 
 // Если найдены дубликаты, то пост в ленту и создание задачи
-if ($duplicatesPhoneList['result'] and $duplicatesEmailList['result']) {
+if ($duplicatesPhoneList and $duplicatesEmailList) {
 	$desc = makeDescription($duplicatesPhoneList, 'PHONE') . "\n\n" . makeDescription($duplicatesEmailList, 'EMAIL');
-} else if ($duplicatesPhoneList['result']) {
+} else if ($duplicatesPhoneList) {
 	$desc = makeDescription($duplicatesPhoneList, 'PHONE');
 } elseif ($duplicatesEmailList['result']) {
 	$desc = makeDescription($duplicatesEmailList, 'EMAIL');
@@ -294,7 +250,11 @@ if ($duplicatesPhoneList['result'] and $duplicatesEmailList['result']) {
 }
 
 notifyPost($desc, $_REQUEST['ID'], $entityTypeId);
-postTask($desc);
+
+// if (isset($_REQUEST['flag']) and $_REQUEST['flag'] == 'manual') {
+// } else {
+// 	postTask($desc);
+// }
 
 // ---!
 	

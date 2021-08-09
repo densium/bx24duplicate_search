@@ -1,0 +1,40 @@
+function postTask($final) {
+	foreach ($final['lead'] as $fLValue) {
+				$taskCall = CRestPlus::call('tasks.task.add', array('fields' => array(
+					'TITLE' => 'Найден дубликат в базе клиентов',
+					'RESPONSIBLE_ID' => $userID,
+					'DESCRIPTION' => $desc,
+					'UF_CRM_TASK' => array($crmTask)
+				)));
+				Debugger::writeToLog($taskCall, LOG, 'taskCall');
+			}
+		
+	foreach ($final['company'] as $fCoValue) {
+		if ($getLead['result']['COMPANY_ID'] != $fCoValue['ID']) {
+			#Постановка задачи
+			if ($taskDesc) {
+				Debugger::writeToLog($desc, LOG, 'desc');
+				$taskCall = CRestPlus::call('tasks.task.add', array('fields' => array(
+					'TITLE' => 'Найден дубликат в базе клиентов',
+					'RESPONSIBLE_ID' => $userID,
+					'DESCRIPTION' => $desc,
+					'UF_CRM_TASK' => array($crmTask)
+				)));
+				Debugger::writeToLog($taskCall, LOG, 'taskCall');
+			}
+		}
+	}
+	
+	foreach ($final['contact'] as $fCValue) {
+		if ($getLead['result']['CONTACT_ID'] != $fCValue['ID']) {
+				Debugger::writeToLog($desc, LOG, 'desc');
+				$taskCall = CRestPlus::call('tasks.task.add', array('fields' => array(
+					'TITLE' => 'Найден дубликат в базе клиентов',
+					'RESPONSIBLE_ID' => $userID,
+					'DESCRIPTION' => $desc,
+					'UF_CRM_TASK' => array($crmTask)
+				)));
+				Debugger::writeToLog($taskCall, LOG, 'taskCall');
+			}
+		}
+}

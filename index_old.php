@@ -1,8 +1,9 @@
 <?php
 require(__DIR__ . '/libs/crest/CRestPlus.php');
 require(__DIR__ . '/libs/debugger/Debugger.php');
-define('LOG', 'log_new.txt');
-define('DOMAIN', 'https://djemdecor.bitrix24.ru');
+define('LOG', 'log_old_script.txt');
+define('DOMAIN', 'https://it-solution.bitrix24.ru'); // не забудь на тестах свой портал, в бою портал клиента
+define('USER_ID', '1851'); // Пользователь в системе Маляр Юлия
 
 Debugger::writeToLog($_REQUEST, LOG, '$_REQUEST');
 
