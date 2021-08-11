@@ -1,6 +1,6 @@
 
 --------------------
-11.08.2021 14:51:21
+11.08.2021 21:43:24
 Caption: $_REQUEST
 Array
 (
@@ -11,7 +11,7 @@ Array
 --------------------
 
 --------------------
-11.08.2021 14:51:21
+11.08.2021 21:43:24
 Caption: getCrmEntity
 Array
 (
@@ -20,9 +20,9 @@ Array
             [ID] => 243
             [TITLE] => 123123
             [HONORIFIC] => 
-            [NAME] => 
-            [SECOND_NAME] => 
-            [LAST_NAME] => 
+            [NAME] => Алексей
+            [SECOND_NAME] => Дмитриевич
+            [LAST_NAME] => Сковородкин
             [COMPANY_TITLE] => 
             [COMPANY_ID] => 0
             [CONTACT_ID] => 
@@ -44,7 +44,7 @@ Array
             [CREATED_BY_ID] => 1851
             [MODIFY_BY_ID] => 1851
             [DATE_CREATE] => 2021-02-05T15:08:31+03:00
-            [DATE_MODIFY] => 2021-08-04T19:47:33+03:00
+            [DATE_MODIFY] => 2021-08-11T21:06:08+03:00
             [DATE_CLOSED] => 
             [STATUS_SEMANTIC_ID] => P
             [OPENED] => Y
@@ -259,12 +259,12 @@ Array
 
     [time] => Array
         (
-            [start] => 1628682667.9559
-            [finish] => 1628682668.0872
-            [duration] => 0.13130903244019
-            [processing] => 0.070019960403442
-            [date_start] => 2021-08-11T14:51:07+03:00
-            [date_finish] => 2021-08-11T14:51:08+03:00
+            [start] => 1628707391.3539
+            [finish] => 1628707391.4293
+            [duration] => 0.075384855270386
+            [processing] => 0.034744024276733
+            [date_start] => 2021-08-11T21:43:11+03:00
+            [date_finish] => 2021-08-11T21:43:11+03:00
         )
 
 )
@@ -272,636 +272,104 @@ Array
 --------------------
 
 --------------------
-11.08.2021 14:51:22
-Caption: $_REQUEST
+11.08.2021 21:43:24
+Caption: requestParams
 Array
 (
-    [lead] => Array
+    [filter] => Array
         (
-            [result] => Array
+            [%NAME] => Сковородкин
+            [%LAST_NAME] => Алексей
+            [%SECOND_NAME] => Дмитриевич
+        )
+
+    [select] => Array
+        (
+            [0] => ID
+            [1] => NAME
+            [2] => LAST_NAME
+        )
+
+)
+
+--------------------
+
+--------------------
+11.08.2021 21:43:24
+Caption: requestParamsCompany
+Array
+(
+    [0] => Array
+        (
+            [filter] => Array
                 (
-                    [0] => Array
-                        (
-                            [ID] => 243
-                            [TITLE] => 123123
-                        )
-
-                    [1] => Array
-                        (
-                            [ID] => 257
-                            [TITLE] => 123123
-                        )
-
-                    [2] => Array
-                        (
-                            [ID] => 397
-                            [TITLE] => 123123
-                        )
-
+                    [TITLE] => Сковородкин Алексей Дмитриевич
                 )
 
-            [total] => 3
-            [time] => Array
+            [select] => Array
                 (
-                    [start] => 1628682668.2019
-                    [finish] => 1628682668.2675
-                    [duration] => 0.065572023391724
-                    [processing] => 0.025426864624023
-                    [date_start] => 2021-08-11T14:51:08+03:00
-                    [date_finish] => 2021-08-11T14:51:08+03:00
-                )
-
-            [0] => Array
-                (
-                    [0] => Array
-                        (
-                            [ID] => 237
-                            [TITLE] => С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр 
-                        )
-
-                    [1] => Array
-                        (
-                            [ID] => 243
-                            [TITLE] => 123123
-                        )
-
-                    [2] => Array
-                        (
-                            [ID] => 257
-                            [TITLE] => 123123
-                        )
-
-                    [3] => Array
-                        (
-                            [ID] => 349
-                            [TITLE] => 123123123123
-                        )
-
-                    [4] => Array
-                        (
-                            [ID] => 397
-                            [TITLE] => 123123
-                        )
-
-                    [5] => Array
-                        (
-                            [ID] => 401
-                            [TITLE] => С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр
-                        )
-
+                    [0] => ID
+                    [1] => TITLE
                 )
 
         )
 
-    [company] => Array
+    [1] => Array
         (
-            [result] => Array
+            [filter] => Array
                 (
+                    [TITLE] => Сковородкин Дмитриевич Алексей
                 )
 
-            [total] => 0
-            [time] => Array
+            [select] => Array
                 (
-                    [start] => 1628682668.3921
-                    [finish] => 1628682668.4523
-                    [duration] => 0.060184001922607
-                    [processing] => 0.019171953201294
-                    [date_start] => 2021-08-11T14:51:08+03:00
-                    [date_finish] => 2021-08-11T14:51:08+03:00
-                )
-
-            [0] => Array
-                (
-                    [0] => Array
-                        (
-                            [ID] => 147
-                            [TITLE] => 123123123123
-                        )
-
+                    [0] => ID
+                    [1] => TITLE
                 )
 
         )
 
-    [contact] => Array
+    [2] => Array
         (
-            [result] => Array
+            [filter] => Array
                 (
-                    [0] => Array
-                        (
-                            [ID] => 1
-                        )
-
-                    [1] => Array
-                        (
-                            [ID] => 3
-                        )
-
-                    [2] => Array
-                        (
-                            [ID] => 5
-                        )
-
-                    [3] => Array
-                        (
-                            [ID] => 7
-                        )
-
-                    [4] => Array
-                        (
-                            [ID] => 9
-                        )
-
-                    [5] => Array
-                        (
-                            [ID] => 11
-                        )
-
-                    [6] => Array
-                        (
-                            [ID] => 13
-                        )
-
-                    [7] => Array
-                        (
-                            [ID] => 15
-                        )
-
-                    [8] => Array
-                        (
-                            [ID] => 17
-                        )
-
-                    [9] => Array
-                        (
-                            [ID] => 21
-                        )
-
-                    [10] => Array
-                        (
-                            [ID] => 23
-                        )
-
-                    [11] => Array
-                        (
-                            [ID] => 25
-                        )
-
-                    [12] => Array
-                        (
-                            [ID] => 27
-                        )
-
-                    [13] => Array
-                        (
-                            [ID] => 29
-                        )
-
-                    [14] => Array
-                        (
-                            [ID] => 31
-                        )
-
-                    [15] => Array
-                        (
-                            [ID] => 33
-                        )
-
-                    [16] => Array
-                        (
-                            [ID] => 35
-                        )
-
-                    [17] => Array
-                        (
-                            [ID] => 37
-                        )
-
-                    [18] => Array
-                        (
-                            [ID] => 39
-                        )
-
-                    [19] => Array
-                        (
-                            [ID] => 41
-                        )
-
-                    [20] => Array
-                        (
-                            [ID] => 43
-                        )
-
-                    [21] => Array
-                        (
-                            [ID] => 45
-                        )
-
-                    [22] => Array
-                        (
-                            [ID] => 47
-                        )
-
-                    [23] => Array
-                        (
-                            [ID] => 49
-                        )
-
-                    [24] => Array
-                        (
-                            [ID] => 51
-                        )
-
-                    [25] => Array
-                        (
-                            [ID] => 53
-                        )
-
-                    [26] => Array
-                        (
-                            [ID] => 55
-                        )
-
-                    [27] => Array
-                        (
-                            [ID] => 57
-                        )
-
-                    [28] => Array
-                        (
-                            [ID] => 61
-                        )
-
-                    [29] => Array
-                        (
-                            [ID] => 63
-                        )
-
-                    [30] => Array
-                        (
-                            [ID] => 65
-                        )
-
-                    [31] => Array
-                        (
-                            [ID] => 67
-                        )
-
-                    [32] => Array
-                        (
-                            [ID] => 69
-                        )
-
-                    [33] => Array
-                        (
-                            [ID] => 71
-                        )
-
-                    [34] => Array
-                        (
-                            [ID] => 73
-                        )
-
-                    [35] => Array
-                        (
-                            [ID] => 75
-                        )
-
-                    [36] => Array
-                        (
-                            [ID] => 77
-                        )
-
-                    [37] => Array
-                        (
-                            [ID] => 79
-                        )
-
-                    [38] => Array
-                        (
-                            [ID] => 81
-                        )
-
-                    [39] => Array
-                        (
-                            [ID] => 83
-                        )
-
-                    [40] => Array
-                        (
-                            [ID] => 85
-                        )
-
-                    [41] => Array
-                        (
-                            [ID] => 87
-                        )
-
-                    [42] => Array
-                        (
-                            [ID] => 89
-                        )
-
-                    [43] => Array
-                        (
-                            [ID] => 91
-                        )
-
-                    [44] => Array
-                        (
-                            [ID] => 93
-                        )
-
-                    [45] => Array
-                        (
-                            [ID] => 95
-                        )
-
-                    [46] => Array
-                        (
-                            [ID] => 97
-                        )
-
-                    [47] => Array
-                        (
-                            [ID] => 99
-                        )
-
-                    [48] => Array
-                        (
-                            [ID] => 101
-                        )
-
-                    [49] => Array
-                        (
-                            [ID] => 103
-                        )
-
+                    [TITLE] => Алексей Дмитриевич Сковородкин
                 )
 
-            [next] => 50
-            [total] => 151
-            [time] => Array
+            [select] => Array
                 (
-                    [start] => 1628682668.5633
-                    [finish] => 1628682668.667
-                    [duration] => 0.10368204116821
-                    [processing] => 0.023820877075195
-                    [date_start] => 2021-08-11T14:51:08+03:00
-                    [date_finish] => 2021-08-11T14:51:08+03:00
+                    [0] => ID
+                    [1] => TITLE
                 )
 
-            [0] => Array
+        )
+
+    [3] => Array
+        (
+            [filter] => Array
                 (
-                    [0] => Array
-                        (
-                            [ID] => 1
-                        )
+                    [TITLE] => Дмитриевич Сковородкин Алексей
+                )
 
-                    [1] => Array
-                        (
-                            [ID] => 3
-                        )
+            [select] => Array
+                (
+                    [0] => ID
+                    [1] => TITLE
+                )
 
-                    [2] => Array
-                        (
-                            [ID] => 5
-                        )
+        )
 
-                    [3] => Array
-                        (
-                            [ID] => 7
-                        )
+    [4] => Array
+        (
+            [filter] => Array
+                (
+                    [TITLE] => Дмитриевич Алексей Сковородкин
+                )
 
-                    [4] => Array
-                        (
-                            [ID] => 9
-                        )
-
-                    [5] => Array
-                        (
-                            [ID] => 11
-                        )
-
-                    [6] => Array
-                        (
-                            [ID] => 13
-                        )
-
-                    [7] => Array
-                        (
-                            [ID] => 15
-                        )
-
-                    [8] => Array
-                        (
-                            [ID] => 17
-                        )
-
-                    [9] => Array
-                        (
-                            [ID] => 21
-                        )
-
-                    [10] => Array
-                        (
-                            [ID] => 23
-                        )
-
-                    [11] => Array
-                        (
-                            [ID] => 25
-                        )
-
-                    [12] => Array
-                        (
-                            [ID] => 27
-                        )
-
-                    [13] => Array
-                        (
-                            [ID] => 29
-                        )
-
-                    [14] => Array
-                        (
-                            [ID] => 31
-                        )
-
-                    [15] => Array
-                        (
-                            [ID] => 33
-                        )
-
-                    [16] => Array
-                        (
-                            [ID] => 35
-                        )
-
-                    [17] => Array
-                        (
-                            [ID] => 37
-                        )
-
-                    [18] => Array
-                        (
-                            [ID] => 39
-                        )
-
-                    [19] => Array
-                        (
-                            [ID] => 41
-                        )
-
-                    [20] => Array
-                        (
-                            [ID] => 43
-                        )
-
-                    [21] => Array
-                        (
-                            [ID] => 45
-                        )
-
-                    [22] => Array
-                        (
-                            [ID] => 47
-                        )
-
-                    [23] => Array
-                        (
-                            [ID] => 49
-                        )
-
-                    [24] => Array
-                        (
-                            [ID] => 51
-                        )
-
-                    [25] => Array
-                        (
-                            [ID] => 53
-                        )
-
-                    [26] => Array
-                        (
-                            [ID] => 55
-                        )
-
-                    [27] => Array
-                        (
-                            [ID] => 57
-                        )
-
-                    [28] => Array
-                        (
-                            [ID] => 61
-                        )
-
-                    [29] => Array
-                        (
-                            [ID] => 63
-                        )
-
-                    [30] => Array
-                        (
-                            [ID] => 65
-                        )
-
-                    [31] => Array
-                        (
-                            [ID] => 67
-                        )
-
-                    [32] => Array
-                        (
-                            [ID] => 69
-                        )
-
-                    [33] => Array
-                        (
-                            [ID] => 71
-                        )
-
-                    [34] => Array
-                        (
-                            [ID] => 73
-                        )
-
-                    [35] => Array
-                        (
-                            [ID] => 75
-                        )
-
-                    [36] => Array
-                        (
-                            [ID] => 77
-                        )
-
-                    [37] => Array
-                        (
-                            [ID] => 79
-                        )
-
-                    [38] => Array
-                        (
-                            [ID] => 81
-                        )
-
-                    [39] => Array
-                        (
-                            [ID] => 83
-                        )
-
-                    [40] => Array
-                        (
-                            [ID] => 85
-                        )
-
-                    [41] => Array
-                        (
-                            [ID] => 87
-                        )
-
-                    [42] => Array
-                        (
-                            [ID] => 89
-                        )
-
-                    [43] => Array
-                        (
-                            [ID] => 91
-                        )
-
-                    [44] => Array
-                        (
-                            [ID] => 93
-                        )
-
-                    [45] => Array
-                        (
-                            [ID] => 95
-                        )
-
-                    [46] => Array
-                        (
-                            [ID] => 97
-                        )
-
-                    [47] => Array
-                        (
-                            [ID] => 99
-                        )
-
-                    [48] => Array
-                        (
-                            [ID] => 101
-                        )
-
-                    [49] => Array
-                        (
-                            [ID] => 103
-                        )
-
+            [select] => Array
+                (
+                    [0] => ID
+                    [1] => TITLE
                 )
 
         )
@@ -911,271 +379,88 @@ Array
 --------------------
 
 --------------------
-11.08.2021 14:52:15
-Caption: $_REQUEST
+11.08.2021 21:43:24
+Caption: requestParamsContact
 Array
 (
-    [ID] => 243
-    [ENTITY_TYPE_ID] => 1
-)
-
---------------------
-
---------------------
-11.08.2021 14:52:15
-Caption: getCrmEntity
-Array
-(
-    [result] => Array
+    [0] => Array
         (
-            [ID] => 243
-            [TITLE] => 123123
-            [HONORIFIC] => 
-            [NAME] => 
-            [SECOND_NAME] => 
-            [LAST_NAME] => 
-            [COMPANY_TITLE] => 
-            [COMPANY_ID] => 0
-            [CONTACT_ID] => 
-            [IS_RETURN_CUSTOMER] => N
-            [BIRTHDATE] => 
-            [SOURCE_ID] => WEBFORM
-            [SOURCE_DESCRIPTION] => 
-            [STATUS_ID] => NEW
-            [STATUS_DESCRIPTION] => 
-            [POST] => 
-            [COMMENTS] => 
-            [CURRENCY_ID] => RUB
-            [OPPORTUNITY] => 0.00
-            [IS_MANUAL_OPPORTUNITY] => N
-            [HAS_PHONE] => Y
-            [HAS_EMAIL] => Y
-            [HAS_IMOL] => N
-            [ASSIGNED_BY_ID] => 1851
-            [CREATED_BY_ID] => 1851
-            [MODIFY_BY_ID] => 1851
-            [DATE_CREATE] => 2021-02-05T15:08:31+03:00
-            [DATE_MODIFY] => 2021-08-04T19:47:33+03:00
-            [DATE_CLOSED] => 
-            [STATUS_SEMANTIC_ID] => P
-            [OPENED] => Y
-            [ORIGINATOR_ID] => 
-            [ORIGIN_ID] => 
-            [ADDRESS] => 
-            [ADDRESS_2] => 
-            [ADDRESS_CITY] => 
-            [ADDRESS_POSTAL_CODE] => 
-            [ADDRESS_REGION] => 
-            [ADDRESS_PROVINCE] => 
-            [ADDRESS_COUNTRY] => 
-            [ADDRESS_COUNTRY_CODE] => 
-            [ADDRESS_LOC_ADDR_ID] => 
-            [UTM_SOURCE] => 
-            [UTM_MEDIUM] => 
-            [UTM_CAMPAIGN] => 
-            [UTM_CONTENT] => 
-            [UTM_TERM] => 
-            [UF_CRM_SP_UNSUBSCR] => 0
-            [UF_CRM_1538647419] => 
-            [UF_CRM_1581418338] => 
-            [UF_CRM_1581418376] => 
-            [UF_CRM_ITS_RELATED1] => custom value for show field
-            [UF_CRM_1597407280] => 
-            [UF_CRM_1600245856370] => 
-            [UF_CRM_1612527141] => 12213
-            [UF_CRM_1614353863] => 
-            [UF_CRM_603916A3BEA3B] => 
-            [UF_CRM_1614681079399] => 
-            [UF_CRM_1614681116518] => 
-            [UF_CRM_1614681130910] => 
-            [UF_CRM_1614705530] => 
-            [UF_CRM_1614706460] => 
-            [UF_CRM_1614706518] => 
-            [UF_CRM_1614706596] => 
-            [UF_CRM_1615820003612] => Array
+            [filter] => Array
                 (
+                    [NAME] => Сковородкин Алексей Дмитриевич
                 )
 
-            [UF_CRM_ITS_DICT_CITY] => 
-            [UF_CRM_1617887745774] => 
-            [UF_CRM_ITS_DICT_OKVED] => 
-            [UF_CRM_ITS_DICT_PROFESSION] => 
-            [UF_CRM_LAST_CALL_DATE] => 
-            [UF_CRM_5A9EBF2E896B6] => 
-            [UF_CRM_ORDER_IDS] => 
-            [UF_CRM_PROBABILITY] => 
-            [UF_CRM_BEGINDATE] => 
-            [UF_CRM_EVENT_DATE] => 
-            [UF_CRM_ORIGINATOR_ID] => 
-            [UF_CRM_LEAD_ID] => 
-            [UF_CRM_EVENT_DESCRIPTION] => 
-            [UF_CRM_ORIGIN_ID] => 
-            [UF_CRM_CLOSEDATE] => 
-            [UF_CRM_CLOSED] => 
-            [UF_CRM_OPPORTUNITY_ACCOUNT] => 
-            [UF_CRM_ACCOUNT_CURRENCY_ID] => 
-            [UF_CRM_CONTACT_IDS] => 
-            [UF_CRM_CATEGORY_ID] => 
-            [UF_CRM_TYPE_ID] => 
-            [UF_CRM_EVENT_ID] => 
-            [UF_CRM_1551419189] => 
-            [UF_CRM_1578484533] => 
-            [UF_CRM_1557008108] => 
-            [UF_CRM_1557008119] => 
-            [UF_CRM_5E15CA0E5F680] => 
-            [UF_CRM_1595780613] => 
-            [UF_CRM_1560728821] => 
-            [UF_CRM_1551430847644] => 
-            [UF_CRM_602105FF4A726] => 
-            [UF_CRM_6021087F7EAFE] => 
-            [UF_CRM_5C384171CE6EB] => 
-            [UF_CRM_602A600530990] => 
-            [UF_CRM_1615885523] => 
-            [UF_CRM_1560875452] => 
-            [UF_CRM_1551692234] => 
-            [UF_CRM_1612955822] => 
-            [UF_CRM_1553932688] => 
-            [UF_CRM_1613377055] => 
-            [UF_CRM_1560144352] => 
-            [UF_CRM_1611304733] => 
-            [UF_CRM_1560328872] => 
-            [UF_CRM_6031218E8E304] => 
-            [UF_CRM_602104BD6B6A8] => 
-            [UF_CRM_1566189708] => 
-            [UF_CRM_5C5801DDEEB24] => 
-            [UF_CRM_1591598208] => 
-            [UF_CRM_1572293623] => 
-            [UF_CRM_1565582929] => 
-            [UF_CRM_1566212333] => 
-            [UF_CRM_1611303102] => 
-            [UF_CRM_1617260897] => 
-            [UF_CRM_1555561455] => 
-            [UF_CRM_1555561368] => 
-            [UF_CRM_1597308245526] => 
-            [UF_CRM_1560854189] => 
-            [UF_CRM_5DD4EC413EAC5] => 
-            [UF_CRM_1567680966] => 
-            [UF_CRM_1606485361524] => 
-            [UF_CRM_1553778436] => 
-            [UF_CRM_COMPANY_ID] => 
-            [UF_CRM_CONTACT_ID] => 
-            [UF_CRM_1551430886580] => 
-            [UF_CRM_1553451508] => 
-            [UF_CRM_1551080498] => 
-            [UF_CRM_1611303121] => 
-            [UF_CRM_1587980750449] => 
-            [UF_CRM_5DD4EC4092AAA] => 
-            [UF_CRM_1594019939710] => 
-            [UF_CRM_1614339040] => 
-            [UF_CRM_1554032151] => 
-            [UF_CRM_1554032126] => 
-            [UF_CRM_602EC0EE73B77] => 
-            [UF_CRM_5D975650C5AF3] => 
-            [UF_CRM_1584430071] => 
-            [UF_CRM_5D1DB552ED029] => 
-            [UF_CRM_1563263100] => 
-            [UF_CRM_1575023853] => 
-            [UF_CRM_1573578091] => 
-            [UF_CRM_1560875494] => 
-            [UF_CRM_1584430260] => 
-            [UF_CRM_5CE354C709B88] => 
-            [UF_CRM_1573481584] => 
-            [UF_CRM_1562309336] => 
-            [UF_CRM_1555485619] => 
-            [UF_CRM_1560875525] => 
-            [UF_CRM_1586943938471] => 
-            [UF_CRM_5C799367EBA93] => 
-            [UF_CRM_602104BBEC516] => 
-            [UF_CRM_1560143592] => 
-            [UF_CRM_1612957408] => 
-            [UF_CRM_STAGE_ID] => 
-            [UF_CRM_1611306143] => 
-            [UF_CRM_1560339072] => 
-            [UF_CRM_5E68F9D47A272] => 
-            [UF_CRM_1583142836] => 
-            [UF_CRM_1594020917603] => 
-            [UF_CRM_1606304984610] => 
-            [UF_CRM_1567495710] => 
-            [UF_CRM_1573579295] => 
-            [UF_CRM_1551080461] => 
-            [UF_CRM_1566189777] => 
-            [UF_CRM_1503667665] => 
-            [UF_CRM_1507891985986] => 
-            [UF_CRM_1512488738] => Array
+            [select] => Array
                 (
-                )
-
-            [UF_CRM_1527523282] => https://calcus.ru/kalkulyator-ipoteki
-            [UF_CRM_1532362405] => Array
-                (
-                )
-
-            [UF_CRM_1532363145] => 
-            [UF_CRM_1532363460] => Array
-                (
-                )
-
-            [UF_CRM_1613674874] => 
-            [UF_CRM_1613675957] => 
-            [UF_CRM_1614353750] => 
-            [EMAIL] => Array
-                (
-                    [0] => Array
-                        (
-                            [ID] => 59601
-                            [VALUE_TYPE] => WORK
-                            [VALUE] => rty@tyu.ru
-                            [TYPE_ID] => EMAIL
-                        )
-
-                    [1] => Array
-                        (
-                            [ID] => 59603
-                            [VALUE_TYPE] => WORK
-                            [VALUE] => 123@tyu.ru
-                            [TYPE_ID] => EMAIL
-                        )
-
-                    [2] => Array
-                        (
-                            [ID] => 59605
-                            [VALUE_TYPE] => WORK
-                            [VALUE] => vasya@vasya.ru
-                            [TYPE_ID] => EMAIL
-                        )
-
-                )
-
-            [PHONE] => Array
-                (
-                    [0] => Array
-                        (
-                            [ID] => 59607
-                            [VALUE_TYPE] => MOBILE
-                            [VALUE] => +79339393939
-                            [TYPE_ID] => PHONE
-                        )
-
-                    [1] => Array
-                        (
-                            [ID] => 59609
-                            [VALUE_TYPE] => MOBILE
-                            [VALUE] => +79339099090
-                            [TYPE_ID] => PHONE
-                        )
-
+                    [0] => ID
+                    [1] => NAME
+                    [2] => LAST_NAME
                 )
 
         )
 
-    [time] => Array
+    [1] => Array
         (
-            [start] => 1628682722.3109
-            [finish] => 1628682722.4357
-            [duration] => 0.12484383583069
-            [processing] => 0.055164813995361
-            [date_start] => 2021-08-11T14:52:02+03:00
-            [date_finish] => 2021-08-11T14:52:02+03:00
+            [filter] => Array
+                (
+                    [NAME] => Сковородкин Дмитриевич Алексей
+                )
+
+            [select] => Array
+                (
+                    [0] => ID
+                    [1] => NAME
+                    [2] => LAST_NAME
+                )
+
+        )
+
+    [2] => Array
+        (
+            [filter] => Array
+                (
+                    [NAME] => Алексей Дмитриевич Сковородкин
+                )
+
+            [select] => Array
+                (
+                    [0] => ID
+                    [1] => NAME
+                    [2] => LAST_NAME
+                )
+
+        )
+
+    [3] => Array
+        (
+            [filter] => Array
+                (
+                    [NAME] => Дмитриевич Сковородкин Алексей
+                )
+
+            [select] => Array
+                (
+                    [0] => ID
+                    [1] => NAME
+                    [2] => LAST_NAME
+                )
+
+        )
+
+    [4] => Array
+        (
+            [filter] => Array
+                (
+                    [NAME] => Дмитриевич Алексей Сковородкин
+                )
+
+            [select] => Array
+                (
+                    [0] => ID
+                    [1] => NAME
+                    [2] => LAST_NAME
+                )
+
         )
 
 )
@@ -1183,934 +468,31 @@ Array
 --------------------
 
 --------------------
-11.08.2021 14:52:17
-Caption: $_REQUEST
+11.08.2021 21:43:26
+Caption: findDuplicatesByName
 Array
 (
-    [lead] => Array
-        (
-            [0] => Array
-                (
-                    [ID] => 243
-                    [TITLE] => 123123
-                )
-
-            [1] => Array
-                (
-                    [ID] => 257
-                    [TITLE] => 123123
-                )
-
-            [2] => Array
-                (
-                    [ID] => 397
-                    [TITLE] => 123123
-                )
-
-            [3] => Array
-                (
-                    [0] => Array
-                        (
-                            [ID] => 237
-                            [TITLE] => С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр 
-                        )
-
-                    [1] => Array
-                        (
-                            [ID] => 243
-                            [TITLE] => 123123
-                        )
-
-                    [2] => Array
-                        (
-                            [ID] => 257
-                            [TITLE] => 123123
-                        )
-
-                    [3] => Array
-                        (
-                            [ID] => 349
-                            [TITLE] => 123123123123
-                        )
-
-                    [4] => Array
-                        (
-                            [ID] => 397
-                            [TITLE] => 123123
-                        )
-
-                    [5] => Array
-                        (
-                            [ID] => 401
-                            [TITLE] => С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр
-                        )
-
-                )
-
-        )
-
-    [company] => Array
-        (
-            [0] => Array
-                (
-                    [0] => Array
-                        (
-                            [ID] => 147
-                            [TITLE] => 123123123123
-                        )
-
-                )
-
-        )
-
     [contact] => Array
         (
             [0] => Array
                 (
-                    [ID] => 1
+                    [0] => Array
+                        (
+                            [ID] => 235
+                            [NAME] => Сковородкин Алексей Дмитриевич
+                            [LAST_NAME] => 
+                        )
+
                 )
 
             [1] => Array
                 (
-                    [ID] => 3
-                )
-
-            [2] => Array
-                (
-                    [ID] => 5
-                )
-
-            [3] => Array
-                (
-                    [ID] => 7
-                )
-
-            [4] => Array
-                (
-                    [ID] => 9
-                )
-
-            [5] => Array
-                (
-                    [ID] => 11
-                )
-
-            [6] => Array
-                (
-                    [ID] => 13
-                )
-
-            [7] => Array
-                (
-                    [ID] => 15
-                )
-
-            [8] => Array
-                (
-                    [ID] => 17
-                )
-
-            [9] => Array
-                (
-                    [ID] => 21
-                )
-
-            [10] => Array
-                (
-                    [ID] => 23
-                )
-
-            [11] => Array
-                (
-                    [ID] => 25
-                )
-
-            [12] => Array
-                (
-                    [ID] => 27
-                )
-
-            [13] => Array
-                (
-                    [ID] => 29
-                )
-
-            [14] => Array
-                (
-                    [ID] => 31
-                )
-
-            [15] => Array
-                (
-                    [ID] => 33
-                )
-
-            [16] => Array
-                (
-                    [ID] => 35
-                )
-
-            [17] => Array
-                (
-                    [ID] => 37
-                )
-
-            [18] => Array
-                (
-                    [ID] => 39
-                )
-
-            [19] => Array
-                (
-                    [ID] => 41
-                )
-
-            [20] => Array
-                (
-                    [ID] => 43
-                )
-
-            [21] => Array
-                (
-                    [ID] => 45
-                )
-
-            [22] => Array
-                (
-                    [ID] => 47
-                )
-
-            [23] => Array
-                (
-                    [ID] => 49
-                )
-
-            [24] => Array
-                (
-                    [ID] => 51
-                )
-
-            [25] => Array
-                (
-                    [ID] => 53
-                )
-
-            [26] => Array
-                (
-                    [ID] => 55
-                )
-
-            [27] => Array
-                (
-                    [ID] => 57
-                )
-
-            [28] => Array
-                (
-                    [ID] => 61
-                )
-
-            [29] => Array
-                (
-                    [ID] => 63
-                )
-
-            [30] => Array
-                (
-                    [ID] => 65
-                )
-
-            [31] => Array
-                (
-                    [ID] => 67
-                )
-
-            [32] => Array
-                (
-                    [ID] => 69
-                )
-
-            [33] => Array
-                (
-                    [ID] => 71
-                )
-
-            [34] => Array
-                (
-                    [ID] => 73
-                )
-
-            [35] => Array
-                (
-                    [ID] => 75
-                )
-
-            [36] => Array
-                (
-                    [ID] => 77
-                )
-
-            [37] => Array
-                (
-                    [ID] => 79
-                )
-
-            [38] => Array
-                (
-                    [ID] => 81
-                )
-
-            [39] => Array
-                (
-                    [ID] => 83
-                )
-
-            [40] => Array
-                (
-                    [ID] => 85
-                )
-
-            [41] => Array
-                (
-                    [ID] => 87
-                )
-
-            [42] => Array
-                (
-                    [ID] => 89
-                )
-
-            [43] => Array
-                (
-                    [ID] => 91
-                )
-
-            [44] => Array
-                (
-                    [ID] => 93
-                )
-
-            [45] => Array
-                (
-                    [ID] => 95
-                )
-
-            [46] => Array
-                (
-                    [ID] => 97
-                )
-
-            [47] => Array
-                (
-                    [ID] => 99
-                )
-
-            [48] => Array
-                (
-                    [ID] => 101
-                )
-
-            [49] => Array
-                (
-                    [ID] => 103
-                )
-
-            [50] => Array
-                (
-                    [0] => Array
-                        (
-                            [ID] => 1
-                        )
-
-                    [1] => Array
-                        (
-                            [ID] => 3
-                        )
-
-                    [2] => Array
-                        (
-                            [ID] => 5
-                        )
-
-                    [3] => Array
-                        (
-                            [ID] => 7
-                        )
-
-                    [4] => Array
-                        (
-                            [ID] => 9
-                        )
-
-                    [5] => Array
-                        (
-                            [ID] => 11
-                        )
-
-                    [6] => Array
-                        (
-                            [ID] => 13
-                        )
-
-                    [7] => Array
-                        (
-                            [ID] => 15
-                        )
-
-                    [8] => Array
-                        (
-                            [ID] => 17
-                        )
-
-                    [9] => Array
-                        (
-                            [ID] => 21
-                        )
-
-                    [10] => Array
-                        (
-                            [ID] => 23
-                        )
-
-                    [11] => Array
-                        (
-                            [ID] => 25
-                        )
-
-                    [12] => Array
-                        (
-                            [ID] => 27
-                        )
-
-                    [13] => Array
-                        (
-                            [ID] => 29
-                        )
-
-                    [14] => Array
-                        (
-                            [ID] => 31
-                        )
-
-                    [15] => Array
-                        (
-                            [ID] => 33
-                        )
-
-                    [16] => Array
-                        (
-                            [ID] => 35
-                        )
-
-                    [17] => Array
-                        (
-                            [ID] => 37
-                        )
-
-                    [18] => Array
-                        (
-                            [ID] => 39
-                        )
-
-                    [19] => Array
-                        (
-                            [ID] => 41
-                        )
-
-                    [20] => Array
-                        (
-                            [ID] => 43
-                        )
-
-                    [21] => Array
-                        (
-                            [ID] => 45
-                        )
-
-                    [22] => Array
-                        (
-                            [ID] => 47
-                        )
-
-                    [23] => Array
-                        (
-                            [ID] => 49
-                        )
-
-                    [24] => Array
-                        (
-                            [ID] => 51
-                        )
-
-                    [25] => Array
-                        (
-                            [ID] => 53
-                        )
-
-                    [26] => Array
-                        (
-                            [ID] => 55
-                        )
-
-                    [27] => Array
-                        (
-                            [ID] => 57
-                        )
-
-                    [28] => Array
-                        (
-                            [ID] => 61
-                        )
-
-                    [29] => Array
-                        (
-                            [ID] => 63
-                        )
-
-                    [30] => Array
-                        (
-                            [ID] => 65
-                        )
-
-                    [31] => Array
-                        (
-                            [ID] => 67
-                        )
-
-                    [32] => Array
-                        (
-                            [ID] => 69
-                        )
-
-                    [33] => Array
-                        (
-                            [ID] => 71
-                        )
-
-                    [34] => Array
-                        (
-                            [ID] => 73
-                        )
-
-                    [35] => Array
-                        (
-                            [ID] => 75
-                        )
-
-                    [36] => Array
-                        (
-                            [ID] => 77
-                        )
-
-                    [37] => Array
-                        (
-                            [ID] => 79
-                        )
-
-                    [38] => Array
-                        (
-                            [ID] => 81
-                        )
-
-                    [39] => Array
-                        (
-                            [ID] => 83
-                        )
-
-                    [40] => Array
-                        (
-                            [ID] => 85
-                        )
-
-                    [41] => Array
-                        (
-                            [ID] => 87
-                        )
-
-                    [42] => Array
-                        (
-                            [ID] => 89
-                        )
-
-                    [43] => Array
-                        (
-                            [ID] => 91
-                        )
-
-                    [44] => Array
-                        (
-                            [ID] => 93
-                        )
-
-                    [45] => Array
-                        (
-                            [ID] => 95
-                        )
-
-                    [46] => Array
-                        (
-                            [ID] => 97
-                        )
-
-                    [47] => Array
-                        (
-                            [ID] => 99
-                        )
-
-                    [48] => Array
-                        (
-                            [ID] => 101
-                        )
-
-                    [49] => Array
-                        (
-                            [ID] => 103
-                        )
-
                 )
 
         )
 
-)
-
---------------------
-
---------------------
-11.08.2021 15:04:10
-Caption: $_REQUEST
-Array
-(
-    [ID] => 243
-    [ENTITY_TYPE_ID] => 1
-)
-
---------------------
-
---------------------
-11.08.2021 15:04:11
-Caption: getCrmEntity
-Array
-(
-    [result] => Array
-        (
-            [ID] => 243
-            [TITLE] => 123123
-            [HONORIFIC] => 
-            [NAME] => 
-            [SECOND_NAME] => 
-            [LAST_NAME] => 
-            [COMPANY_TITLE] => 
-            [COMPANY_ID] => 0
-            [CONTACT_ID] => 
-            [IS_RETURN_CUSTOMER] => N
-            [BIRTHDATE] => 
-            [SOURCE_ID] => WEBFORM
-            [SOURCE_DESCRIPTION] => 
-            [STATUS_ID] => NEW
-            [STATUS_DESCRIPTION] => 
-            [POST] => 
-            [COMMENTS] => 
-            [CURRENCY_ID] => RUB
-            [OPPORTUNITY] => 0.00
-            [IS_MANUAL_OPPORTUNITY] => N
-            [HAS_PHONE] => Y
-            [HAS_EMAIL] => Y
-            [HAS_IMOL] => N
-            [ASSIGNED_BY_ID] => 1851
-            [CREATED_BY_ID] => 1851
-            [MODIFY_BY_ID] => 1851
-            [DATE_CREATE] => 2021-02-05T15:08:31+03:00
-            [DATE_MODIFY] => 2021-08-04T19:47:33+03:00
-            [DATE_CLOSED] => 
-            [STATUS_SEMANTIC_ID] => P
-            [OPENED] => Y
-            [ORIGINATOR_ID] => 
-            [ORIGIN_ID] => 
-            [ADDRESS] => 
-            [ADDRESS_2] => 
-            [ADDRESS_CITY] => 
-            [ADDRESS_POSTAL_CODE] => 
-            [ADDRESS_REGION] => 
-            [ADDRESS_PROVINCE] => 
-            [ADDRESS_COUNTRY] => 
-            [ADDRESS_COUNTRY_CODE] => 
-            [ADDRESS_LOC_ADDR_ID] => 
-            [UTM_SOURCE] => 
-            [UTM_MEDIUM] => 
-            [UTM_CAMPAIGN] => 
-            [UTM_CONTENT] => 
-            [UTM_TERM] => 
-            [UF_CRM_SP_UNSUBSCR] => 0
-            [UF_CRM_1538647419] => 
-            [UF_CRM_1581418338] => 
-            [UF_CRM_1581418376] => 
-            [UF_CRM_ITS_RELATED1] => custom value for show field
-            [UF_CRM_1597407280] => 
-            [UF_CRM_1600245856370] => 
-            [UF_CRM_1612527141] => 12213
-            [UF_CRM_1614353863] => 
-            [UF_CRM_603916A3BEA3B] => 
-            [UF_CRM_1614681079399] => 
-            [UF_CRM_1614681116518] => 
-            [UF_CRM_1614681130910] => 
-            [UF_CRM_1614705530] => 
-            [UF_CRM_1614706460] => 
-            [UF_CRM_1614706518] => 
-            [UF_CRM_1614706596] => 
-            [UF_CRM_1615820003612] => Array
-                (
-                )
-
-            [UF_CRM_ITS_DICT_CITY] => 
-            [UF_CRM_1617887745774] => 
-            [UF_CRM_ITS_DICT_OKVED] => 
-            [UF_CRM_ITS_DICT_PROFESSION] => 
-            [UF_CRM_LAST_CALL_DATE] => 
-            [UF_CRM_5A9EBF2E896B6] => 
-            [UF_CRM_ORDER_IDS] => 
-            [UF_CRM_PROBABILITY] => 
-            [UF_CRM_BEGINDATE] => 
-            [UF_CRM_EVENT_DATE] => 
-            [UF_CRM_ORIGINATOR_ID] => 
-            [UF_CRM_LEAD_ID] => 
-            [UF_CRM_EVENT_DESCRIPTION] => 
-            [UF_CRM_ORIGIN_ID] => 
-            [UF_CRM_CLOSEDATE] => 
-            [UF_CRM_CLOSED] => 
-            [UF_CRM_OPPORTUNITY_ACCOUNT] => 
-            [UF_CRM_ACCOUNT_CURRENCY_ID] => 
-            [UF_CRM_CONTACT_IDS] => 
-            [UF_CRM_CATEGORY_ID] => 
-            [UF_CRM_TYPE_ID] => 
-            [UF_CRM_EVENT_ID] => 
-            [UF_CRM_1551419189] => 
-            [UF_CRM_1578484533] => 
-            [UF_CRM_1557008108] => 
-            [UF_CRM_1557008119] => 
-            [UF_CRM_5E15CA0E5F680] => 
-            [UF_CRM_1595780613] => 
-            [UF_CRM_1560728821] => 
-            [UF_CRM_1551430847644] => 
-            [UF_CRM_602105FF4A726] => 
-            [UF_CRM_6021087F7EAFE] => 
-            [UF_CRM_5C384171CE6EB] => 
-            [UF_CRM_602A600530990] => 
-            [UF_CRM_1615885523] => 
-            [UF_CRM_1560875452] => 
-            [UF_CRM_1551692234] => 
-            [UF_CRM_1612955822] => 
-            [UF_CRM_1553932688] => 
-            [UF_CRM_1613377055] => 
-            [UF_CRM_1560144352] => 
-            [UF_CRM_1611304733] => 
-            [UF_CRM_1560328872] => 
-            [UF_CRM_6031218E8E304] => 
-            [UF_CRM_602104BD6B6A8] => 
-            [UF_CRM_1566189708] => 
-            [UF_CRM_5C5801DDEEB24] => 
-            [UF_CRM_1591598208] => 
-            [UF_CRM_1572293623] => 
-            [UF_CRM_1565582929] => 
-            [UF_CRM_1566212333] => 
-            [UF_CRM_1611303102] => 
-            [UF_CRM_1617260897] => 
-            [UF_CRM_1555561455] => 
-            [UF_CRM_1555561368] => 
-            [UF_CRM_1597308245526] => 
-            [UF_CRM_1560854189] => 
-            [UF_CRM_5DD4EC413EAC5] => 
-            [UF_CRM_1567680966] => 
-            [UF_CRM_1606485361524] => 
-            [UF_CRM_1553778436] => 
-            [UF_CRM_COMPANY_ID] => 
-            [UF_CRM_CONTACT_ID] => 
-            [UF_CRM_1551430886580] => 
-            [UF_CRM_1553451508] => 
-            [UF_CRM_1551080498] => 
-            [UF_CRM_1611303121] => 
-            [UF_CRM_1587980750449] => 
-            [UF_CRM_5DD4EC4092AAA] => 
-            [UF_CRM_1594019939710] => 
-            [UF_CRM_1614339040] => 
-            [UF_CRM_1554032151] => 
-            [UF_CRM_1554032126] => 
-            [UF_CRM_602EC0EE73B77] => 
-            [UF_CRM_5D975650C5AF3] => 
-            [UF_CRM_1584430071] => 
-            [UF_CRM_5D1DB552ED029] => 
-            [UF_CRM_1563263100] => 
-            [UF_CRM_1575023853] => 
-            [UF_CRM_1573578091] => 
-            [UF_CRM_1560875494] => 
-            [UF_CRM_1584430260] => 
-            [UF_CRM_5CE354C709B88] => 
-            [UF_CRM_1573481584] => 
-            [UF_CRM_1562309336] => 
-            [UF_CRM_1555485619] => 
-            [UF_CRM_1560875525] => 
-            [UF_CRM_1586943938471] => 
-            [UF_CRM_5C799367EBA93] => 
-            [UF_CRM_602104BBEC516] => 
-            [UF_CRM_1560143592] => 
-            [UF_CRM_1612957408] => 
-            [UF_CRM_STAGE_ID] => 
-            [UF_CRM_1611306143] => 
-            [UF_CRM_1560339072] => 
-            [UF_CRM_5E68F9D47A272] => 
-            [UF_CRM_1583142836] => 
-            [UF_CRM_1594020917603] => 
-            [UF_CRM_1606304984610] => 
-            [UF_CRM_1567495710] => 
-            [UF_CRM_1573579295] => 
-            [UF_CRM_1551080461] => 
-            [UF_CRM_1566189777] => 
-            [UF_CRM_1503667665] => 
-            [UF_CRM_1507891985986] => 
-            [UF_CRM_1512488738] => Array
-                (
-                )
-
-            [UF_CRM_1527523282] => https://calcus.ru/kalkulyator-ipoteki
-            [UF_CRM_1532362405] => Array
-                (
-                )
-
-            [UF_CRM_1532363145] => 
-            [UF_CRM_1532363460] => Array
-                (
-                )
-
-            [UF_CRM_1613674874] => 
-            [UF_CRM_1613675957] => 
-            [UF_CRM_1614353750] => 
-            [EMAIL] => Array
-                (
-                    [0] => Array
-                        (
-                            [ID] => 59601
-                            [VALUE_TYPE] => WORK
-                            [VALUE] => rty@tyu.ru
-                            [TYPE_ID] => EMAIL
-                        )
-
-                    [1] => Array
-                        (
-                            [ID] => 59603
-                            [VALUE_TYPE] => WORK
-                            [VALUE] => 123@tyu.ru
-                            [TYPE_ID] => EMAIL
-                        )
-
-                    [2] => Array
-                        (
-                            [ID] => 59605
-                            [VALUE_TYPE] => WORK
-                            [VALUE] => vasya@vasya.ru
-                            [TYPE_ID] => EMAIL
-                        )
-
-                )
-
-            [PHONE] => Array
-                (
-                    [0] => Array
-                        (
-                            [ID] => 59607
-                            [VALUE_TYPE] => MOBILE
-                            [VALUE] => +79339393939
-                            [TYPE_ID] => PHONE
-                        )
-
-                    [1] => Array
-                        (
-                            [ID] => 59609
-                            [VALUE_TYPE] => MOBILE
-                            [VALUE] => +79339099090
-                            [TYPE_ID] => PHONE
-                        )
-
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1628683437.5661
-            [finish] => 1628683437.699
-            [duration] => 0.13296413421631
-            [processing] => 0.070761203765869
-            [date_start] => 2021-08-11T15:03:57+03:00
-            [date_finish] => 2021-08-11T15:03:57+03:00
-        )
-
-)
-
---------------------
-
---------------------
-11.08.2021 15:04:11
-Caption: $_REQUEST
-Array
-(
     [lead] => Array
         (
-            [0] => Array
-                (
-                    [ID] => 237
-                    [TITLE] => С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр 
-                )
-
-            [1] => Array
-                (
-                    [ID] => 243
-                    [TITLE] => 123123
-                )
-
-            [2] => Array
-                (
-                    [ID] => 257
-                    [TITLE] => 123123
-                )
-
-            [3] => Array
-                (
-                    [ID] => 349
-                    [TITLE] => 123123123123
-                )
-
-            [4] => Array
-                (
-                    [ID] => 397
-                    [TITLE] => 123123
-                )
-
-            [5] => Array
-                (
-                    [ID] => 401
-                    [TITLE] => С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр
-                )
-
-        )
-
-    [company] => Array
-        (
-            [0] => Array
-                (
-                    [ID] => 147
-                    [TITLE] => 123123123123
-                )
-
-        )
-
-    [contact] => Array
-        (
-            [0] => Array
-                (
-                    [ID] => 221
-                    [NAME] => 123123123
-                    [LAST_NAME] => 
-                )
-
         )
 
 )

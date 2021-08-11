@@ -54,47 +54,41 @@ function findDuplicatesByTitle($crmEntityTitle)
 	$result['company'] = CRestPlus::call('crm.company.list', $requestParamsSubstr)['result'];
 	$result['contact'] = CRestPlus::call('crm.contact.list', $requestParamsSubstrContact)['result'];
 
+	Debugger::writeToLog($result, LOG, 'findDuplicatesByTitle');
 	return $result;
 }
 
-// TODO - Написать эту функцию
-// При этом при поиске по Имени, Фамилии и Отчеству надо учесть, что могут быть перепутаны они местами, например Имя указано в поле Фамилия и наоборот.
-function findDuplicatesByName($entityId, $name, $lastName, $secondName)
+function arrSwap($arr, $elNum1, $elNum2)
 {
-	/*
-	Получить контакты и лиды с именем, фамилией и отчеством
-	Какие есть варианты:
+	$temp = $arr[$elNum1];
+	$arr[$elNum1] = $arr[$elNum2];
+	$arr[$elNum2] = $temp;
+	return $arr;
+}
+
+/*
+	Получить контакты и лиды и компании с именем, фамилией и отчеством
+	Какие есть нюансы:
 	2. Проверять наличие аргументов
 	3. Прямой поиск имя = имя, фамилия = фамилия и так далее
 	4. Обратный имя = фамилия и фамилия = имя
 	5. Поиск внутри имени Контакта
+
+	TODO - $entityId
 	*/
-
-	if (isset($name) and isset($lastName) and isset($secondName)) {
-		$searchVariant = 'NAME, LAST_NAME, SECOND_NAME';
-	} else if (empty($secondName) and isset($name) and isset($lastName)) {
-		$searchVariant = 'NAME, LAST_NAME';
-	} else if (empty($secondName) and empty($lastName) and isset($name)) {
-		$searchVariant = 'NAME ONLY';
-	}
-
+function findDuplicatesByNames($name, $lastName, $secondName, $searchVariant)
+{
+	// !--- Формируем запросы
 	switch ($searchVariant) {
 		case 'NAME, LAST_NAME, SECOND_NAME':
-			$requestNames[] = $lastName;
-			$requestNames[] = $name;
-			$requestNames[] = $secondName;
-
 			$requestParams = array(
 				'filter' => array(
 					'%NAME' => $name,
 					'%LAST_NAME' => $lastName,
 					'%SECOND_NAME' => $secondName
-				)
-			);
-			
-			$requestParamsContact = array(
-				'filter' => array(
-					'NAME' => implode(' ', $requestNames),
+				),
+				'select' => array(
+					'ID', 'NAME', 'LAST_NAME'
 				)
 			);
 
@@ -103,20 +97,52 @@ function findDuplicatesByName($entityId, $name, $lastName, $secondName)
 					'%NAME' => $lastName,
 					'%LAST_NAME' => $name,
 					'%SECOND_NAME' => $secondName
+				),
+				'select' => array(
+					'ID', 'NAME', 'LAST_NAME'
 				)
 			);
 
-			$result['contact'] = CRestPlus::call('crm.contact.list', $requestParams)['result'];
+			// поиск внутри имени контакта
+			$arrNames = array($lastName, $name, $secondName);
+
+			$requestNames[] = arrSwap($arrNames, 0, 1);
+			$requestNames[] = arrSwap(arrSwap($arrNames, 0, 1), 1, 2);
+			$requestNames[] = arrSwap($arrNames, 1, 2);
+			$requestNames[] = arrSwap($arrNames, 2, 0);
+			$requestNames[] = arrSwap(arrSwap($arrNames, 2, 0), 1, 2);
+
+			foreach ($requestNames as $key) {
+				$requestParamsContact[] = array(
+					'filter' => array(
+						'NAME' => implode(" ", $key)
+					),
+					'select' => array(
+						'ID', 'NAME', 'LAST_NAME'
+					)
+				);
+			}
+
+			foreach ($requestNames as $key) {
+				$requestParamsCompany[] = array(
+					'filter' => array(
+						'TITLE' => implode(" ", $key)
+					),
+					'select' => array(
+						'ID', 'TITLE'
+					)
+				);
+			}
 			break;
 
 		case 'NAME, LAST_NAME':
-			$requestNames[] = $lastName;
-			$requestNames[] = $name;
-
 			$requestParams = array(
 				'filter' => array(
 					'%NAME' => $name,
 					'%LAST_NAME' => $lastName
+				),
+				'select' => array(
+					'ID', 'NAME', 'LAST_NAME'
 				)
 			);
 
@@ -124,37 +150,112 @@ function findDuplicatesByName($entityId, $name, $lastName, $secondName)
 				'filter' => array(
 					'%NAME' => $lastName,
 					'%LAST_NAME' => $name
+				),
+				'select' => array(
+					'ID', 'NAME', 'LAST_NAME'
 				)
 			);
+
+			$requestNames = [$lastName . $name, $name . $lastName];
+
+			foreach ($requestNames as $key) {
+				$requestParamsContact[] = array(
+					'filter' => array(
+						'NAME' => $key
+					),
+					'select' => array(
+						'ID', 'NAME', 'LAST_NAME'
+					)
+				);
+			}
+
+			foreach ($requestNames as $key) {
+				$requestParamsCompany[] = array(
+					'filter' => array(
+						'TITLE' => $key
+					),
+					'select' => array(
+						'ID', 'TITLE'
+					)
+				);
+			}
+
+			
+
+			
 			break;
 
 		case 'NAME ONLY':
-			$requestNames[] = $name;
 			$requestParams = array(
 				'filter' => array(
 					'%NAME' => $name,
+				),
+				'select' => array(
+					'ID', 'TITLE'
+				)
+			);
+
+			$requestParamsContact[] = array(
+				'filter' => array(
+					'NAME' => $name
+				),
+				'select' => array(
+					'ID', 'NAME', 'LAST_NAME'
+				)
+			);
+
+			$requestParamsCompany[] = array(
+				'filter' => array(
+					'TITLE' => $name
+				),
+				'select' => array(
+					'ID', 'TITLE'
 				)
 			);
 			break;
 	}
 
-	// поиск внутри имени контакта
-	$requestNames = $lastName . $name . $secondName;
-	$requestNames = $name . $lastName . $secondName;
-	$requestNames = $secondName . $name . $lastName;
-
-	$requestParams = array(
-		'filter' => array(
-			'NAME' => $requestNames,
-		)
-	);
-
+	Debugger::writeToLog($requestParams, LOG, 'requestParams');
+	Debugger::writeToLog($requestParamsCompany, LOG, 'requestParamsCompany');
+	Debugger::writeToLog($requestParamsContact, LOG, 'requestParamsContact');
+	// ---!
+	
+	// !--- Выполняем запросы 
+	$i = 0;
+	foreach ($requestParamsContact as $key) {
+		$try = CRestPlus::call('crm.contact.list', $key)['result'];
+		if (!empty($try)) {
+			$result['contact'][$i] = $try;		
+		}
+		$i++;
+	}
+	
+	$i = 0;
+	foreach ($requestParamsCompany as $key) {
+		$try = CRestPlus::call('crm.company.list', $key)['result'];
+		if (!empty($try)) {
+			$result['company'][$i] = $try;		
+		}
+		$i++;
+	}
+	
 	$result['lead'] = CRestPlus::call('crm.lead.list', $requestParams)['result'];
-	$result['contact'] = CRestPlus::call('crm.contact.list', $requestParams)['result'];
-	// В компании в названии ищем 
-	$result['company'] = CRestPlus::call('crm.company.list', $requestParams)['result'];
+	$result['contact'][] = CRestPlus::call('crm.contact.list', $requestParams)['result'];
 
-	return null;
+	// if (isset($requestParamsReverse)) {
+	// 	$try = CRestPlus::call('crm.lead.list', $requestParamsReverse)['result'];
+		
+	// 	$result['lead'] = array_merge($resultArr, $result['lead']); 
+		
+	// 	$resultArr = CRestPlus::call('crm.contact.list', $requestParamsReverse)['result'];
+	// 	$result['contact'] = array_merge($result['contact'], $resultArr);
+
+	// 	Debugger::writeToLog($requestParamsReverse, LOG, 'requestParamsReverse');
+	// }	
+	// ---!
+
+	Debugger::writeToLog($result, LOG, 'findDuplicatesByName');
+	return $result;
 }
 
 // !--- Выполнение скрипта
@@ -187,5 +288,29 @@ if ($_REQUEST['ENTITY_TYPE_ID']) {
 // Получить данные сущности по ID, найти дубликаты
 $crmEntity = getCrmEntity($_REQUEST['ID'], $entityTypeId);
 
-$result = findDuplicatesByTitle($crmEntity['result']['TITLE']);
-Debugger::writeToLog($result, LOG, '$_REQUEST');
+// Указываем какой запрос формировать
+if ($crmEntity['result']['LAST_NAME'] and $crmEntity['result']['NAME'] and $crmEntity['result']['SECOND_NAME']) {
+	$result = findDuplicatesByNames(
+		$crmEntity['result']['LAST_NAME'],
+		$crmEntity['result']['NAME'],
+		$crmEntity['result']['SECOND_NAME'],
+		'NAME, LAST_NAME, SECOND_NAME'
+	);
+} else if ($crmEntity['result']['LAST_NAME'] and $crmEntity['result']['NAME']) {
+	$result = findDuplicatesByNames(
+		$crmEntity['result']['LAST_NAME'],
+		$crmEntity['result']['NAME'],
+		null,
+		'NAME, LAST_NAME'
+	);
+} else if ($crmEntity['result']['NAME']) {
+	$result = findDuplicatesByNames(
+		$crmEntity['result']['NAME'],
+		null,
+		null,
+		'NAME ONLY'
+	);
+} else {
+	Debugger::writeToLog('Не заданы поля для поиска', LOG, 'Error: Missing parameters');
+	exit;
+}
