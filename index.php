@@ -105,9 +105,38 @@ function findDuplicates($phonesArr, $entityId, $typeOfDuplicates)
 
 // TODO - Написать эту функцию
 // При этом при поиске по Имени, Фамилии и Отчеству надо учесть, что могут быть перепутаны они местами, например Имя указано в поле Фамилия и наоборот.
-function findDuplicatesByName() 
+function findDuplicatesByName($entityId, $name, $lastName, $secondName) 
 {
+	/*
+	Получить контакты и лиды с именем, фамилией и отчеством
+	Какие есть варианты:
+	1. 2а варианта входящих данных первая буква низкая, вторая высокая
+	2. Проверять наличие аргументов
+	2. Прямой поиск имя = имя, фамилия = фамилия и так далее
+	3. Обратный имя = фамилия и фамилия = имя
+	4. 
+	*/
 	return null;
+}
+
+function findDuplicatesByTitle($crmEntityTitle) {
+	// Получить лиды, сделки, компании по названию
+	// Искать часть текущей строки в названии
+
+	$requestParams = array('filter' => array('TITLE' => $crmEntityTitle), 'select' => array('ID', 'TITLE'));
+	
+	// Какой там оператор для "содержит"
+	$requestParamsSubstring = array('filter' => array('%TITLE' => $crmEntityTitle), 'select' => array('ID', 'TITLE'));
+
+	$result['lead'] = CRestPlus::call('crm.lead.list', $requestParams);
+	$result['company'] = CRestPlus::call('crm.company.list', $requestParams);
+	$result['contact'] = CRestPlus::call('crm.contact.list', $requestParams);
+	
+	$result['lead'][] = CRestPlus::call('crm.lead.list', $requestParamsSubstring);
+	$result['company'][] = CRestPlus::call('crm.company.list', $requestParamsSubstring);
+	$result['contact'][] = CRestPlus::call('crm.contact.list', $requestParamsSubstring);
+
+	return $result;	
 }
 
 // TODO - Написать эту функцию
@@ -137,6 +166,7 @@ function makeDescription($duplicatesArr, $typeOfDuplicates)
 
 	$final = array();
 
+	// TODO - Переписать в функцию
 	$i = 0;
 	if ($lead['result']) {
 		foreach ($lead['result'] as $value) {
@@ -202,6 +232,7 @@ function notifyPost($postText, $entityId, $entityTypeId)
 
 // Создать задачи пользователю
 
+
 // !--- Выполнение скрипта
 
 // Проверить передан ли параметр ID сущности, без которого не получится поиск
@@ -257,5 +288,3 @@ notifyPost($desc, $_REQUEST['ID'], $entityTypeId);
 // }
 
 // ---!
-	
-?>
