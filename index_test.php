@@ -103,7 +103,7 @@ function findDuplicatesByNames($name, $lastName, $secondName, $searchVariant)
 				)
 			);
 
-			// поиск внутри имени контакта
+			// поиск внутри имени контакта и в названии компании
 			$arrNames = array($lastName, $name, $secondName);
 
 			$requestNames[] = arrSwap($arrNames, 0, 1);
@@ -180,9 +180,9 @@ function findDuplicatesByNames($name, $lastName, $secondName, $searchVariant)
 				);
 			}
 
-			
 
-			
+
+
 			break;
 
 		case 'NAME ONLY':
@@ -219,39 +219,57 @@ function findDuplicatesByNames($name, $lastName, $secondName, $searchVariant)
 	Debugger::writeToLog($requestParamsCompany, LOG, 'requestParamsCompany');
 	Debugger::writeToLog($requestParamsContact, LOG, 'requestParamsContact');
 	// ---!
-	
+
 	// !--- Выполняем запросы 
-	$i = 0;
 	foreach ($requestParamsContact as $key) {
 		$try = CRestPlus::call('crm.contact.list', $key)['result'];
 		if (!empty($try)) {
-			$result['contact'][$i] = $try;		
+			foreach ($try as $element) {
+				$result['contact'][] = $element;
+			}
 		}
-		$i++;
 	}
-	
-	$i = 0;
+
+	$try = CRestPlus::call('crm.contact.list', $requestParams)['result'];
+	if (!empty($try)) {
+		foreach ($try as $element) {
+			$result['contact'][] = $element;
+		}
+	}
+
 	foreach ($requestParamsCompany as $key) {
 		$try = CRestPlus::call('crm.company.list', $key)['result'];
 		if (!empty($try)) {
-			$result['company'][$i] = $try;		
+			foreach ($try as $element) {
+				$result['company'][] = $element;
+			}
 		}
-		$i++;
 	}
-	
-	$result['lead'] = CRestPlus::call('crm.lead.list', $requestParams)['result'];
-	$result['contact'][] = CRestPlus::call('crm.contact.list', $requestParams)['result'];
 
-	// if (isset($requestParamsReverse)) {
-	// 	$try = CRestPlus::call('crm.lead.list', $requestParamsReverse)['result'];
-		
-	// 	$result['lead'] = array_merge($resultArr, $result['lead']); 
-		
-	// 	$resultArr = CRestPlus::call('crm.contact.list', $requestParamsReverse)['result'];
-	// 	$result['contact'] = array_merge($result['contact'], $resultArr);
+	$try = CRestPlus::call('crm.lead.list', $requestParams)['result'];
+	if (!empty($try)) {
+		foreach ($try as $element) {
+			$result['lead'][] = $element;
+		}
+	}
 
-	// 	Debugger::writeToLog($requestParamsReverse, LOG, 'requestParamsReverse');
-	// }	
+	if (isset($requestParamsReverse)) {
+		$try = CRestPlus::call('crm.lead.list', $requestParamsReverse)['result'];
+		if (!empty($try)) {
+			foreach ($try as $element) {
+				$result['lead'][] = $element;
+			}
+		}
+
+		$try = CRestPlus::call('crm.contact.list', $requestParamsReverse)['result'];
+		if (!empty($try)) {
+			foreach ($try as $element) {
+				$result['contact'][] = $element;
+			}
+		}
+
+		Debugger::writeToLog($requestParamsReverse, LOG, 'requestParamsReverse');
+	}
 	// ---!
 
 	Debugger::writeToLog($result, LOG, 'findDuplicatesByName');
@@ -311,6 +329,6 @@ if ($crmEntity['result']['LAST_NAME'] and $crmEntity['result']['NAME'] and $crmE
 		'NAME ONLY'
 	);
 } else {
-	Debugger::writeToLog('Не заданы поля для поиска', LOG, 'Error: Missing parameters');
+	Debugger::writeToLog('Не заданы поля для поиска по имени', LOG, 'Error: Missing parameters');
 	exit;
 }
