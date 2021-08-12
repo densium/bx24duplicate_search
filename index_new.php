@@ -35,37 +35,10 @@ if (empty($_REQUEST['ENTITY_TYPE_ID']))
 $crmEntity = getCrmEntity($_REQUEST['ID'], $entityTypeId);
 
 $duplicates = [];
-$duplicates['phoneList'] = findDuplicates(parsePhones($crmEntity), $crmEntity['result']['ID'], 'PHONE');
-$duplicates['emailList'] = findDuplicates(parseEmails($crmEntity), $crmEntity['result']['ID'], 'EMAIL');
-$duplicates['titleList'] = findDuplicatesByTitle($crmEntity['result']['TITLE']);
-$duplicates['namesList'] = findDuplicatesByNames()
-
-// Указываем какой запрос формировать
-if ($crmEntity['result']['LAST_NAME'] and $crmEntity['result']['NAME'] and $crmEntity['result']['SECOND_NAME']) {
-	$result = findDuplicatesByNames(
-		$crmEntity['result']['LAST_NAME'],
-		$crmEntity['result']['NAME'],
-		$crmEntity['result']['SECOND_NAME'],
-		'NAME, LAST_NAME, SECOND_NAME'
-	);
-} else if ($crmEntity['result']['LAST_NAME'] and $crmEntity['result']['NAME']) {
-	$result = findDuplicatesByNames(
-		$crmEntity['result']['LAST_NAME'],
-		$crmEntity['result']['NAME'],
-		null,
-		'NAME, LAST_NAME'
-	);
-} else if ($crmEntity['result']['NAME']) {
-	$result = findDuplicatesByNames(
-		$crmEntity['result']['NAME'],
-		null,
-		null,
-		'NAME ONLY'
-	);
-} else {
-	Debugger::writeToLog('Не заданы поля для поиска по имени', LOG, 'Error: Missing parameters');
-	exit;
-}
+$duplicates['phoneList'] = findDuplicates(parsePhones($crmEntity), $crmEntity['ID'], 'PHONE');
+$duplicates['emailList'] = findDuplicates(parseEmails($crmEntity), $crmEntity['ID'], 'EMAIL');
+$duplicates['titleList'] = findDuplicatesByTitle($crmEntity['TITLE']);
+$duplicates['namesList'] = findDuplicatesByNames(checkNames($crmEntity));
 
 // Если найдены дубликаты, то пост в ленту и создание задачи
 if ($duplicatesPhoneList and $duplicatesEmailList) {

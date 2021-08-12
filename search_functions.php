@@ -20,7 +20,7 @@ function parsePhones($entityObject)
 {
 	$phonesArr = array();
 	
-	foreach ($entityObject['result']['PHONE'] as $phone) {
+	foreach ($entityObject['PHONE'] as $phone) {
 		array_push($phonesArr, substr(preg_replace('~[^0-9]+~', '', $phone['VALUE']), -10));
 	}
 	
@@ -44,7 +44,7 @@ function parseEmails($entityObject)
 {
 	$emailsArr = array();
 
-	foreach ($entityObject['result']['EMAIL'] as $email) {
+	foreach ($entityObject['EMAIL'] as $email) {
 		array_push($emailsArr, $email['VALUE']);
 	}
 
@@ -68,23 +68,23 @@ function getCrmEntity($entityId, $entityTypeId)
 			$result = CRestPlus::call('crm.lead.get', $requestParams);
 			//$crmTask = 'L_' . $entityId;
 			break;
-
+			
 		case "3":
 			$result = CRestPlus::call('crm.contact.get', $requestParams);
 			// $crmTask = 'C_' . $entityId;			
 			break;
-
-		case "4":
-			$result = CRestPlus::call('crm.company.get', $requestParams);
-			// $crmTask = 'CO_' . $entityId;
-			break;
-	}
-
-	//$userID = $result['result']['ASSIGNED_BY_ID'];
-	//Debugger::writeToLog($userID, LOG, 'userID');
-
+			
+			case "4":
+				$result = CRestPlus::call('crm.company.get', $requestParams);
+				// $crmTask = 'CO_' . $entityId;
+				break;
+			}
+			
+			//$userID = $result['result']['ASSIGNED_BY_ID'];
+			//Debugger::writeToLog($userID, LOG, 'userID');
+			
 	Debugger::writeToLog($result, LOG, 'getCrmEntity');
-	return $result;
+	return $result['result'] ?? null;
 }
 
 /**
@@ -120,9 +120,19 @@ function findDuplicatesByTitle($crmEntityTitle)
 
 	$requestParamsSubstrContact = array('filter' => array('%NAME' => $crmEntityTitle), 'select' => array('ID', 'NAME', 'LAST_NAME'));
 
-	$result['lead'] = CRestPlus::call('crm.lead.list', $requestParamsSubstr)['result'];
-	$result['company'] = CRestPlus::call('crm.company.list', $requestParamsSubstr)['result'];
-	$result['contact'] = CRestPlus::call('crm.contact.list', $requestParamsSubstrContact)['result'];
+	$try = CRestPlus::call('crm.lead.list', $requestParamsSubstr)['result'];
+	if (!empty($try)) {
+		$result['lead'] = $try;
+	}
+	$try = CRestPlus::call('crm.company.list', $requestParamsSubstr)['result'];
+	if (!empty($try)) {
+		$result['company'] = $try;
+	}
+
+	$try = CRestPlus::call('crm.contact.list', $requestParamsSubstrContact)['result'];
+	if (!empty($try)) {
+		$result['contact'] = $try;
+	}
 
 	Debugger::writeToLog($result, LOG, 'findDuplicatesByTitle');
 	return $result;
@@ -132,13 +142,23 @@ function findDuplicatesByTitle($crmEntityTitle)
  * Получить контакты,лиды и компании со схожим именем, фамилией или отчеством
  * Нюансы:
  * Нужно проверять наличие аргументов перед запуском и указывать тип поиска
- * @param string $name
- * @param string $lastName
- * @param string $secondName
- * @param string $searchVarian NAME, LAST_NAME, SECOND_NAME / NAME, LAST_NAME / NAME ONLY
+ * @param string $name из get запроса NAME
+ * @param string $lastName из get запроса LAST_NAME
+ * @param string $secondName из get запроса SECOND_NAME
+ * @param string $searchVariant NAME, LAST_NAME, SECOND_NAME / NAME, LAST_NAME / NAME ONLY
  */
-function findDuplicatesByNames($name, $lastName, $secondName, $searchVariant)
+function findDuplicatesByNames($namesObj)
 {
+	if ($namesObj === 'error') {
+		Debugger::writeToLog('Не заданы поля для поиска по имени', LOG, 'findDuplicatesByNames');
+		return null;
+	}
+
+	$lastName = $namesObj[0];
+	$name = $namesObj[1];
+	$secondName = $namesObj[2];
+	$searchVariant = $namesObj[3];
+
 	// !--- Формируем запросы
 	switch ($searchVariant) {
 		case 'NAME, LAST_NAME, SECOND_NAME':
@@ -333,30 +353,31 @@ function findDuplicatesByNames($name, $lastName, $secondName, $searchVariant)
 	return $result;
 }
 
+// Проверить какой вариант поиска по имени использовать
 function checkNames($crmEntity) {
-	if ($crmEntity['result']['LAST_NAME'] and $crmEntity['result']['NAME'] and $crmEntity['result']['SECOND_NAME']) {
+	if ($crmEntity['LAST_NAME'] and $crmEntity['NAME'] and $crmEntity['SECOND_NAME']) {
 		$resultObj = array(
-			$crmEntity['result']['LAST_NAME'],
-			$crmEntity['result']['NAME'],
-			$crmEntity['result']['SECOND_NAME'],
+			$crmEntity['LAST_NAME'],
+			$crmEntity['NAME'],
+			$crmEntity['SECOND_NAME'],
 			'NAME, LAST_NAME, SECOND_NAME'
 		);
-	} else if ($crmEntity['result']['LAST_NAME'] and $crmEntity['result']['NAME']) {
+	} else if ($crmEntity['LAST_NAME'] and $crmEntity['NAME']) {
 		$resultObj = array(
-			$crmEntity['result']['LAST_NAME'],
-			$crmEntity['result']['NAME'],
+			$crmEntity['LAST_NAME'],
+			$crmEntity['NAME'],
 			null,
 			'NAME, LAST_NAME'
 		);
-	} else if ($crmEntity['result']['NAME']) {
+	} else if ($crmEntity['NAME']) {
 		$resultObj = array(
-			$crmEntity['result']['NAME'],
+			$crmEntity['NAME'],
 			null,
 			null,
 			'NAME ONLY'
 		);
 	} else {
-		Debugger::writeToLog('Не заданы поля для поиска по имени', LOG, 'Error: Missing parameters');
+		Debugger::writeToLog('Не заданы поля для поиска по имени', LOG, 'checkNames');
 		return "error";
 	}
 	return $resultObj;
