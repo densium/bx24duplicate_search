@@ -1,6 +1,6 @@
 
 --------------------
-12.08.2021 22:17:13
+13.08.2021 16:54:45
 Caption: $_REQUEST
 Array
 (
@@ -11,7 +11,7 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:17:13
+13.08.2021 16:54:45
 Caption: getCrmEntity
 Array
 (
@@ -259,12 +259,12 @@ Array
 
     [time] => Array
         (
-            [start] => 1628795819.2223
-            [finish] => 1628795819.2711
-            [duration] => 0.048887968063354
-            [processing] => 0.021367073059082
-            [date_start] => 2021-08-12T22:16:59+03:00
-            [date_finish] => 2021-08-12T22:16:59+03:00
+            [start] => 1628862870.0844
+            [finish] => 1628862870.1591
+            [duration] => 0.074718952178955
+            [processing] => 0.05420994758606
+            [date_start] => 2021-08-13T16:54:30+03:00
+            [date_finish] => 2021-08-13T16:54:30+03:00
         )
 
 )
@@ -272,264 +272,58 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:17:13
-Caption: phonesArr
+13.08.2021 16:54:46
+Caption: findDuplicatesByTitle
 Array
 (
-)
-
---------------------
-
---------------------
-12.08.2021 22:17:59
-Caption: $_REQUEST
-Array
-(
-    [ID] => 243
-    [ENTITY_TYPE_ID] => 1
-)
-
---------------------
-
---------------------
-12.08.2021 22:17:59
-Caption: getCrmEntity
-Array
-(
-    [ID] => 243
-    [TITLE] => 123123
-    [HONORIFIC] => 
-    [NAME] => Алексей
-    [SECOND_NAME] => Дмитриевич
-    [LAST_NAME] => Сковородкин
-    [COMPANY_TITLE] => 
-    [COMPANY_ID] => 0
-    [CONTACT_ID] => 
-    [IS_RETURN_CUSTOMER] => N
-    [BIRTHDATE] => 
-    [SOURCE_ID] => WEBFORM
-    [SOURCE_DESCRIPTION] => 
-    [STATUS_ID] => NEW
-    [STATUS_DESCRIPTION] => 
-    [POST] => 
-    [COMMENTS] => 
-    [CURRENCY_ID] => RUB
-    [OPPORTUNITY] => 0.00
-    [IS_MANUAL_OPPORTUNITY] => N
-    [HAS_PHONE] => Y
-    [HAS_EMAIL] => Y
-    [HAS_IMOL] => N
-    [ASSIGNED_BY_ID] => 1851
-    [CREATED_BY_ID] => 1851
-    [MODIFY_BY_ID] => 1851
-    [DATE_CREATE] => 2021-02-05T15:08:31+03:00
-    [DATE_MODIFY] => 2021-08-11T21:06:08+03:00
-    [DATE_CLOSED] => 
-    [STATUS_SEMANTIC_ID] => P
-    [OPENED] => Y
-    [ORIGINATOR_ID] => 
-    [ORIGIN_ID] => 
-    [ADDRESS] => 
-    [ADDRESS_2] => 
-    [ADDRESS_CITY] => 
-    [ADDRESS_POSTAL_CODE] => 
-    [ADDRESS_REGION] => 
-    [ADDRESS_PROVINCE] => 
-    [ADDRESS_COUNTRY] => 
-    [ADDRESS_COUNTRY_CODE] => 
-    [ADDRESS_LOC_ADDR_ID] => 
-    [UTM_SOURCE] => 
-    [UTM_MEDIUM] => 
-    [UTM_CAMPAIGN] => 
-    [UTM_CONTENT] => 
-    [UTM_TERM] => 
-    [UF_CRM_SP_UNSUBSCR] => 0
-    [UF_CRM_1538647419] => 
-    [UF_CRM_1581418338] => 
-    [UF_CRM_1581418376] => 
-    [UF_CRM_ITS_RELATED1] => custom value for show field
-    [UF_CRM_1597407280] => 
-    [UF_CRM_1600245856370] => 
-    [UF_CRM_1612527141] => 12213
-    [UF_CRM_1614353863] => 
-    [UF_CRM_603916A3BEA3B] => 
-    [UF_CRM_1614681079399] => 
-    [UF_CRM_1614681116518] => 
-    [UF_CRM_1614681130910] => 
-    [UF_CRM_1614705530] => 
-    [UF_CRM_1614706460] => 
-    [UF_CRM_1614706518] => 
-    [UF_CRM_1614706596] => 
-    [UF_CRM_1615820003612] => Array
-        (
-        )
-
-    [UF_CRM_ITS_DICT_CITY] => 
-    [UF_CRM_1617887745774] => 
-    [UF_CRM_ITS_DICT_OKVED] => 
-    [UF_CRM_ITS_DICT_PROFESSION] => 
-    [UF_CRM_LAST_CALL_DATE] => 
-    [UF_CRM_5A9EBF2E896B6] => 
-    [UF_CRM_ORDER_IDS] => 
-    [UF_CRM_PROBABILITY] => 
-    [UF_CRM_BEGINDATE] => 
-    [UF_CRM_EVENT_DATE] => 
-    [UF_CRM_ORIGINATOR_ID] => 
-    [UF_CRM_LEAD_ID] => 
-    [UF_CRM_EVENT_DESCRIPTION] => 
-    [UF_CRM_ORIGIN_ID] => 
-    [UF_CRM_CLOSEDATE] => 
-    [UF_CRM_CLOSED] => 
-    [UF_CRM_OPPORTUNITY_ACCOUNT] => 
-    [UF_CRM_ACCOUNT_CURRENCY_ID] => 
-    [UF_CRM_CONTACT_IDS] => 
-    [UF_CRM_CATEGORY_ID] => 
-    [UF_CRM_TYPE_ID] => 
-    [UF_CRM_EVENT_ID] => 
-    [UF_CRM_1551419189] => 
-    [UF_CRM_1578484533] => 
-    [UF_CRM_1557008108] => 
-    [UF_CRM_1557008119] => 
-    [UF_CRM_5E15CA0E5F680] => 
-    [UF_CRM_1595780613] => 
-    [UF_CRM_1560728821] => 
-    [UF_CRM_1551430847644] => 
-    [UF_CRM_602105FF4A726] => 
-    [UF_CRM_6021087F7EAFE] => 
-    [UF_CRM_5C384171CE6EB] => 
-    [UF_CRM_602A600530990] => 
-    [UF_CRM_1615885523] => 
-    [UF_CRM_1560875452] => 
-    [UF_CRM_1551692234] => 
-    [UF_CRM_1612955822] => 
-    [UF_CRM_1553932688] => 
-    [UF_CRM_1613377055] => 
-    [UF_CRM_1560144352] => 
-    [UF_CRM_1611304733] => 
-    [UF_CRM_1560328872] => 
-    [UF_CRM_6031218E8E304] => 
-    [UF_CRM_602104BD6B6A8] => 
-    [UF_CRM_1566189708] => 
-    [UF_CRM_5C5801DDEEB24] => 
-    [UF_CRM_1591598208] => 
-    [UF_CRM_1572293623] => 
-    [UF_CRM_1565582929] => 
-    [UF_CRM_1566212333] => 
-    [UF_CRM_1611303102] => 
-    [UF_CRM_1617260897] => 
-    [UF_CRM_1555561455] => 
-    [UF_CRM_1555561368] => 
-    [UF_CRM_1597308245526] => 
-    [UF_CRM_1560854189] => 
-    [UF_CRM_5DD4EC413EAC5] => 
-    [UF_CRM_1567680966] => 
-    [UF_CRM_1606485361524] => 
-    [UF_CRM_1553778436] => 
-    [UF_CRM_COMPANY_ID] => 
-    [UF_CRM_CONTACT_ID] => 
-    [UF_CRM_1551430886580] => 
-    [UF_CRM_1553451508] => 
-    [UF_CRM_1551080498] => 
-    [UF_CRM_1611303121] => 
-    [UF_CRM_1587980750449] => 
-    [UF_CRM_5DD4EC4092AAA] => 
-    [UF_CRM_1594019939710] => 
-    [UF_CRM_1614339040] => 
-    [UF_CRM_1554032151] => 
-    [UF_CRM_1554032126] => 
-    [UF_CRM_602EC0EE73B77] => 
-    [UF_CRM_5D975650C5AF3] => 
-    [UF_CRM_1584430071] => 
-    [UF_CRM_5D1DB552ED029] => 
-    [UF_CRM_1563263100] => 
-    [UF_CRM_1575023853] => 
-    [UF_CRM_1573578091] => 
-    [UF_CRM_1560875494] => 
-    [UF_CRM_1584430260] => 
-    [UF_CRM_5CE354C709B88] => 
-    [UF_CRM_1573481584] => 
-    [UF_CRM_1562309336] => 
-    [UF_CRM_1555485619] => 
-    [UF_CRM_1560875525] => 
-    [UF_CRM_1586943938471] => 
-    [UF_CRM_5C799367EBA93] => 
-    [UF_CRM_602104BBEC516] => 
-    [UF_CRM_1560143592] => 
-    [UF_CRM_1612957408] => 
-    [UF_CRM_STAGE_ID] => 
-    [UF_CRM_1611306143] => 
-    [UF_CRM_1560339072] => 
-    [UF_CRM_5E68F9D47A272] => 
-    [UF_CRM_1583142836] => 
-    [UF_CRM_1594020917603] => 
-    [UF_CRM_1606304984610] => 
-    [UF_CRM_1567495710] => 
-    [UF_CRM_1573579295] => 
-    [UF_CRM_1551080461] => 
-    [UF_CRM_1566189777] => 
-    [UF_CRM_1503667665] => 
-    [UF_CRM_1507891985986] => 
-    [UF_CRM_1512488738] => Array
-        (
-        )
-
-    [UF_CRM_1527523282] => https://calcus.ru/kalkulyator-ipoteki
-    [UF_CRM_1532362405] => Array
-        (
-        )
-
-    [UF_CRM_1532363145] => 
-    [UF_CRM_1532363460] => Array
-        (
-        )
-
-    [UF_CRM_1613674874] => 
-    [UF_CRM_1613675957] => 
-    [UF_CRM_1614353750] => 
-    [EMAIL] => Array
+    [LEAD] => Array
         (
             [0] => Array
                 (
-                    [ID] => 59601
-                    [VALUE_TYPE] => WORK
-                    [VALUE] => rty@tyu.ru
-                    [TYPE_ID] => EMAIL
+                    [ID] => 237
                 )
 
             [1] => Array
                 (
-                    [ID] => 59603
-                    [VALUE_TYPE] => WORK
-                    [VALUE] => 123@tyu.ru
-                    [TYPE_ID] => EMAIL
+                    [ID] => 243
                 )
 
             [2] => Array
                 (
-                    [ID] => 59605
-                    [VALUE_TYPE] => WORK
-                    [VALUE] => vasya@vasya.ru
-                    [TYPE_ID] => EMAIL
+                    [ID] => 257
+                )
+
+            [3] => Array
+                (
+                    [ID] => 349
+                )
+
+            [4] => Array
+                (
+                    [ID] => 397
+                )
+
+            [5] => Array
+                (
+                    [ID] => 401
                 )
 
         )
 
-    [PHONE] => Array
+    [COMPANY] => Array
         (
             [0] => Array
                 (
-                    [ID] => 59607
-                    [VALUE_TYPE] => MOBILE
-                    [VALUE] => +79339393939
-                    [TYPE_ID] => PHONE
+                    [ID] => 147
                 )
 
-            [1] => Array
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => Array
                 (
-                    [ID] => 59609
-                    [VALUE_TYPE] => MOBILE
-                    [VALUE] => +79339099090
-                    [TYPE_ID] => PHONE
+                    [ID] => 221
                 )
 
         )
@@ -539,7 +333,7 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:17:59
+13.08.2021 16:54:46
 Caption: phonesArr
 Array
 (
@@ -550,7 +344,7 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:17:59
+13.08.2021 16:54:46
 Caption: parsePhones
 Array
 (
@@ -571,7 +365,7 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:17:59
+13.08.2021 16:54:46
 Caption: getDuplicates / typeOfDuplicates - PHONE
 Array
 (
@@ -598,12 +392,12 @@ Array
 
     [time] => Array
         (
-            [start] => 1628795865.3666
-            [finish] => 1628795865.4054
-            [duration] => 0.038838863372803
-            [processing] => 0.0092248916625977
-            [date_start] => 2021-08-12T22:17:45+03:00
-            [date_finish] => 2021-08-12T22:17:45+03:00
+            [start] => 1628862870.6691
+            [finish] => 1628862870.6996
+            [duration] => 0.030476093292236
+            [processing] => 0.0083649158477783
+            [date_start] => 2021-08-13T16:54:30+03:00
+            [date_finish] => 2021-08-13T16:54:30+03:00
         )
 
 )
@@ -611,33 +405,7 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:17:59
-Caption: findDuplicates / typeOfDuplicates - PHONE
-Array
-(
-    [LEAD] => Array
-        (
-            [0] => 243
-            [1] => 451
-        )
-
-    [CONTACT] => Array
-        (
-            [0] => 315
-        )
-
-    [COMPANY] => Array
-        (
-            [0] => 501
-            [1] => 503
-        )
-
-)
-
---------------------
-
---------------------
-12.08.2021 22:17:59
+13.08.2021 16:54:46
 Caption: parseEmails
 Array
 (
@@ -653,7 +421,7 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:17:59
+13.08.2021 16:54:46
 Caption: getDuplicates / typeOfDuplicates - EMAIL
 Array
 (
@@ -679,12 +447,12 @@ Array
 
     [time] => Array
         (
-            [start] => 1628795865.5133
-            [finish] => 1628795865.5525
-            [duration] => 0.039163112640381
-            [processing] => 0.016361951828003
-            [date_start] => 2021-08-12T22:17:45+03:00
-            [date_finish] => 2021-08-12T22:17:45+03:00
+            [start] => 1628862870.7967
+            [finish] => 1628862870.8237
+            [duration] => 0.027026891708374
+            [processing] => 0.0055828094482422
+            [date_start] => 2021-08-13T16:54:30+03:00
+            [date_finish] => 2021-08-13T16:54:30+03:00
         )
 
 )
@@ -692,1003 +460,7 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:17:59
-Caption: findDuplicates / typeOfDuplicates - EMAIL
-Array
-(
-    [LEAD] => Array
-        (
-            [0] => 243
-            [1] => 451
-        )
-
-    [CONTACT] => Array
-        (
-            [0] => 125
-        )
-
-    [COMPANY] => Array
-        (
-            [0] => 503
-        )
-
-)
-
---------------------
-
---------------------
-12.08.2021 22:18:00
-Caption: findDuplicatesByTitle
-Array
-(
-    [lead] => Array
-        (
-            [0] => Array
-                (
-                    [ID] => 1
-                    [TITLE] => Заполнение CRM-формы "Отзыв о заказе"
-                )
-
-            [1] => Array
-                (
-                    [ID] => 3
-                    [TITLE] => Заполнение CRM-формы "Отзыв о заказе"
-                )
-
-            [2] => Array
-                (
-                    [ID] => 5
-                    [TITLE] => Отзыв о заказе №33333
-                )
-
-            [3] => Array
-                (
-                    [ID] => 7
-                    [TITLE] => Отзыв о заказе №1
-                )
-
-            [4] => Array
-                (
-                    [ID] => 9
-                    [TITLE] => Отзыв о заказе №11
-                )
-
-            [5] => Array
-                (
-                    [ID] => 11
-                    [TITLE] => Отзыв о заказе №12
-                )
-
-            [6] => Array
-                (
-                    [ID] => 13
-                    [TITLE] => Отзыв о заказе №3
-                )
-
-            [7] => Array
-                (
-                    [ID] => 15
-                    [TITLE] => Отзыв о заказе №
-                )
-
-            [8] => Array
-                (
-                    [ID] => 17
-                    [TITLE] => Отзыв о заказе №5
-                )
-
-            [9] => Array
-                (
-                    [ID] => 19
-                    [TITLE] => Отзыв о заказе №5
-                )
-
-            [10] => Array
-                (
-                    [ID] => 21
-                    [TITLE] => Отзыв о заказе №7
-                )
-
-            [11] => Array
-                (
-                    [ID] => 23
-                    [TITLE] => 2602
-                )
-
-            [12] => Array
-                (
-                    [ID] => 25
-                    [TITLE] => 26022
-                )
-
-            [13] => Array
-                (
-                    [ID] => 27
-                    [TITLE] => Отзыв о заказе №13
-                )
-
-            [14] => Array
-                (
-                    [ID] => 29
-                    [TITLE] => Отзыв о заказе №%deal_id%
-                )
-
-            [15] => Array
-                (
-                    [ID] => 31
-                    [TITLE] => МОО БЦ Хэсэд Авраам
-                )
-
-            [16] => Array
-                (
-                    [ID] => 35
-                    [TITLE] => NotifyME 
-                )
-
-            [17] => Array
-                (
-                    [ID] => 37
-                    [TITLE] => 89210968098 - Исходящий звонок
-                )
-
-            [18] => Array
-                (
-                    [ID] => 39
-                    [TITLE] => +79057874133 - Исходящий звонок
-                )
-
-            [19] => Array
-                (
-                    [ID] => 41
-                    [TITLE] => +79112598392 - Исходящий звонок
-                )
-
-            [20] => Array
-                (
-                    [ID] => 43
-                    [TITLE] => Фотостудия Эмоджи
-                )
-
-            [21] => Array
-                (
-                    [ID] => 45
-                    [TITLE] => тест
-                )
-
-            [22] => Array
-                (
-                    [ID] => 49
-                    [TITLE] => Venera SPA
-                )
-
-            [23] => Array
-                (
-                    [ID] => 51
-                    [TITLE] => FamilyStory
-                )
-
-            [24] => Array
-                (
-                    [ID] => 53
-                    [TITLE] => Romance
-                )
-
-            [25] => Array
-                (
-                    [ID] => 55
-                    [TITLE] => Лайтрум
-                )
-
-            [26] => Array
-                (
-                    [ID] => 57
-                    [TITLE] => благотворительный центр Хэсэд Авраам
-                )
-
-            [27] => Array
-                (
-                    [ID] => 59
-                    [TITLE] => BeverlyHills
-                )
-
-            [28] => Array
-                (
-                    [ID] => 61
-                    [TITLE] => Ведущий Валентин Новиков
-                )
-
-            [29] => Array
-                (
-                    [ID] => 63
-                    [TITLE] => Белая комната 
-                )
-
-            [30] => Array
-                (
-                    [ID] => 65
-                    [TITLE] => Норд
-                )
-
-            [31] => Array
-                (
-                    [ID] => 67
-                    [TITLE] => ShvetsPhotoLife
-                )
-
-            [32] => Array
-                (
-                    [ID] => 69
-                    [TITLE] => ShvetsPhotoLife
-                )
-
-            [33] => Array
-                (
-                    [ID] => 73
-                    [TITLE] => Вуд
-                )
-
-            [34] => Array
-                (
-                    [ID] => 75
-                    [TITLE] => Новый клиент SAA
-                )
-
-            [35] => Array
-                (
-                    [ID] => 77
-                    [TITLE] => Новый клиент SAA 1
-                )
-
-            [36] => Array
-                (
-                    [ID] => 79
-                    [TITLE] => Новый клиент SAA 2
-                )
-
-            [37] => Array
-                (
-                    [ID] => 81
-                    [TITLE] => Новый клиент SAA 3
-                )
-
-            [38] => Array
-                (
-                    [ID] => 83
-                    [TITLE] => йуцвйуцвв
-                )
-
-            [39] => Array
-                (
-                    [ID] => 85
-                    [TITLE] => Белая комната 
-                )
-
-            [40] => Array
-                (
-                    [ID] => 87
-                    [TITLE] => планетарий
-                )
-
-            [41] => Array
-                (
-                    [ID] => 89
-                    [TITLE] => планетарий
-                )
-
-            [42] => Array
-                (
-                    [ID] => 91
-                    [TITLE] => Loft Время вечеринок
-                )
-
-            [43] => Array
-                (
-                    [ID] => 93
-                    [TITLE] => Сталинка
-                )
-
-            [44] => Array
-                (
-                    [ID] => 95
-                    [TITLE] => Verba
-                )
-
-            [45] => Array
-                (
-                    [ID] => 99
-                    [TITLE] => +78123364242 - Входящий звонок
-                )
-
-            [46] => Array
-                (
-                    [ID] => 101
-                    [TITLE] => +79516816442 - Входящий звонок
-                )
-
-            [47] => Array
-                (
-                    [ID] => 103
-                    [TITLE] => +79313452769 - Входящий звонок
-                )
-
-            [48] => Array
-                (
-                    [ID] => 105
-                    [TITLE] => Cameleon Studio
-                )
-
-            [49] => Array
-                (
-                    [ID] => 107
-                    [TITLE] => МЯТА
-                )
-
-        )
-
-    [company] => Array
-        (
-            [0] => Array
-                (
-                    [ID] => 21
-                    [TITLE] => !!Компания 4 для схлопывания
-                )
-
-            [1] => Array
-                (
-                    [ID] => 23
-                    [TITLE] => !!Компания 4 для схлопывания
-                )
-
-            [2] => Array
-                (
-                    [ID] => 53
-                    [TITLE] => +78123364242 - Входящий звонок
-                )
-
-            [3] => Array
-                (
-                    [ID] => 29
-                    [TITLE] => +79057874133 - Исходящий звонок
-                )
-
-            [4] => Array
-                (
-                    [ID] => 31
-                    [TITLE] => +79112598392 - Исходящий звонок
-                )
-
-            [5] => Array
-                (
-                    [ID] => 67
-                    [TITLE] => +79119631368 - Входящий звонок
-                )
-
-            [6] => Array
-                (
-                    [ID] => 57
-                    [TITLE] => +79313452769 - Входящий звонок
-                )
-
-            [7] => Array
-                (
-                    [ID] => 55
-                    [TITLE] => +79516816442 - Входящий звонок
-                )
-
-            [8] => Array
-                (
-                    [ID] => 147
-                    [TITLE] => 123123123123
-                )
-
-            [9] => Array
-                (
-                    [ID] => 125
-                    [TITLE] => 88129276377 - Исходящий звонок
-                )
-
-            [10] => Array
-                (
-                    [ID] => 27
-                    [TITLE] => 89210968098 - Исходящий звонок
-                )
-
-            [11] => Array
-                (
-                    [ID] => 123
-                    [TITLE] => AlarmaPlus
-                )
-
-            [12] => Array
-                (
-                    [ID] => 71
-                    [TITLE] => ApartPrestige
-                )
-
-            [13] => Array
-                (
-                    [ID] => 105
-                    [TITLE] => Bonjour
-                )
-
-            [14] => Array
-                (
-                    [ID] => 135
-                    [TITLE] => Brooklyn
-                )
-
-            [15] => Array
-                (
-                    [ID] => 59
-                    [TITLE] => Cameleon Studio
-                )
-
-            [16] => Array
-                (
-                    [ID] => 83
-                    [TITLE] => Chulan
-                )
-
-            [17] => Array
-                (
-                    [ID] => 501
-                    [TITLE] => Company
-                )
-
-            [18] => Array
-                (
-                    [ID] => 141
-                    [TITLE] => Company24
-                )
-
-            [19] => Array
-                (
-                    [ID] => 77
-                    [TITLE] => CUBE
-                )
-
-            [20] => Array
-                (
-                    [ID] => 85
-                    [TITLE] => Family Studio
-                )
-
-            [21] => Array
-                (
-                    [ID] => 79
-                    [TITLE] => fewfewfewf
-                )
-
-            [22] => Array
-                (
-                    [ID] => 1
-                    [TITLE] => Fotogenico
-                )
-
-            [23] => Array
-                (
-                    [ID] => 181
-                    [TITLE] => Global Trade Company GmbH
-                )
-
-            [24] => Array
-                (
-                    [ID] => 137
-                    [TITLE] => https://chessrussian.ru/
-                )
-
-            [25] => Array
-                (
-                    [ID] => 91
-                    [TITLE] => IT-Solution
-                )
-
-            [26] => Array
-                (
-                    [ID] => 99
-                    [TITLE] => its1207 - Входящий звонок
-                )
-
-            [27] => Array
-                (
-                    [ID] => 111
-                    [TITLE] => IziTRIP
-                )
-
-            [28] => Array
-                (
-                    [ID] => 145
-                    [TITLE] => keyisfocus
-                )
-
-            [29] => Array
-                (
-                    [ID] => 389
-                    [TITLE] => Kikinda (Сербия)
-                )
-
-            [30] => Array
-                (
-                    [ID] => 381
-                    [TITLE] => Koenig Holding GmbH
-                )
-
-            [31] => Array
-                (
-                    [ID] => 65
-                    [TITLE] => Ksenia
-                )
-
-            [32] => Array
-                (
-                    [ID] => 81
-                    [TITLE] => Loft 360 
-                )
-
-            [33] => Array
-                (
-                    [ID] => 47
-                    [TITLE] => Loft Время вечеринок
-                )
-
-            [34] => Array
-                (
-                    [ID] => 133
-                    [TITLE] => Open Studio
-                )
-
-            [35] => Array
-                (
-                    [ID] => 119
-                    [TITLE] => Ozon
-                )
-
-            [36] => Array
-                (
-                    [ID] => 93
-                    [TITLE] => retert erterter
-                )
-
-            [37] => Array
-                (
-                    [ID] => 75
-                    [TITLE] => SENOSOLOMA DOM
-                )
-
-            [38] => Array
-                (
-                    [ID] => 87
-                    [TITLE] => TEST NTC
-                )
-
-            [39] => Array
-                (
-                    [ID] => 51
-                    [TITLE] => Verba
-                )
-
-            [40] => Array
-                (
-                    [ID] => 233
-                    [TITLE] => АВИКА
-                )
-
-            [41] => Array
-                (
-                    [ID] => 391
-                    [TITLE] => АвтБанк АКБ
-                )
-
-            [42] => Array
-                (
-                    [ID] => 327
-                    [TITLE] => Алхимов А.А.
-                )
-
-            [43] => Array
-                (
-                    [ID] => 301
-                    [TITLE] => Альтаир
-                )
-
-            [44] => Array
-                (
-                    [ID] => 283
-                    [TITLE] => Альфа
-                )
-
-            [45] => Array
-                (
-                    [ID] => 297
-                    [TITLE] => Альфа-Протон
-                )
-
-            [46] => Array
-                (
-                    [ID] => 465
-                    [TITLE] => Ассоль
-                )
-
-            [47] => Array
-                (
-                    [ID] => 413
-                    [TITLE] => База "Мебель"
-                )
-
-            [48] => Array
-                (
-                    [ID] => 331
-                    [TITLE] => База "Продовольственные товары"
-                )
-
-            [49] => Array
-                (
-                    [ID] => 335
-                    [TITLE] => База "Продукты"
-                )
-
-        )
-
-    [contact] => Array
-        (
-            [0] => Array
-                (
-                    [ID] => 15
-                    [NAME] => %deal_id%
-                    [LAST_NAME] => 
-                )
-
-            [1] => Array
-                (
-                    [ID] => 65
-                    [NAME] => +7 499 283-88-17
-                    [LAST_NAME] => 
-                )
-
-            [2] => Array
-                (
-                    [ID] => 13
-                    [NAME] => 13
-                    [LAST_NAME] => 
-                )
-
-            [3] => Array
-                (
-                    [ID] => 131
-                    [NAME] => Dinara
-                    [LAST_NAME] => 
-                )
-
-            [4] => Array
-                (
-                    [ID] => 189
-                    [NAME] => Google
-                    [LAST_NAME] => 
-                )
-
-            [5] => Array
-                (
-                    [ID] => 21
-                    [NAME] => Ilya
-                    [LAST_NAME] => 
-                )
-
-            [6] => Array
-                (
-                    [ID] => 111
-                    [NAME] => Lepetyukha 
-                    [LAST_NAME] => 
-                )
-
-            [7] => Array
-                (
-                    [ID] => 185
-                    [NAME] => Sergio
-                    [LAST_NAME] => 
-                )
-
-            [8] => Array
-                (
-                    [ID] => 181
-                    [NAME] => Александр 
-                    [LAST_NAME] => 
-                )
-
-            [9] => Array
-                (
-                    [ID] => 197
-                    [NAME] => Александр
-                    [LAST_NAME] => 
-                )
-
-            [10] => Array
-                (
-                    [ID] => 241
-                    [NAME] => Александров Петр Константинович
-                    [LAST_NAME] => 
-                )
-
-            [11] => Array
-                (
-                    [ID] => 183
-                    [NAME] => Алексей
-                    [LAST_NAME] => 
-                )
-
-            [12] => Array
-                (
-                    [ID] => 187
-                    [NAME] => Алексей
-                    [LAST_NAME] => 
-                )
-
-            [13] => Array
-                (
-                    [ID] => 211
-                    [NAME] => Алексей
-                    [LAST_NAME] => 
-                )
-
-            [14] => Array
-                (
-                    [ID] => 191
-                    [NAME] => Алина
-                    [LAST_NAME] => 
-                )
-
-            [15] => Array
-                (
-                    [ID] => 17
-                    [NAME] => Анна
-                    [LAST_NAME] => 
-                )
-
-            [16] => Array
-                (
-                    [ID] => 129
-                    [NAME] => Анна
-                    [LAST_NAME] => 
-                )
-
-            [17] => Array
-                (
-                    [ID] => 45
-                    [NAME] => Артём
-                    [LAST_NAME] => 
-                )
-
-            [18] => Array
-                (
-                    [ID] => 3
-                    [NAME] => Без имени
-                    [LAST_NAME] => 
-                )
-
-            [19] => Array
-                (
-                    [ID] => 5
-                    [NAME] => Без имени
-                    [LAST_NAME] => 
-                )
-
-            [20] => Array
-                (
-                    [ID] => 73
-                    [NAME] => Без имени
-                    [LAST_NAME] => 
-                )
-
-            [21] => Array
-                (
-                    [ID] => 75
-                    [NAME] => Без имени
-                    [LAST_NAME] => 
-                )
-
-            [22] => Array
-                (
-                    [ID] => 77
-                    [NAME] => Без имени
-                    [LAST_NAME] => 
-                )
-
-            [23] => Array
-                (
-                    [ID] => 99
-                    [NAME] => Без имени
-                    [LAST_NAME] => 
-                )
-
-            [24] => Array
-                (
-                    [ID] => 101
-                    [NAME] => Без имени
-                    [LAST_NAME] => 
-                )
-
-            [25] => Array
-                (
-                    [ID] => 103
-                    [NAME] => Без имени
-                    [LAST_NAME] => 
-                )
-
-            [26] => Array
-                (
-                    [ID] => 113
-                    [NAME] => Без имени
-                    [LAST_NAME] => 
-                )
-
-            [27] => Array
-                (
-                    [ID] => 173
-                    [NAME] => Без имени
-                    [LAST_NAME] => 
-                )
-
-            [28] => Array
-                (
-                    [ID] => 199
-                    [NAME] => Без имени
-                    [LAST_NAME] => 
-                )
-
-            [29] => Array
-                (
-                    [ID] => 29
-                    [NAME] => Берекет
-                    [LAST_NAME] => 
-                )
-
-            [30] => Array
-                (
-                    [ID] => 115
-                    [NAME] => Вадим
-                    [LAST_NAME] => 
-                )
-
-            [31] => Array
-                (
-                    [ID] => 39
-                    [NAME] => Валентин
-                    [LAST_NAME] => 
-                )
-
-            [32] => Array
-                (
-                    [ID] => 127
-                    [NAME] => Валерия
-                    [LAST_NAME] => 
-                )
-
-            [33] => Array
-                (
-                    [ID] => 207
-                    [NAME] => Валерия
-                    [LAST_NAME] => 
-                )
-
-            [34] => Array
-                (
-                    [ID] => 107
-                    [NAME] => Денис
-                    [LAST_NAME] => 
-                )
-
-            [35] => Array
-                (
-                    [ID] => 41
-                    [NAME] => Диана
-                    [LAST_NAME] => 
-                )
-
-            [36] => Array
-                (
-                    [ID] => 37
-                    [NAME] => Дмитрий
-                    [LAST_NAME] => 
-                )
-
-            [37] => Array
-                (
-                    [ID] => 93
-                    [NAME] => Евгения
-                    [LAST_NAME] => 
-                )
-
-            [38] => Array
-                (
-                    [ID] => 203
-                    [NAME] => Евгения
-                    [LAST_NAME] => 
-                )
-
-            [39] => Array
-                (
-                    [ID] => 35
-                    [NAME] => Екатерина
-                    [LAST_NAME] => 
-                )
-
-            [40] => Array
-                (
-                    [ID] => 105
-                    [NAME] => Екатерина
-                    [LAST_NAME] => 
-                )
-
-            [41] => Array
-                (
-                    [ID] => 209
-                    [NAME] => екатерина
-                    [LAST_NAME] => 
-                )
-
-            [42] => Array
-                (
-                    [ID] => 213
-                    [NAME] => Екатерина
-                    [LAST_NAME] => 
-                )
-
-            [43] => Array
-                (
-                    [ID] => 31
-                    [NAME] => Елена
-                    [LAST_NAME] => 
-                )
-
-            [44] => Array
-                (
-                    [ID] => 119
-                    [NAME] => Игорь
-                    [LAST_NAME] => 
-                )
-
-            [45] => Array
-                (
-                    [ID] => 193
-                    [NAME] => Игорь
-                    [LAST_NAME] => 
-                )
-
-            [46] => Array
-                (
-                    [ID] => 109
-                    [NAME] => Ирина
-                    [LAST_NAME] => 
-                )
-
-            [47] => Array
-                (
-                    [ID] => 123
-                    [NAME] => Ирина
-                    [LAST_NAME] => 
-                )
-
-            [48] => Array
-                (
-                    [ID] => 239
-                    [NAME] => Исаков Олег Владимирович
-                    [LAST_NAME] => 
-                )
-
-            [49] => Array
-                (
-                    [ID] => 243
-                    [NAME] => Исаков Олег Владимирович
-                    [LAST_NAME] => 
-                )
-
-        )
-
-)
-
---------------------
-
---------------------
-12.08.2021 22:18:00
+13.08.2021 16:54:46
 Caption: requestParams
 Array
 (
@@ -1702,8 +474,6 @@ Array
     [select] => Array
         (
             [0] => ID
-            [1] => NAME
-            [2] => LAST_NAME
         )
 
 )
@@ -1711,11 +481,25 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:18:00
+13.08.2021 16:54:46
 Caption: requestParamsCompany
 Array
 (
     [0] => Array
+        (
+            [filter] => Array
+                (
+                    [TITLE] => Сковородкин Алексей Дмитриевич
+                )
+
+            [select] => Array
+                (
+                    [0] => ID
+                )
+
+        )
+
+    [1] => Array
         (
             [filter] => Array
                 (
@@ -1725,12 +509,11 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => TITLE
                 )
 
         )
 
-    [1] => Array
+    [2] => Array
         (
             [filter] => Array
                 (
@@ -1740,12 +523,11 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => TITLE
                 )
 
         )
 
-    [2] => Array
+    [3] => Array
         (
             [filter] => Array
                 (
@@ -1755,12 +537,11 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => TITLE
                 )
 
         )
 
-    [3] => Array
+    [4] => Array
         (
             [filter] => Array
                 (
@@ -1770,12 +551,11 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => TITLE
                 )
 
         )
 
-    [4] => Array
+    [5] => Array
         (
             [filter] => Array
                 (
@@ -1785,7 +565,6 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => TITLE
                 )
 
         )
@@ -1795,11 +574,25 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:18:00
+13.08.2021 16:54:46
 Caption: requestParamsContact
 Array
 (
     [0] => Array
+        (
+            [filter] => Array
+                (
+                    [NAME] => Сковородкин Алексей Дмитриевич
+                )
+
+            [select] => Array
+                (
+                    [0] => ID
+                )
+
+        )
+
+    [1] => Array
         (
             [filter] => Array
                 (
@@ -1809,13 +602,11 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => NAME
-                    [2] => LAST_NAME
                 )
 
         )
 
-    [1] => Array
+    [2] => Array
         (
             [filter] => Array
                 (
@@ -1825,13 +616,11 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => NAME
-                    [2] => LAST_NAME
                 )
 
         )
 
-    [2] => Array
+    [3] => Array
         (
             [filter] => Array
                 (
@@ -1841,13 +630,11 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => NAME
-                    [2] => LAST_NAME
                 )
 
         )
 
-    [3] => Array
+    [4] => Array
         (
             [filter] => Array
                 (
@@ -1857,13 +644,11 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => NAME
-                    [2] => LAST_NAME
                 )
 
         )
 
-    [4] => Array
+    [5] => Array
         (
             [filter] => Array
                 (
@@ -1873,8 +658,6 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => NAME
-                    [2] => LAST_NAME
                 )
 
         )
@@ -1884,7 +667,7 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:18:02
+13.08.2021 16:54:48
 Caption: requestParamsReverse
 Array
 (
@@ -1898,8 +681,6 @@ Array
     [select] => Array
         (
             [0] => ID
-            [1] => NAME
-            [2] => LAST_NAME
         )
 
 )
@@ -1907,17 +688,24 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:18:02
+13.08.2021 16:54:48
 Caption: findDuplicatesByName
 Array
 (
-    [lead] => Array
+    [CONTACT] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 235
+                )
+
+        )
+
+    [LEAD] => Array
         (
             [0] => Array
                 (
                     [ID] => 243
-                    [NAME] => Алексей
-                    [LAST_NAME] => Сковородкин
                 )
 
         )
@@ -1927,390 +715,27 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:18:02
-Caption: Дубликаты в базе не обнаружены
-
---------------------
-
---------------------
-12.08.2021 22:31:44
-Caption: $_REQUEST
-Array
-(
-    [ID] => 243
-    [ENTITY_TYPE_ID] => 1
-)
-
---------------------
-
---------------------
-12.08.2021 22:31:45
-Caption: getCrmEntity
-Array
-(
-    [result] => Array
-        (
-            [ID] => 243
-            [TITLE] => 123123
-            [HONORIFIC] => 
-            [NAME] => Алексей
-            [SECOND_NAME] => Дмитриевич
-            [LAST_NAME] => Сковородкин
-            [COMPANY_TITLE] => 
-            [COMPANY_ID] => 0
-            [CONTACT_ID] => 
-            [IS_RETURN_CUSTOMER] => N
-            [BIRTHDATE] => 
-            [SOURCE_ID] => WEBFORM
-            [SOURCE_DESCRIPTION] => 
-            [STATUS_ID] => NEW
-            [STATUS_DESCRIPTION] => 
-            [POST] => 
-            [COMMENTS] => 
-            [CURRENCY_ID] => RUB
-            [OPPORTUNITY] => 0.00
-            [IS_MANUAL_OPPORTUNITY] => N
-            [HAS_PHONE] => Y
-            [HAS_EMAIL] => Y
-            [HAS_IMOL] => N
-            [ASSIGNED_BY_ID] => 1851
-            [CREATED_BY_ID] => 1851
-            [MODIFY_BY_ID] => 1851
-            [DATE_CREATE] => 2021-02-05T15:08:31+03:00
-            [DATE_MODIFY] => 2021-08-11T21:06:08+03:00
-            [DATE_CLOSED] => 
-            [STATUS_SEMANTIC_ID] => P
-            [OPENED] => Y
-            [ORIGINATOR_ID] => 
-            [ORIGIN_ID] => 
-            [ADDRESS] => 
-            [ADDRESS_2] => 
-            [ADDRESS_CITY] => 
-            [ADDRESS_POSTAL_CODE] => 
-            [ADDRESS_REGION] => 
-            [ADDRESS_PROVINCE] => 
-            [ADDRESS_COUNTRY] => 
-            [ADDRESS_COUNTRY_CODE] => 
-            [ADDRESS_LOC_ADDR_ID] => 
-            [UTM_SOURCE] => 
-            [UTM_MEDIUM] => 
-            [UTM_CAMPAIGN] => 
-            [UTM_CONTENT] => 
-            [UTM_TERM] => 
-            [UF_CRM_SP_UNSUBSCR] => 0
-            [UF_CRM_1538647419] => 
-            [UF_CRM_1581418338] => 
-            [UF_CRM_1581418376] => 
-            [UF_CRM_ITS_RELATED1] => custom value for show field
-            [UF_CRM_1597407280] => 
-            [UF_CRM_1600245856370] => 
-            [UF_CRM_1612527141] => 12213
-            [UF_CRM_1614353863] => 
-            [UF_CRM_603916A3BEA3B] => 
-            [UF_CRM_1614681079399] => 
-            [UF_CRM_1614681116518] => 
-            [UF_CRM_1614681130910] => 
-            [UF_CRM_1614705530] => 
-            [UF_CRM_1614706460] => 
-            [UF_CRM_1614706518] => 
-            [UF_CRM_1614706596] => 
-            [UF_CRM_1615820003612] => Array
-                (
-                )
-
-            [UF_CRM_ITS_DICT_CITY] => 
-            [UF_CRM_1617887745774] => 
-            [UF_CRM_ITS_DICT_OKVED] => 
-            [UF_CRM_ITS_DICT_PROFESSION] => 
-            [UF_CRM_LAST_CALL_DATE] => 
-            [UF_CRM_5A9EBF2E896B6] => 
-            [UF_CRM_ORDER_IDS] => 
-            [UF_CRM_PROBABILITY] => 
-            [UF_CRM_BEGINDATE] => 
-            [UF_CRM_EVENT_DATE] => 
-            [UF_CRM_ORIGINATOR_ID] => 
-            [UF_CRM_LEAD_ID] => 
-            [UF_CRM_EVENT_DESCRIPTION] => 
-            [UF_CRM_ORIGIN_ID] => 
-            [UF_CRM_CLOSEDATE] => 
-            [UF_CRM_CLOSED] => 
-            [UF_CRM_OPPORTUNITY_ACCOUNT] => 
-            [UF_CRM_ACCOUNT_CURRENCY_ID] => 
-            [UF_CRM_CONTACT_IDS] => 
-            [UF_CRM_CATEGORY_ID] => 
-            [UF_CRM_TYPE_ID] => 
-            [UF_CRM_EVENT_ID] => 
-            [UF_CRM_1551419189] => 
-            [UF_CRM_1578484533] => 
-            [UF_CRM_1557008108] => 
-            [UF_CRM_1557008119] => 
-            [UF_CRM_5E15CA0E5F680] => 
-            [UF_CRM_1595780613] => 
-            [UF_CRM_1560728821] => 
-            [UF_CRM_1551430847644] => 
-            [UF_CRM_602105FF4A726] => 
-            [UF_CRM_6021087F7EAFE] => 
-            [UF_CRM_5C384171CE6EB] => 
-            [UF_CRM_602A600530990] => 
-            [UF_CRM_1615885523] => 
-            [UF_CRM_1560875452] => 
-            [UF_CRM_1551692234] => 
-            [UF_CRM_1612955822] => 
-            [UF_CRM_1553932688] => 
-            [UF_CRM_1613377055] => 
-            [UF_CRM_1560144352] => 
-            [UF_CRM_1611304733] => 
-            [UF_CRM_1560328872] => 
-            [UF_CRM_6031218E8E304] => 
-            [UF_CRM_602104BD6B6A8] => 
-            [UF_CRM_1566189708] => 
-            [UF_CRM_5C5801DDEEB24] => 
-            [UF_CRM_1591598208] => 
-            [UF_CRM_1572293623] => 
-            [UF_CRM_1565582929] => 
-            [UF_CRM_1566212333] => 
-            [UF_CRM_1611303102] => 
-            [UF_CRM_1617260897] => 
-            [UF_CRM_1555561455] => 
-            [UF_CRM_1555561368] => 
-            [UF_CRM_1597308245526] => 
-            [UF_CRM_1560854189] => 
-            [UF_CRM_5DD4EC413EAC5] => 
-            [UF_CRM_1567680966] => 
-            [UF_CRM_1606485361524] => 
-            [UF_CRM_1553778436] => 
-            [UF_CRM_COMPANY_ID] => 
-            [UF_CRM_CONTACT_ID] => 
-            [UF_CRM_1551430886580] => 
-            [UF_CRM_1553451508] => 
-            [UF_CRM_1551080498] => 
-            [UF_CRM_1611303121] => 
-            [UF_CRM_1587980750449] => 
-            [UF_CRM_5DD4EC4092AAA] => 
-            [UF_CRM_1594019939710] => 
-            [UF_CRM_1614339040] => 
-            [UF_CRM_1554032151] => 
-            [UF_CRM_1554032126] => 
-            [UF_CRM_602EC0EE73B77] => 
-            [UF_CRM_5D975650C5AF3] => 
-            [UF_CRM_1584430071] => 
-            [UF_CRM_5D1DB552ED029] => 
-            [UF_CRM_1563263100] => 
-            [UF_CRM_1575023853] => 
-            [UF_CRM_1573578091] => 
-            [UF_CRM_1560875494] => 
-            [UF_CRM_1584430260] => 
-            [UF_CRM_5CE354C709B88] => 
-            [UF_CRM_1573481584] => 
-            [UF_CRM_1562309336] => 
-            [UF_CRM_1555485619] => 
-            [UF_CRM_1560875525] => 
-            [UF_CRM_1586943938471] => 
-            [UF_CRM_5C799367EBA93] => 
-            [UF_CRM_602104BBEC516] => 
-            [UF_CRM_1560143592] => 
-            [UF_CRM_1612957408] => 
-            [UF_CRM_STAGE_ID] => 
-            [UF_CRM_1611306143] => 
-            [UF_CRM_1560339072] => 
-            [UF_CRM_5E68F9D47A272] => 
-            [UF_CRM_1583142836] => 
-            [UF_CRM_1594020917603] => 
-            [UF_CRM_1606304984610] => 
-            [UF_CRM_1567495710] => 
-            [UF_CRM_1573579295] => 
-            [UF_CRM_1551080461] => 
-            [UF_CRM_1566189777] => 
-            [UF_CRM_1503667665] => 
-            [UF_CRM_1507891985986] => 
-            [UF_CRM_1512488738] => Array
-                (
-                )
-
-            [UF_CRM_1527523282] => https://calcus.ru/kalkulyator-ipoteki
-            [UF_CRM_1532362405] => Array
-                (
-                )
-
-            [UF_CRM_1532363145] => 
-            [UF_CRM_1532363460] => Array
-                (
-                )
-
-            [UF_CRM_1613674874] => 
-            [UF_CRM_1613675957] => 
-            [UF_CRM_1614353750] => 
-            [EMAIL] => Array
-                (
-                    [0] => Array
-                        (
-                            [ID] => 59601
-                            [VALUE_TYPE] => WORK
-                            [VALUE] => rty@tyu.ru
-                            [TYPE_ID] => EMAIL
-                        )
-
-                    [1] => Array
-                        (
-                            [ID] => 59603
-                            [VALUE_TYPE] => WORK
-                            [VALUE] => 123@tyu.ru
-                            [TYPE_ID] => EMAIL
-                        )
-
-                    [2] => Array
-                        (
-                            [ID] => 59605
-                            [VALUE_TYPE] => WORK
-                            [VALUE] => vasya@vasya.ru
-                            [TYPE_ID] => EMAIL
-                        )
-
-                )
-
-            [PHONE] => Array
-                (
-                    [0] => Array
-                        (
-                            [ID] => 59607
-                            [VALUE_TYPE] => MOBILE
-                            [VALUE] => +79339393939
-                            [TYPE_ID] => PHONE
-                        )
-
-                    [1] => Array
-                        (
-                            [ID] => 59609
-                            [VALUE_TYPE] => MOBILE
-                            [VALUE] => +79339099090
-                            [TYPE_ID] => PHONE
-                        )
-
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1628796690.8241
-            [finish] => 1628796690.8842
-            [duration] => 0.06003999710083
-            [processing] => 0.036397933959961
-            [date_start] => 2021-08-12T22:31:30+03:00
-            [date_finish] => 2021-08-12T22:31:30+03:00
-        )
-
-)
-
---------------------
-
---------------------
-12.08.2021 22:31:45
-Caption: phonesArr
-Array
-(
-    [0] => 9339393939
-    [1] => 9339099090
-)
-
---------------------
-
---------------------
-12.08.2021 22:31:45
-Caption: parsePhones
-Array
-(
-    [0] => Array
-        (
-            [0] => 9339393939
-            [1] => 79339393939
-            [2] => +79339393939
-            [3] => 89339393939
-            [4] => 9339099090
-            [5] => 79339099090
-            [6] => +79339099090
-            [7] => 89339099090
-        )
-
-)
-
---------------------
-
---------------------
-12.08.2021 22:31:45
-Caption: getDuplicates / typeOfDuplicates - PHONE
-Array
-(
-    [result] => Array
-        (
-            [LEAD] => Array
-                (
-                    [0] => 243
-                    [1] => 451
-                )
-
-            [CONTACT] => Array
-                (
-                    [0] => 315
-                )
-
-            [COMPANY] => Array
-                (
-                    [0] => 501
-                    [1] => 503
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1628796690.9976
-            [finish] => 1628796691.0275
-            [duration] => 0.029882192611694
-            [processing] => 0.0063381195068359
-            [date_start] => 2021-08-12T22:31:30+03:00
-            [date_finish] => 2021-08-12T22:31:31+03:00
-        )
-
-)
-
---------------------
-
---------------------
-12.08.2021 22:31:45
-Caption: findDuplicates / typeOfDuplicates - PHONE
+13.08.2021 16:54:48
+Caption: duplicatesArr / typeOfDuplicates - TITLE
 Array
 (
     [LEAD] => Array
         (
-            [0] => 451
-        )
-
-    [CONTACT] => Array
-        (
-            [0] => 315
+            [0] => 237
+            [1] => 257
+            [2] => 349
+            [3] => 397
+            [4] => 401
         )
 
     [COMPANY] => Array
         (
-            [0] => 501
-            [1] => 503
+            [0] => 147
         )
 
-)
-
---------------------
-
---------------------
-12.08.2021 22:31:45
-Caption: parseEmails
-Array
-(
-    [0] => Array
+    [CONTACT] => Array
         (
-            [0] => rty@tyu.ru
-            [1] => 123@tyu.ru
-            [2] => vasya@vasya.ru
+            [0] => 221
         )
 
 )
@@ -2318,74 +743,11 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:31:45
-Caption: getDuplicates / typeOfDuplicates - EMAIL
+13.08.2021 16:54:48
+Caption: lead list
 Array
 (
     [result] => Array
-        (
-            [LEAD] => Array
-                (
-                    [0] => 243
-                    [1] => 451
-                )
-
-            [CONTACT] => Array
-                (
-                    [0] => 125
-                )
-
-            [COMPANY] => Array
-                (
-                    [0] => 503
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1628796691.1303
-            [finish] => 1628796691.1625
-            [duration] => 0.032257080078125
-            [processing] => 0.0064690113067627
-            [date_start] => 2021-08-12T22:31:31+03:00
-            [date_finish] => 2021-08-12T22:31:31+03:00
-        )
-
-)
-
---------------------
-
---------------------
-12.08.2021 22:31:45
-Caption: findDuplicates / typeOfDuplicates - EMAIL
-Array
-(
-    [LEAD] => Array
-        (
-            [0] => 451
-        )
-
-    [CONTACT] => Array
-        (
-            [0] => 125
-        )
-
-    [COMPANY] => Array
-        (
-            [0] => 503
-        )
-
-)
-
---------------------
-
---------------------
-12.08.2021 22:31:45
-Caption: findDuplicatesByTitle
-Array
-(
-    [lead] => Array
         (
             [0] => Array
                 (
@@ -2395,29 +757,23 @@ Array
 
             [1] => Array
                 (
-                    [ID] => 243
+                    [ID] => 257
                     [TITLE] => 123123
                 )
 
             [2] => Array
                 (
-                    [ID] => 257
-                    [TITLE] => 123123
-                )
-
-            [3] => Array
-                (
                     [ID] => 349
                     [TITLE] => 123123123123
                 )
 
-            [4] => Array
+            [3] => Array
                 (
                     [ID] => 397
                     [TITLE] => 123123
                 )
 
-            [5] => Array
+            [4] => Array
                 (
                     [ID] => 401
                     [TITLE] => С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр
@@ -2425,7 +781,27 @@ Array
 
         )
 
-    [company] => Array
+    [total] => 5
+    [time] => Array
+        (
+            [start] => 1628862873.0643
+            [finish] => 1628862873.0953
+            [duration] => 0.030916929244995
+            [processing] => 0.012172937393188
+            [date_start] => 2021-08-13T16:54:33+03:00
+            [date_finish] => 2021-08-13T16:54:33+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: company list
+Array
+(
+    [result] => Array
         (
             [0] => Array
                 (
@@ -2435,7 +811,27 @@ Array
 
         )
 
-    [contact] => Array
+    [total] => 1
+    [time] => Array
+        (
+            [start] => 1628862873.1903
+            [finish] => 1628862873.2212
+            [duration] => 0.030868053436279
+            [processing] => 0.010377168655396
+            [date_start] => 2021-08-13T16:54:33+03:00
+            [date_finish] => 2021-08-13T16:54:33+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: contact list
+Array
+(
+    [result] => Array
         (
             [0] => Array
                 (
@@ -2446,12 +842,906 @@ Array
 
         )
 
+    [total] => 1
+    [time] => Array
+        (
+            [start] => 1628862873.3146
+            [finish] => 1628862873.3481
+            [duration] => 0.033524036407471
+            [processing] => 0.01358699798584
+            [date_start] => 2021-08-13T16:54:33+03:00
+            [date_finish] => 2021-08-13T16:54:33+03:00
+        )
+
 )
 
 --------------------
 
 --------------------
-12.08.2021 22:31:45
+13.08.2021 16:54:49
+Caption: final
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 237
+                    [TITLE] => Лид: С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр 
+                )
+
+            [1] => Array
+                (
+                    [ID] => 257
+                    [TITLE] => Лид: 123123
+                )
+
+            [2] => Array
+                (
+                    [ID] => 349
+                    [TITLE] => Лид: 123123123123
+                )
+
+            [3] => Array
+                (
+                    [ID] => 397
+                    [TITLE] => Лид: 123123
+                )
+
+            [4] => Array
+                (
+                    [ID] => 401
+                    [TITLE] => Лид: С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр
+                )
+
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 221
+                    [TITLE] => Контакт: 123123123 
+                )
+
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 147
+                    [TITLE] => Компания: 123123123123
+                )
+
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: taskDesc
+
+[url=https://it-solution.bitrix24.ru/crm/lead/details/237/]Лид: С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр [/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/257/]Лид: 123123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/349/]Лид: 123123123123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/397/]Лид: 123123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/401/]Лид: С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр[/url]
+[url=https://it-solution.bitrix24.ru/crm/contact/details/221/]Контакт: 123123123 [/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/147/]Компания: 123123123123[/url]
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: taskDesc / тип дубликатов - TITLE
+Дубликаты по названию сущности:
+[url=https://it-solution.bitrix24.ru/crm/lead/details/237/]Лид: С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр [/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/257/]Лид: 123123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/349/]Лид: 123123123123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/397/]Лид: 123123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/401/]Лид: С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр[/url]
+[url=https://it-solution.bitrix24.ru/crm/contact/details/221/]Контакт: 123123123 [/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/147/]Компания: 123123123123[/url]
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: duplicatesArr / typeOfDuplicates - PHONE
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => 451
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => 315
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => 501
+            [1] => 503
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: lead list
+Array
+(
+    [result] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 451
+                    [TITLE] => 9809
+                )
+
+        )
+
+    [total] => 1
+    [time] => Array
+        (
+            [start] => 1628862873.4421
+            [finish] => 1628862873.4699
+            [duration] => 0.027822017669678
+            [processing] => 0.011534214019775
+            [date_start] => 2021-08-13T16:54:33+03:00
+            [date_finish] => 2021-08-13T16:54:33+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: company list
+Array
+(
+    [result] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 501
+                    [TITLE] => Company
+                )
+
+            [1] => Array
+                (
+                    [ID] => 503
+                    [TITLE] => ТЕСТОВАЯ КОМПАНИЯ123
+                )
+
+        )
+
+    [total] => 2
+    [time] => Array
+        (
+            [start] => 1628862873.5649
+            [finish] => 1628862873.5963
+            [duration] => 0.031424999237061
+            [processing] => 0.011354923248291
+            [date_start] => 2021-08-13T16:54:33+03:00
+            [date_finish] => 2021-08-13T16:54:33+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: contact list
+Array
+(
+    [result] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 315
+                    [NAME] => Нно
+                    [LAST_NAME] => 
+                )
+
+        )
+
+    [total] => 1
+    [time] => Array
+        (
+            [start] => 1628862873.6896
+            [finish] => 1628862873.7227
+            [duration] => 0.0330810546875
+            [processing] => 0.015087127685547
+            [date_start] => 2021-08-13T16:54:33+03:00
+            [date_finish] => 2021-08-13T16:54:33+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: final
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 451
+                    [TITLE] => Лид: 9809
+                )
+
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 315
+                    [TITLE] => Контакт: Нно 
+                )
+
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 501
+                    [TITLE] => Компания: Company
+                )
+
+            [1] => Array
+                (
+                    [ID] => 503
+                    [TITLE] => Компания: ТЕСТОВАЯ КОМПАНИЯ123
+                )
+
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: taskDesc
+
+[url=https://it-solution.bitrix24.ru/crm/lead/details/451/]Лид: 9809[/url]
+[url=https://it-solution.bitrix24.ru/crm/contact/details/315/]Контакт: Нно [/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/501/]Компания: Company[/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/503/]Компания: ТЕСТОВАЯ КОМПАНИЯ123[/url]
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: taskDesc / тип дубликатов - PHONE
+Дубликаты по номеру телефона:
+[url=https://it-solution.bitrix24.ru/crm/lead/details/451/]Лид: 9809[/url]
+[url=https://it-solution.bitrix24.ru/crm/contact/details/315/]Контакт: Нно [/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/501/]Компания: Company[/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/503/]Компания: ТЕСТОВАЯ КОМПАНИЯ123[/url]
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: duplicatesArr / typeOfDuplicates - EMAIL
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => 451
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => 125
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => 503
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: lead list
+Array
+(
+    [result] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 451
+                    [TITLE] => 9809
+                )
+
+        )
+
+    [total] => 1
+    [time] => Array
+        (
+            [start] => 1628862873.8324
+            [finish] => 1628862873.8669
+            [duration] => 0.034502983093262
+            [processing] => 0.013169050216675
+            [date_start] => 2021-08-13T16:54:33+03:00
+            [date_finish] => 2021-08-13T16:54:33+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: company list
+Array
+(
+    [result] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 503
+                    [TITLE] => ТЕСТОВАЯ КОМПАНИЯ123
+                )
+
+        )
+
+    [total] => 1
+    [time] => Array
+        (
+            [start] => 1628862873.9606
+            [finish] => 1628862873.9899
+            [duration] => 0.029309034347534
+            [processing] => 0.011977910995483
+            [date_start] => 2021-08-13T16:54:33+03:00
+            [date_finish] => 2021-08-13T16:54:33+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: contact list
+Array
+(
+    [result] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 125
+                    [NAME] => Он
+                    [LAST_NAME] => Оновый
+                )
+
+        )
+
+    [total] => 1
+    [time] => Array
+        (
+            [start] => 1628862874.0893
+            [finish] => 1628862874.1317
+            [duration] => 0.042377948760986
+            [processing] => 0.016095161437988
+            [date_start] => 2021-08-13T16:54:34+03:00
+            [date_finish] => 2021-08-13T16:54:34+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: final
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 451
+                    [TITLE] => Лид: 9809
+                )
+
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 125
+                    [TITLE] => Контакт: Он Оновый
+                )
+
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 503
+                    [TITLE] => Компания: ТЕСТОВАЯ КОМПАНИЯ123
+                )
+
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: taskDesc
+
+[url=https://it-solution.bitrix24.ru/crm/lead/details/451/]Лид: 9809[/url]
+[url=https://it-solution.bitrix24.ru/crm/contact/details/125/]Контакт: Он Оновый[/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/503/]Компания: ТЕСТОВАЯ КОМПАНИЯ123[/url]
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: taskDesc / тип дубликатов - EMAIL
+Дубликаты по email:
+[url=https://it-solution.bitrix24.ru/crm/lead/details/451/]Лид: 9809[/url]
+[url=https://it-solution.bitrix24.ru/crm/contact/details/125/]Контакт: Он Оновый[/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/503/]Компания: ТЕСТОВАЯ КОМПАНИЯ123[/url]
+--------------------
+
+--------------------
+13.08.2021 16:54:49
+Caption: duplicatesArr / typeOfDuplicates - NAME
+Array
+(
+    [CONTACT] => Array
+        (
+            [0] => 235
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 16:54:50
+Caption: contact list
+Array
+(
+    [result] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 235
+                    [NAME] => Сковородкин Алексей Дмитриевич
+                    [LAST_NAME] => 
+                )
+
+        )
+
+    [total] => 1
+    [time] => Array
+        (
+            [start] => 1628862874.2288
+            [finish] => 1628862874.2579
+            [duration] => 0.029145956039429
+            [processing] => 0.012041091918945
+            [date_start] => 2021-08-13T16:54:34+03:00
+            [date_finish] => 2021-08-13T16:54:34+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 16:54:50
+Caption: final
+Array
+(
+    [CONTACT] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 235
+                    [TITLE] => Контакт: Сковородкин Алексей Дмитриевич 
+                )
+
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 16:54:50
+Caption: taskDesc
+
+[url=https://it-solution.bitrix24.ru/crm/contact/details/235/]Контакт: Сковородкин Алексей Дмитриевич [/url]
+--------------------
+
+--------------------
+13.08.2021 16:54:50
+Caption: taskDesc / тип дубликатов - NAME
+Дубликаты по имени, фамилии, отчеству:
+[url=https://it-solution.bitrix24.ru/crm/contact/details/235/]Контакт: Сковородкин Алексей Дмитриевич [/url]
+--------------------
+
+--------------------
+13.08.2021 16:54:50
+Caption: postTask
+Array
+(
+    [result] => Array
+        (
+            [task] => Array
+                (
+                    [id] => 1789
+                    [title] => Найдены дубликаты в базе клиентов / 123123
+                    [description] => Дубликаты по названию сущности:
+[url=https://it-solution.bitrix24.ru/crm/lead/details/237/]Лид: С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр [/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/257/]Лид: 123123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/349/]Лид: 123123123123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/397/]Лид: 123123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/401/]Лид: С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр[/url]
+[url=https://it-solution.bitrix24.ru/crm/contact/details/221/]Контакт: 123123123 [/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/147/]Компания: 123123123123[/url]
+Дубликаты по номеру телефона:
+[url=https://it-solution.bitrix24.ru/crm/lead/details/451/]Лид: 9809[/url]
+[url=https://it-solution.bitrix24.ru/crm/contact/details/315/]Контакт: Нно [/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/501/]Компания: Company[/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/503/]Компания: ТЕСТОВАЯ КОМПАНИЯ123[/url]
+Дубликаты по email:
+[url=https://it-solution.bitrix24.ru/crm/lead/details/451/]Лид: 9809[/url]
+[url=https://it-solution.bitrix24.ru/crm/contact/details/125/]Контакт: Он Оновый[/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/503/]Компания: ТЕСТОВАЯ КОМПАНИЯ123[/url]
+Дубликаты по имени, фамилии, отчеству:
+[url=https://it-solution.bitrix24.ru/crm/contact/details/235/]Контакт: Сковородкин Алексей Дмитриевич [/url]
+                    [descriptionInBbcode] => Y
+                    [declineReason] => 
+                    [priority] => 1
+                    [status] => 2
+                    [notViewed] => N
+                    [statusComplete] => 1
+                    [multitask] => N
+                    [stageId] => 0
+                    [responsibleId] => 1851
+                    [responsibleName] => Денис
+                    [responsibleLastName] => Брюхачев
+                    [responsibleSecondName] => 
+                    [responsibleLogin] => brdv@it-solution.ru
+                    [responsibleWorkPosition] => 
+                    [responsiblePhoto] => 97605
+                    [dateStart] => 
+                    [durationFact] => 
+                    [timeEstimate] => 0
+                    [timeSpentInLogs] => 
+                    [replicate] => N
+                    [deadline] => 
+                    [deadlineOrig] => 
+                    [startDatePlan] => 
+                    [endDatePlan] => 
+                    [createdBy] => 1851
+                    [createdByName] => Денис
+                    [createdByLastName] => Брюхачев
+                    [createdBySecondName] => 
+                    [createdByLogin] => brdv@it-solution.ru
+                    [createdByWorkPosition] => 
+                    [createdByPhoto] => 97605
+                    [createdDate] => 2021-08-13T16:54:34+03:00
+                    [changedBy] => 1851
+                    [changedDate] => 2021-08-13T16:54:34+03:00
+                    [statusChangedBy] => 1851
+                    [statusChangedDate] => 2021-08-13T16:54:34+03:00
+                    [closedBy] => 
+                    [closedDate] => 
+                    [activityDate] => 2021-08-13T16:54:34+03:00
+                    [guid] => {efe83260-c8df-4707-ba44-3ba396c9eb6f}
+                    [xmlId] => 
+                    [mark] => 
+                    [allowChangeDeadline] => N
+                    [allowChangeDeadlineCount] => 
+                    [allowChangeDeadlineCountValue] => 
+                    [allowChangeDeadlineMaxtime] => 
+                    [allowChangeDeadlineMaxtimeValue] => 
+                    [allowTimeTracking] => N
+                    [matchWorkTime] => N
+                    [taskControl] => N
+                    [addInReport] => N
+                    [groupId] => 0
+                    [forumTopicId] => 
+                    [parentId] => 
+                    [commentsCount] => 
+                    [serviceCommentsCount] => 
+                    [forumId] => 
+                    [siteId] => s1
+                    [subordinate] => N
+                    [exchangeModified] => 
+                    [exchangeId] => 
+                    [outlookVersion] => 1
+                    [viewedDate] => 
+                    [deadlineCounted] => 0
+                    [forkedByTemplateId] => 
+                    [favorite] => N
+                    [sorting] => -7168.0000000
+                    [durationPlanSeconds] => 
+                    [durationTypeAll] => days
+                    [durationPlan] => 
+                    [durationType] => days
+                    [isMuted] => N
+                    [isPinned] => N
+                    [isPinnedInGroup] => N
+                    [ufCrmTask] => Array
+                        (
+                            [0] => L_243
+                        )
+
+                    [ufTaskWebdavFiles] => 
+                    [ufAuto133535995276] => 
+                    [ufAuto675763242438] => 
+                    [ufMailMessage] => 
+                    [ufAuto468830205390] => 
+                    [ufAuto698193192593] => 
+                    [auditors] => Array
+                        (
+                        )
+
+                    [accomplices] => Array
+                        (
+                        )
+
+                    [tags] => Array
+                        (
+                        )
+
+                    [checklist] => Array
+                        (
+                        )
+
+                    [files] => Array
+                        (
+                        )
+
+                    [dependsOn] => Array
+                        (
+                        )
+
+                    [group] => Array
+                        (
+                        )
+
+                    [creator] => Array
+                        (
+                            [id] => 1851
+                            [name] => Брюхачев Денис
+                            [link] => /company/personal/user/1851/
+                            [icon] => https://bitrix2.cdnvideo.ru/b1624879/resize_cache/97605/c0120a8d7c10d63c83e32398d1ec4d9e/main/e31/e31a4642a20fa86a68b44ef688293fc6/ee3562721d763f89e3144c0c310b8904.jpg?h=it-solution.bitrix24.ru
+                        )
+
+                    [responsible] => Array
+                        (
+                            [id] => 1851
+                            [name] => Брюхачев Денис
+                            [link] => /company/personal/user/1851/
+                            [icon] => https://bitrix2.cdnvideo.ru/b1624879/resize_cache/97605/c0120a8d7c10d63c83e32398d1ec4d9e/main/e31/e31a4642a20fa86a68b44ef688293fc6/ee3562721d763f89e3144c0c310b8904.jpg?h=it-solution.bitrix24.ru
+                        )
+
+                    [newCommentsCount] => 0
+                    [action] => Array
+                        (
+                            [accept] => 
+                            [decline] => 
+                            [complete] => 1
+                            [approve] => 
+                            [disapprove] => 
+                            [start] => 1
+                            [pause] => 
+                            [delegate] => 1
+                            [remove] => 1
+                            [edit] => 1
+                            [defer] => 1
+                            [renew] => 
+                            [create] => 1
+                            [changeDeadline] => 1
+                            [checklistAddItems] => 1
+                            [addFavorite] => 1
+                            [deleteFavorite] => 
+                            [rate] => 1
+                            [edit.originator] => 1
+                            [checklist.reorder] => 1
+                            [elapsedtime.add] => 1
+                            [dayplan.timer.toggle] => 
+                            [edit.plan] => 1
+                            [checklist.add] => 1
+                            [favorite.add] => 1
+                            [favorite.delete] => 
+                        )
+
+                )
+
+        )
+
+    [time] => Array
+        (
+            [start] => 1628862874.3552
+            [finish] => 1628862874.8954
+            [duration] => 0.54018211364746
+            [processing] => 0.52105116844177
+            [date_start] => 2021-08-13T16:54:34+03:00
+            [date_finish] => 2021-08-13T16:54:34+03:00
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:30
+Caption: $_REQUEST
+Array
+(
+    [ID] => 243
+    [ENTITY_TYPE_ID] => 1
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:30
+Caption: makeIdsArray
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => 237
+            [1] => 257
+            [2] => 349
+            [3] => 397
+            [4] => 401
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => 147
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => 221
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:30
+Caption: phonesArr
+Array
+(
+    [0] => 9339393939
+    [1] => 9339099090
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:30
+Caption: parsePhones
+Array
+(
+    [0] => Array
+        (
+            [0] => 9339393939
+            [1] => 79339393939
+            [2] => +79339393939
+            [3] => 89339393939
+            [4] => 9339099090
+            [5] => 79339099090
+            [6] => +79339099090
+            [7] => 89339099090
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:30
+Caption: checkIdsArray
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => 451
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => 315
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => 501
+            [1] => 503
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:30
+Caption: parseEmails
+Array
+(
+    [0] => Array
+        (
+            [0] => rty@tyu.ru
+            [1] => 123@tyu.ru
+            [2] => vasya@vasya.ru
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:30
+Caption: checkIdsArray
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => 451
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => 125
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => 503
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:30
+Caption: checkNames
+Array
+(
+    [0] => Сковородкин
+    [1] => Алексей
+    [2] => Дмитриевич
+    [3] => NAME, LAST_NAME, SECOND_NAME
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:30
 Caption: requestParams
 Array
 (
@@ -2465,8 +1755,6 @@ Array
     [select] => Array
         (
             [0] => ID
-            [1] => NAME
-            [2] => LAST_NAME
         )
 
 )
@@ -2474,11 +1762,25 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:31:45
+13.08.2021 17:16:30
 Caption: requestParamsCompany
 Array
 (
     [0] => Array
+        (
+            [filter] => Array
+                (
+                    [TITLE] => Сковородкин Алексей Дмитриевич
+                )
+
+            [select] => Array
+                (
+                    [0] => ID
+                )
+
+        )
+
+    [1] => Array
         (
             [filter] => Array
                 (
@@ -2488,12 +1790,11 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => TITLE
                 )
 
         )
 
-    [1] => Array
+    [2] => Array
         (
             [filter] => Array
                 (
@@ -2503,12 +1804,11 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => TITLE
                 )
 
         )
 
-    [2] => Array
+    [3] => Array
         (
             [filter] => Array
                 (
@@ -2518,12 +1818,11 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => TITLE
                 )
 
         )
 
-    [3] => Array
+    [4] => Array
         (
             [filter] => Array
                 (
@@ -2533,12 +1832,11 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => TITLE
                 )
 
         )
 
-    [4] => Array
+    [5] => Array
         (
             [filter] => Array
                 (
@@ -2548,7 +1846,6 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => TITLE
                 )
 
         )
@@ -2558,11 +1855,25 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:31:45
+13.08.2021 17:16:30
 Caption: requestParamsContact
 Array
 (
     [0] => Array
+        (
+            [filter] => Array
+                (
+                    [NAME] => Сковородкин Алексей Дмитриевич
+                )
+
+            [select] => Array
+                (
+                    [0] => ID
+                )
+
+        )
+
+    [1] => Array
         (
             [filter] => Array
                 (
@@ -2572,13 +1883,11 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => NAME
-                    [2] => LAST_NAME
                 )
 
         )
 
-    [1] => Array
+    [2] => Array
         (
             [filter] => Array
                 (
@@ -2588,13 +1897,11 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => NAME
-                    [2] => LAST_NAME
                 )
 
         )
 
-    [2] => Array
+    [3] => Array
         (
             [filter] => Array
                 (
@@ -2604,13 +1911,11 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => NAME
-                    [2] => LAST_NAME
                 )
 
         )
 
-    [3] => Array
+    [4] => Array
         (
             [filter] => Array
                 (
@@ -2620,13 +1925,11 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => NAME
-                    [2] => LAST_NAME
                 )
 
         )
 
-    [4] => Array
+    [5] => Array
         (
             [filter] => Array
                 (
@@ -2636,8 +1939,6 @@ Array
             [select] => Array
                 (
                     [0] => ID
-                    [1] => NAME
-                    [2] => LAST_NAME
                 )
 
         )
@@ -2647,7 +1948,7 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:31:47
+13.08.2021 17:16:32
 Caption: requestParamsReverse
 Array
 (
@@ -2661,8 +1962,6 @@ Array
     [select] => Array
         (
             [0] => ID
-            [1] => NAME
-            [2] => LAST_NAME
         )
 
 )
@@ -2670,17 +1969,24 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:31:47
+13.08.2021 17:16:32
 Caption: findDuplicatesByName
 Array
 (
-    [lead] => Array
+    [CONTACT] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 235
+                )
+
+        )
+
+    [LEAD] => Array
         (
             [0] => Array
                 (
                     [ID] => 243
-                    [NAME] => Алексей
-                    [LAST_NAME] => Сковородкин
                 )
 
         )
@@ -2690,7 +1996,311 @@ Array
 --------------------
 
 --------------------
-12.08.2021 22:31:47
-Caption: Дубликаты в базе не обнаружены
+13.08.2021 17:16:32
+Caption: makeIdsArray
+Array
+(
+    [CONTACT] => Array
+        (
+            [0] => 235
+        )
 
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:32
+Caption: makeDescription / start /typeOfDuplicates - TITLE
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => 237
+            [1] => 257
+            [2] => 349
+            [3] => 397
+            [4] => 401
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => 147
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => 221
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:33
+Caption: makeDescription / mid / typeOfDuplicates - TITLE
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 237
+                    [TITLE] => Лид: С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр 
+                )
+
+            [1] => Array
+                (
+                    [ID] => 257
+                    [TITLE] => Лид: 123123
+                )
+
+            [2] => Array
+                (
+                    [ID] => 349
+                    [TITLE] => Лид: 123123123123
+                )
+
+            [3] => Array
+                (
+                    [ID] => 397
+                    [TITLE] => Лид: 123123
+                )
+
+            [4] => Array
+                (
+                    [ID] => 401
+                    [TITLE] => Лид: С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр
+                )
+
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 221
+                    [TITLE] => Контакт: 123123123 
+                )
+
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 147
+                    [TITLE] => Компания: 123123123123
+                )
+
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:33
+Caption: makeDescription / final / typeOfDuplicates - TITLE
+Дубликаты по названию сущности:
+[url=https://it-solution.bitrix24.ru/crm/lead/details/237/]Лид: С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр [/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/257/]Лид: 123123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/349/]Лид: 123123123123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/397/]Лид: 123123[/url]
+[url=https://it-solution.bitrix24.ru/crm/lead/details/401/]Лид: С сайта b24-lg6c3v.bitrix24.site реф 123123 параметр[/url]
+[url=https://it-solution.bitrix24.ru/crm/contact/details/221/]Контакт: 123123123 [/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/147/]Компания: 123123123123[/url]
+--------------------
+
+--------------------
+13.08.2021 17:16:33
+Caption: makeDescription / start /typeOfDuplicates - PHONE
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => 451
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => 315
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => 501
+            [1] => 503
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:33
+Caption: makeDescription / mid / typeOfDuplicates - PHONE
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 451
+                    [TITLE] => Лид: 9809
+                )
+
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 315
+                    [TITLE] => Контакт: Нно 
+                )
+
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 501
+                    [TITLE] => Компания: Company
+                )
+
+            [1] => Array
+                (
+                    [ID] => 503
+                    [TITLE] => Компания: ТЕСТОВАЯ КОМПАНИЯ123
+                )
+
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:33
+Caption: makeDescription / final / typeOfDuplicates - PHONE
+Дубликаты по номеру телефона:
+[url=https://it-solution.bitrix24.ru/crm/lead/details/451/]Лид: 9809[/url]
+[url=https://it-solution.bitrix24.ru/crm/contact/details/315/]Контакт: Нно [/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/501/]Компания: Company[/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/503/]Компания: ТЕСТОВАЯ КОМПАНИЯ123[/url]
+--------------------
+
+--------------------
+13.08.2021 17:16:33
+Caption: makeDescription / start /typeOfDuplicates - EMAIL
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => 451
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => 125
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => 503
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:33
+Caption: makeDescription / mid / typeOfDuplicates - EMAIL
+Array
+(
+    [LEAD] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 451
+                    [TITLE] => Лид: 9809
+                )
+
+        )
+
+    [CONTACT] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 125
+                    [TITLE] => Контакт: Он Оновый
+                )
+
+        )
+
+    [COMPANY] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 503
+                    [TITLE] => Компания: ТЕСТОВАЯ КОМПАНИЯ123
+                )
+
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:33
+Caption: makeDescription / final / typeOfDuplicates - EMAIL
+Дубликаты по email:
+[url=https://it-solution.bitrix24.ru/crm/lead/details/451/]Лид: 9809[/url]
+[url=https://it-solution.bitrix24.ru/crm/contact/details/125/]Контакт: Он Оновый[/url]
+[url=https://it-solution.bitrix24.ru/crm/company/details/503/]Компания: ТЕСТОВАЯ КОМПАНИЯ123[/url]
+--------------------
+
+--------------------
+13.08.2021 17:16:33
+Caption: makeDescription / start /typeOfDuplicates - NAME
+Array
+(
+    [CONTACT] => Array
+        (
+            [0] => 235
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:33
+Caption: makeDescription / mid / typeOfDuplicates - NAME
+Array
+(
+    [CONTACT] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 235
+                    [TITLE] => Контакт: Сковородкин Алексей Дмитриевич 
+                )
+
+        )
+
+)
+
+--------------------
+
+--------------------
+13.08.2021 17:16:33
+Caption: makeDescription / final / typeOfDuplicates - NAME
+Дубликаты по имени, фамилии, отчеству:
+[url=https://it-solution.bitrix24.ru/crm/contact/details/235/]Контакт: Сковородкин Алексей Дмитриевич [/url]
 --------------------

@@ -31,30 +31,51 @@ if (empty($_REQUEST['ENTITY_TYPE_ID']))
 	$entityTypeId = $_REQUEST['ENTITY_TYPE_ID'];
 }
 
-// Получить данные сущности по ID, найти дубликаты
+// Получить данные сущности по ID
 $crmEntity = getCrmEntity($_REQUEST['ID'], $entityTypeId);
 
+// Найти дубликаты
 $duplicates = [];
-$duplicates['phoneList'] = findDuplicates(parsePhones($crmEntity), $crmEntity['ID'], 'PHONE');
-$duplicates['emailList'] = findDuplicates(parseEmails($crmEntity), $crmEntity['ID'], 'EMAIL');
-$duplicates['titleList'] = findDuplicatesByTitle($crmEntity['TITLE']);
-$duplicates['namesList'] = findDuplicatesByNames(checkNames($crmEntity));
 
-// Если найдены дубликаты, то пост в ленту и создание задачи
-if ($duplicatesPhoneList and $duplicatesEmailList) {
-	$desc = makeDescription($duplicatesPhoneList, 'PHONE') . "\n\n" . makeDescription($duplicatesEmailList, 'EMAIL');
-} else if ($duplicatesPhoneList) {
-	$desc = makeDescription($duplicatesPhoneList, 'PHONE');
-} elseif ($duplicatesEmailList['result']) {
-	$desc = makeDescription($duplicatesEmailList, 'EMAIL');
-} else {
+$try = findDuplicatesByTitle($crmEntity['TITLE'], $crmEntity['ID']);
+isset($try) ? $duplicates['titleList'] = $try : null;
+
+if ($crmEntity['PHONE']) {
+    $try = findDuplicates(parsePhones($crmEntity), $crmEntity['ID'], 'PHONE');
+    isset($try) ? $duplicates['phoneList'] = $try : null; 
+}
+
+if ($crmEntity['EMAIL']) {
+    $try = findDuplicates(parseEmails($crmEntity), $crmEntity['ID'], 'EMAIL');
+    isset($try) ? $duplicates['emailList'] = $try : null; 
+}
+
+$try = findDuplicatesByNames(checkNames($crmEntity), $crmEntity['ID']); 
+isset($try) ? $duplicates['namesList'] = $try : null; 
+
+// Проверить найдены ли дубликаты
+if (empty($duplicates)) {
 	Debugger::writeToLog($desc, LOG, 'Дубликаты в базе не обнаружены');
 	exit;
 }
 
-notifyPost($desc, $_REQUEST['ID'], $entityTypeId);
+// Если найдены дубликаты, составить описание задачи и поста
+if ($duplicates['titleList']) {
+    $desc = makeDescription($duplicates['titleList'], 'TITLE');
+}
+if ($duplicates['phoneList']) {
+    $desc .= "\n" . makeDescription($duplicates['phoneList'], 'PHONE');
+}
+if ($duplicates['emailList']) {
+    $desc .= "\n" . makeDescription($duplicates['emailList'], 'EMAIL');
+}
+if ($duplicates['namesList']) {
+    $desc .= "\n" . makeDescription($duplicates['namesList'], 'NAME');
+}
 
-// if (isset($_REQUEST['flag']) and $_REQUEST['flag'] == 'manual') {
-// } else {
-// 	postTask($desc);
-// }
+// Создать пост в ленту или задачу
+if (isset($_REQUEST['flag'])) {
+    $_REQUEST['flag'] == 'manual' ? notifyPost($desc, $crmEntity['ID'], $crmEntity['TITLE'], $entityTypeId) : Debugger::writeToLog($_REQUEST['flag'], LOG, 'Request Param != flag');
+} else {
+    postTask($desc, $crmEntity['ID'], $crmEntity['TITLE'], $entityTypeId);
+}
