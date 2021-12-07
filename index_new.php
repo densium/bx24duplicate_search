@@ -41,7 +41,10 @@ define('DOMAIN', 'https://djemdecor.bitrix24.ru');
  * Пользователь в системе на кого будут ставится задачи
  */
 define('USER_ID', 13);
-
+/**
+ * Тестовый пользователь в системе на кого будут ставится задачи, если в комментарии к сущности указано: "TEST"
+ */
+define('USER_ID_TEST', 11327);
 /**
  * Путь к файлу логов для запросов
  */
@@ -93,7 +96,7 @@ $duplicates = [];
 foreach (['TITLE', 'PHONE', 'EMAIL', 'NAME', 'INSTA'] as $key) {
 	switch ($key) {
 		case 'TITLE':
-			$try = findDuplicatesByTitle($crmEntity['TITLE']);
+			$try = findDuplicatesByTitle($crmEntity['TITLE']); // На удаление
 			break;
 		case 'PHONE':
 			$try = $crmEntity['HAS_PHONE'] == 'Y' ? findDuplicates(parsePhones($crmEntity), 'PHONE') : null;
@@ -133,12 +136,16 @@ foreach ($duplicates as $duplicatesArr) {
 }
 Debugger::writeToLog($description, LOG,  'ID:' . ENTITY_ID . ' Создано описание задачи');
 
+// Для тестирования в бою
+$responsibleId = $crmEntity['COMMENTS'] == "TEST" ? USER_ID_TEST : USER_ID;
+
 // Создать пост в ленту или задачу
+// Создание поста забраковали, но я не стал тратить время на удаление функций
 if (isset($_REQUEST['flag'])) {
 	$_REQUEST['flag'] == 'manual' ? 
 	notifyPost($description, $crmEntity['ID'], $crmEntity['TITLE'], $entityTypeId) : 
 	Debugger::writeToLog($_REQUEST['flag'], LOG, 'Завершить скрипт: ' . 'Request Param flag != manual');
 } else {
-	$taskId = postTask($description, $crmEntity['ID'], $crmEntity['TITLE'], $entityTypeId);
+	$taskId = postTask($description, $crmEntity['ID'], $crmEntity['TITLE'], $entityTypeId, $responsibleId);
 	Debugger::writeToLog($taskId, LOG,  'ID:' . ENTITY_ID . ' Задача создана');
 }

@@ -62,7 +62,7 @@ function notifyPost($postText, $entityId, $entityTitle, $entityTypeId)
 /**
  * Создает задачу для пользователю
  */
-function postTask($taskDescription, $entityId, $entityTitle, $entityTypeId)
+function postTask($taskDescription, $entityId, $entityTitle, $entityTypeId, $responsibleId)
 {
 	switch ($entityTypeId) {
 		case '1':
@@ -79,7 +79,7 @@ function postTask($taskDescription, $entityId, $entityTitle, $entityTypeId)
 	$method = 'tasks.task.add';
 	$requestParams = array('fields' => array(
 		'TITLE' => 'Найдены дубликаты в базе клиентов' . ' / ' . $entityTitle,
-		'RESPONSIBLE_ID' => USER_ID,
+		'RESPONSIBLE_ID' => $responsibleId,
 		'DESCRIPTION' => $taskDescription,
 		'UF_CRM_TASK' => $entityLink
 	));

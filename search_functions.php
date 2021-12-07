@@ -136,6 +136,7 @@ function addInstaWebAdr($instaAccArr)
 		$instaWebArr[] = "https://instagram.com/" . $key; 
 		$instaWebArr[] = "https://instagram.com/" . $key . "/"; 
 	}	
+	return $instaWebArr;
 }
 
 // Проверить какой вариант поиска по имени использовать
@@ -247,7 +248,8 @@ function findDuplicates($valuesArr, $typeOfDuplicates)
 
 /**
  * Получить дубли по названию TITLE
- * @param array $crmEntityTitle название crm сущности 
+ * @param array $crmEntityTitle название crm сущности
+ * На удаление 
  */
 function findDuplicatesByTitle($crmEntityTitle)
 {
