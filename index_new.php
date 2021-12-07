@@ -107,7 +107,7 @@ foreach (['TITLE', 'PHONE', 'EMAIL', 'NAME', 'INSTA'] as $key) {
 			break;
 		case 'INSTA':
 			$instaAcc = parseInstaAcc($crmEntity);
-			$try = $instaAcc ? findDuplicatesByInstagram($instaAcc) : null;
+			$try = $instaAcc ? findDuplicatesByInstagram($instaAcc, addInstaWebAdr($instaAcc)) : null;
 			break;
 
 	}

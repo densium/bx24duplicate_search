@@ -129,6 +129,15 @@ function parseInstaAcc($entityObject)
 	}
 }
 
+function addInstaWebAdr($instaAccArr)
+{
+	$instaWebArr = [];
+	foreach ($instaAccArr as $key) {
+		$instaWebArr[] = "https://instagram.com/" . $key; 
+		$instaWebArr[] = "https://instagram.com/" . $key . "/"; 
+	}	
+}
+
 // Проверить какой вариант поиска по имени использовать
 // TODO - Переписать функцию
 function checkNames($crmEntity)
@@ -298,7 +307,7 @@ function findDuplicatesByNames($namesObj)
 }
 
 // Ищет cущности по аккаунту instagram
-function findDuplicatesByInstagram($instaAccArr)
+function findDuplicatesByInstagram($instaAccArr, $instaWebArr = null)
 {
 	if ($instaAccArr === 'error' or $instaAccArr == null or empty($instaAccArr)) {
 		Debugger::writeToLogSet(null, null, 'ID:' . ENTITY_ID . ' По запросам функции ' . __FUNCTION__ . ' вышла ошибка' . ' Не заданы поля для поиска по instagram');
@@ -311,7 +320,8 @@ function findDuplicatesByInstagram($instaAccArr)
 		'filter' => array(
 			'LOGIC' => 'OR',
 			'%' . INST_FIELD_ID_ACC => $instaAccArr,
-			'%' . INST_FIELD_ID_ADR => $instaAccArr
+			'%' . INST_FIELD_ID_ADR => $instaAccArr,
+			'WEB' => $instaWebArr
 		),
 		'select' => SELECT_ARR['LEAD']
 	);
@@ -320,7 +330,8 @@ function findDuplicatesByInstagram($instaAccArr)
 		'filter' => array(
 			'LOGIC' => 'OR',
 			'%' . INST_FIELD_ID_ACC_CON => $instaAccArr,
-			'%' . INST_FIELD_ID_ADR_CON => $instaAccArr
+			'%' . INST_FIELD_ID_ADR_CON => $instaAccArr,
+			'WEB' => $instaWebArr
 		),
 		'select' => SELECT_ARR['CONTACT']
 	);
@@ -329,7 +340,8 @@ function findDuplicatesByInstagram($instaAccArr)
 			'filter' => array(
 				'LOGIC' => 'OR',
 				'%' . INST_FIELD_ID_ACC_COMP => $instaAccArr,
-				'%' . INST_FIELD_ID_ADR_COMP => $instaAccArr
+				'%' . INST_FIELD_ID_ADR_COMP => $instaAccArr,
+				'WEB' => $instaWebArr
 			),
 		'select' => SELECT_ARR['COMPANY']
 	);
