@@ -307,7 +307,7 @@ function findDuplicatesByNames($namesObj)
 }
 
 // Ищет cущности по аккаунту instagram
-function findDuplicatesByInstagram($instaAccArr, $instaWebArr = null)
+function findDuplicatesByInstagram($instaAccArr, $instaWebArr)
 {
 	if ($instaAccArr === 'error' or $instaAccArr == null or empty($instaAccArr)) {
 		Debugger::writeToLogSet(null, null, 'ID:' . ENTITY_ID . ' По запросам функции ' . __FUNCTION__ . ' вышла ошибка' . ' Не заданы поля для поиска по instagram');
