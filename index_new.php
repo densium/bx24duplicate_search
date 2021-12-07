@@ -139,6 +139,15 @@ Debugger::writeToLog($description, LOG,  'ID:' . ENTITY_ID . ' Создано о
 // Для тестирования в бою
 $responsibleId = $crmEntity['COMMENTS'] == "TEST" ? USER_ID_TEST : USER_ID;
 
+// Тут магия, автоматический поиск дубликатов удаляет лид как раз к тому моменту когда это скрипт завершает свою работу
+// Поэтому нужно ещё раз гетнуть нужную сущность и проверить не удалена ли она
+sleep(3);
+$try = getCrmEntity($_REQUEST['ID'], $entityTypeId);
+if (isset($try['error_description'])) {
+	Debugger::writeToLog($_REQUEST['flag'], LOG, 'Завершить скрипт: ' . $entityTypeId . ' cущность уже удалена');
+	exit;
+};
+
 // Создать пост в ленту или задачу
 // Создание поста забраковали, но я не стал тратить время на удаление функций
 if (isset($_REQUEST['flag'])) {

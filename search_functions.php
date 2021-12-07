@@ -134,7 +134,9 @@ function addInstaWebAdr($instaAccArr)
 	$instaWebArr = [];
 	foreach ($instaAccArr as $key) {
 		$instaWebArr[] = "https://instagram.com/" . $key; 
+		$instaWebArr[] = "https://www.instagram.com/" . $key; 
 		$instaWebArr[] = "https://instagram.com/" . $key . "/"; 
+		$instaWebArr[] = "https://www.instagram.com/" . $key . "/"; 
 	}	
 	return $instaWebArr;
 }
@@ -316,14 +318,34 @@ function findDuplicatesByInstagram($instaAccArr, $instaWebArr)
 		return null;
 	}
 
-	// 'WEB' => $instaAccArr
+	$requestParamsArrWeb['LEAD'] = array(
+		'filter' => array(
+			'WEB' => $instaWebArr
+		),
+		'select' => SELECT_ARR['LEAD']
+	);
+
+	$requestParamsArrWeb['CONTACT'] = array(
+		'filter' => array(
+			'WEB' => $instaWebArr
+		),
+		'select' => SELECT_ARR['CONTACT']
+	);
+
+	$requestParamsArrWeb['COMPANY'] = array(
+			'filter' => array(
+				'WEB' => $instaWebArr
+			),
+		'select' => SELECT_ARR['COMPANY']
+	);
+	
+	// ------------------------------- //
 
 	$requestParamsArr['LEAD'] = array(
 		'filter' => array(
 			'LOGIC' => 'OR',
 			'%' . INST_FIELD_ID_ACC => $instaAccArr,
 			'%' . INST_FIELD_ID_ADR => $instaAccArr,
-			'WEB' => $instaWebArr
 		),
 		'select' => SELECT_ARR['LEAD']
 	);
@@ -333,7 +355,6 @@ function findDuplicatesByInstagram($instaAccArr, $instaWebArr)
 			'LOGIC' => 'OR',
 			'%' . INST_FIELD_ID_ACC_CON => $instaAccArr,
 			'%' . INST_FIELD_ID_ADR_CON => $instaAccArr,
-			'WEB' => $instaWebArr
 		),
 		'select' => SELECT_ARR['CONTACT']
 	);
@@ -343,10 +364,9 @@ function findDuplicatesByInstagram($instaAccArr, $instaWebArr)
 				'LOGIC' => 'OR',
 				'%' . INST_FIELD_ID_ACC_COMP => $instaAccArr,
 				'%' . INST_FIELD_ID_ADR_COMP => $instaAccArr,
-				'WEB' => $instaWebArr
 			),
 		'select' => SELECT_ARR['COMPANY']
 	);
 
-	return makeListQueries(__FUNCTION__, 'INSTA', $requestParamsArr);
+	return array_merge(makeListQueries(__FUNCTION__, 'INSTA_W', $requestParamsArrWeb), makeListQueries(__FUNCTION__, 'INSTA', $requestParamsArr));
 }
