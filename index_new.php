@@ -57,7 +57,6 @@ define('USER_ID', 13);
  */
 define('USER_ID_TEST', 11327);
 
-
 // 1. Можно ли запускать скрипт 2.Получить данные 3.Проверить на дубликаты 4.Выдать данные
 
 // Проверить передан ли параметр ID сущности, без которого не получится поиск
@@ -97,11 +96,12 @@ if (isset($try)) {
 
 // Найти дубликаты
 $duplicates = [];
-foreach (['TITLE', 'PHONE', 'EMAIL', 'NAME', 'INSTA'] as $key) {
+foreach (['PHONE', 'EMAIL', 'NAME', 'INSTA'] as $key) {
 	switch ($key) {
-		case 'TITLE':
-			$try = findDuplicatesByTitle($crmEntity['TITLE']); // На удаление
-			break;
+		// !!! На удаление
+		// case 'TITLE':
+			// $try = findDuplicatesByTitle($crmEntity['TITLE']); 
+			// break;
 		case 'PHONE':
 			$try = $crmEntity['HAS_PHONE'] == 'Y' ? findDuplicates(parsePhones($crmEntity), 'PHONE') : null;
 			break;

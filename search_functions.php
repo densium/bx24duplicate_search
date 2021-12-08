@@ -88,27 +88,27 @@ function parseInstaAcc($entityObject, $entityTypeId)
 {
 	$antiAPattern = '/[^@].*$/i';
 	$pattern = '/instagram\.com\/(@?([a-zA-Z_1-9\.])*)\/?/i';
-    $instaAdress = 'instagram.com/';
+	$instaAdress = 'instagram.com/';
 
 	// Для разных типов сущностей разные наименования полей
 	switch ($entityTypeId) {
 		case '1': // Поля Лида
 			$inst_field_id_acc = INST_FIELD_ID_ACC;
-			$inst_field_id_adr = INST_FIELD_ID_ADR;			
+			$inst_field_id_adr = INST_FIELD_ID_ADR;
 			break;
-		case'3': // Поля Контакта
+		case '3': // Поля Контакта
 			$inst_field_id_acc = INST_FIELD_ID_ACC_CON;
 			$inst_field_id_adr = INST_FIELD_ID_ADR_CON;
 			break;
-		case'4': // Поля Компании
-			$inst_field_id_acc = INST_FIELD_ID_ACC_COMP; 
+		case '4': // Поля Компании
+			$inst_field_id_acc = INST_FIELD_ID_ACC_COMP;
 			$inst_field_id_adr = INST_FIELD_ID_ADR_COMP;
 			break;
 	}
-	
+
 	// Cобрать значения полей
 	if (isset($entityObject['WEB'])) {
-		$instaArr['WEB'] = trim($entityObject['WEB'][0]['VALUE']);
+		$instaArr['WEB'] = $entityObject['WEB'];
 	}
 	if ($entityObject[$inst_field_id_acc]) {
 		$instaArr[$inst_field_id_acc] = trim($entityObject[$inst_field_id_acc]);
@@ -116,27 +116,35 @@ function parseInstaAcc($entityObject, $entityTypeId)
 	if ($entityObject[$inst_field_id_adr]) {
 		$instaArr[$inst_field_id_adr] = trim($entityObject[$inst_field_id_adr]);
 	}
-	
+
 	// Проверить наличие хоть одного значения
 	if (!isset($instaArr)) {
 		Debugger::writeToLogSet(null, null, 'ID:' . ENTITY_ID . ' От функции ' . __FUNCTION__ . ' получен ответ: ' . 'не заданы значения полей для поиска по instagram аккаунту');
 		return null;
 	}
-	
+
 	// Получить аккаунт instagram из полей по паттернам
 	// var_dump($match[1]); группа в которой лежит акк
 	foreach ($instaArr as $key => $value) {
 		$match = [];
-		if (strpos($value, $instaAdress) != false) {
+		if ($key == 'WEB') {
+			foreach ($value as $el) {
+				if (strpos(trim($el['VALUE']), $instaAdress) != false) {
+					if (preg_match($pattern, $value, $match)) {
+						$result[] = $match[1];
+					}
+				}
+			}
+		} elseif (strpos($value, $instaAdress) != false) {
 			if (preg_match($pattern, $value, $match)) {
 				$result[] = $match[1];
 			}
 		} elseif (preg_match($antiAPattern, $value, $match)) {
-				$result[] = $match[0];
-			}
+			$result[] = $match[0];
+		}
 	}
 
-	// Логи и возврат значения из функции, обработка ответов происходит в функции поиска и в index
+	// Логи и возврат значения из функции, обработка ответов происходит в функции поиска и в index_new.php
 	if (isset($result)) {
 		Debugger::writeToLogSet($instaArr, $result, 'ID:' . ENTITY_ID . ' От функции ' . __FUNCTION__ . ' получен ответ');
 		return $result;
@@ -150,11 +158,11 @@ function addInstaWebAdr($instaAccArr)
 {
 	$instaWebArr = [];
 	foreach ($instaAccArr as $key) {
-		$instaWebArr[] = "https://instagram.com/" . $key; 
-		$instaWebArr[] = "https://www.instagram.com/" . $key; 
-		$instaWebArr[] = "https://instagram.com/" . $key . "/"; 
-		$instaWebArr[] = "https://www.instagram.com/" . $key . "/"; 
-	}	
+		$instaWebArr[] = "https://instagram.com/" . $key;
+		$instaWebArr[] = "https://www.instagram.com/" . $key;
+		$instaWebArr[] = "https://instagram.com/" . $key . "/";
+		$instaWebArr[] = "https://www.instagram.com/" . $key . "/";
+	}
 	return $instaWebArr;
 }
 
@@ -168,7 +176,7 @@ function checkNames($entityObject)
 			$resultObj[$key] = trim($entityObject[$key]);
 		}
 	}
-	
+
 	if (isset($resultObj)) {
 		return $resultObj;
 	} else {
@@ -204,7 +212,7 @@ function getCrmEntity($entityId, $entityTypeId)
 
 	$requestParams = array('ID' => $entityId);
 	$try = CRestPlus::call($method, $requestParams);
-	
+
 	if (isset($try['result'])) {
 		Debugger::writeToLogSet($requestParams, $try['result']['ID'], 'ID:' . ENTITY_ID . ' По запросу ' . $method . ' функции ' . __FUNCTION__);
 		return $try['result'];
@@ -350,12 +358,12 @@ function findDuplicatesByInstagram($instaAccArr, $instaWebArr)
 	);
 
 	$requestParamsArrWeb['COMPANY'] = array(
-			'filter' => array(
-				'WEB' => $instaWebArr
-			),
+		'filter' => array(
+			'WEB' => $instaWebArr
+		),
 		'select' => SELECT_ARR['COMPANY']
 	);
-	
+
 	// ------------------------------- //
 
 	$requestParamsArr['LEAD'] = array(
@@ -377,11 +385,11 @@ function findDuplicatesByInstagram($instaAccArr, $instaWebArr)
 	);
 
 	$requestParamsArr['COMPANY'] = array(
-			'filter' => array(
-				'LOGIC' => 'OR',
-				'%' . INST_FIELD_ID_ACC_COMP => $instaAccArr,
-				'%' . INST_FIELD_ID_ADR_COMP => $instaAccArr,
-			),
+		'filter' => array(
+			'LOGIC' => 'OR',
+			'%' . INST_FIELD_ID_ACC_COMP => $instaAccArr,
+			'%' . INST_FIELD_ID_ADR_COMP => $instaAccArr,
+		),
 		'select' => SELECT_ARR['COMPANY']
 	);
 
