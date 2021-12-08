@@ -42,6 +42,7 @@ function makeDescription($duplicatesArr, &$writtenDuplicates)
 }
 
 /**
+ * !!! На удаление
  * Пост сообщения в ленту
  */
 function notifyPost($postText, $entityId, $entityTitle, $entityTypeId)

@@ -83,32 +83,48 @@ function parseEmails($entityObject)
 	return $emailsArr;
 }
 
-// Проверят заполненность полей, для instagram аккаунта, парсит аккаунты
-function parseInstaAcc($entityObject)
+// Проверят заполненность полей для instagram аккаунта, парсит значения полей
+function parseInstaAcc($entityObject, $entityTypeId)
 {
 	$antiAPattern = '/[^@].*$/i';
 	$pattern = '/instagram\.com\/(@?([a-zA-Z_1-9\.])*)\/?/i';
     $instaAdress = 'instagram.com/';
 
-	// $pattern = '/instagram\.com\/(@?([a-zA-Z_\.])*)\/?/i'; не учитывает цифры
-	// $example = 'https://www.instagram.com/rug_nik_artdevivre/?hl=ru';
-	// var_dump($matches[1]); // группа в которой лежит акк
-
+	// Для разных типов сущностей разные наименования полей
+	switch ($entityTypeId) {
+		case '1': // Поля Лида
+			$inst_field_id_acc = INST_FIELD_ID_ACC;
+			$inst_field_id_adr = INST_FIELD_ID_ADR;			
+			break;
+		case'3': // Поля Контакта
+			$inst_field_id_acc = INST_FIELD_ID_ACC_CON;
+			$inst_field_id_adr = INST_FIELD_ID_ADR_CON;
+			break;
+		case'4': // Поля Компании
+			$inst_field_id_acc = INST_FIELD_ID_ACC_COMP; 
+			$inst_field_id_adr = INST_FIELD_ID_ADR_COMP;
+			break;
+	}
+	
+	// Cобрать значения полей
 	if (isset($entityObject['WEB'])) {
 		$instaArr['WEB'] = trim($entityObject['WEB'][0]['VALUE']);
 	}
-	if ($entityObject[INST_FIELD_ID_ACC]) {
-		$instaArr[INST_FIELD_ID_ACC] = trim($entityObject[INST_FIELD_ID_ACC]);
+	if ($entityObject[$inst_field_id_acc]) {
+		$instaArr[$inst_field_id_acc] = trim($entityObject[$inst_field_id_acc]);
 	}
-	if ($entityObject[INST_FIELD_ID_ADR]) {
-		$instaArr[INST_FIELD_ID_ADR] = trim($entityObject[INST_FIELD_ID_ADR]);
+	if ($entityObject[$inst_field_id_adr]) {
+		$instaArr[$inst_field_id_adr] = trim($entityObject[$inst_field_id_adr]);
 	}
-
+	
+	// Проверить наличие хоть одного значения
 	if (!isset($instaArr)) {
 		Debugger::writeToLogSet(null, null, 'ID:' . ENTITY_ID . ' От функции ' . __FUNCTION__ . ' получен ответ: ' . 'не заданы значения полей для поиска по instagram аккаунту');
 		return null;
 	}
-
+	
+	// Получить аккаунт instagram из полей по паттернам
+	// var_dump($match[1]); группа в которой лежит акк
 	foreach ($instaArr as $key => $value) {
 		$match = [];
 		if (strpos($value, $instaAdress) != false) {
@@ -120,6 +136,7 @@ function parseInstaAcc($entityObject)
 			}
 	}
 
+	// Логи и возврат значения из функции, обработка ответов происходит в функции поиска и в index
 	if (isset($result)) {
 		Debugger::writeToLogSet($instaArr, $result, 'ID:' . ENTITY_ID . ' От функции ' . __FUNCTION__ . ' получен ответ');
 		return $result;
@@ -143,12 +160,12 @@ function addInstaWebAdr($instaAccArr)
 
 // Проверить какой вариант поиска по имени использовать
 // TODO - Переписать функцию
-function checkNames($crmEntity)
+function checkNames($entityObject)
 {
 	$keys = ['NAME', 'LAST_NAME', 'SECOND_NAME'];
 	foreach ($keys as $key) {
-		if ($crmEntity[$key]) {
-			$resultObj[$key] = trim($crmEntity[$key]);
+		if ($entityObject[$key]) {
+			$resultObj[$key] = trim($entityObject[$key]);
 		}
 	}
 	
@@ -249,9 +266,9 @@ function findDuplicates($valuesArr, $typeOfDuplicates)
 }
 
 /**
+ * !!! На удаление 
  * Получить дубли по названию TITLE
  * @param array $crmEntityTitle название crm сущности
- * На удаление 
  */
 function findDuplicatesByTitle($crmEntityTitle)
 {
