@@ -87,7 +87,7 @@ function parseEmails($entityObject)
 function parseInstaAcc($entityObject, $entityTypeId)
 {
 	$antiAPattern = '/[^@].*$/i';
-	$pattern = '/instagram\.com\/(@?([a-zA-Z_1-9\.])*)\/?/i';
+	$pattern = '/instagram\.com\/(@?([a-z0-9_\.])*)\/?/i';
 	$instaAdress = 'instagram.com/';
 
 	// Для разных типов сущностей разные наименования полей
@@ -129,8 +129,9 @@ function parseInstaAcc($entityObject, $entityTypeId)
 		$match = [];
 		if ($key == 'WEB') {
 			foreach ($value as $el) {
-				if (strpos(trim($el['VALUE']), $instaAdress) != false) {
-					if (preg_match($pattern, $value, $match)) {
+				$webAdress = trim($el['VALUE']);
+				if (strpos($webAdress, $instaAdress) != false) {
+					if (preg_match($pattern, $webAdress, $match)) {
 						$result[] = $match[1];
 					}
 				}
@@ -343,55 +344,49 @@ function findDuplicatesByInstagram($instaAccArr, $instaWebArr)
 		return null;
 	}
 
-	$requestParamsArrWeb['LEAD'] = array(
-		'filter' => array(
-			'WEB' => $instaWebArr
-		),
-		'select' => SELECT_ARR['LEAD']
-	);
+	// Получить сущности по полю WEB, тут нужно несколько запросов, потому что list плохо ищет когда ему передаешь массив значений
+	$tryWeb = [];
+	foreach ($instaWebArr as $key => $value) {
+		$requestParamsArrWeb = [
+			'LEAD' => ['filter' => ['WEB' => $value], 'select' => SELECT_ARR['LEAD']],
+			'CONTACT' => ['filter' => ['WEB' => $value], 'select' => SELECT_ARR['CONTACT']],
+			'COMPANY' => ['filter' => ['WEB' => $value], 'select' => SELECT_ARR['COMPANY']]
+		];
 
-	$requestParamsArrWeb['CONTACT'] = array(
-		'filter' => array(
-			'WEB' => $instaWebArr
-		),
-		'select' => SELECT_ARR['CONTACT']
-	);
+		$try[$key] = makeListQueries(__FUNCTION__, 'INSTA', $requestParamsArrWeb);
+		if ($key > 0) {
+			$tryWeb = array_merge($tryWeb, $try[$key], $try[$key - 1]);
+		}
+	}
+	Debugger::writeToLogSet(null, $tryWeb, 'ID:' . ENTITY_ID . ' По запросам функции ' . __FUNCTION__ . ' найдены WEB дубликаты');
 
-	$requestParamsArrWeb['COMPANY'] = array(
-		'filter' => array(
-			'WEB' => $instaWebArr
-		),
-		'select' => SELECT_ARR['COMPANY']
-	);
+	// Получить сущности по остальным полям instagram аккаунта
+	$requestParamsArr = [
+		'LEAD' => [
+			'filter' => ['LOGIC' => 'OR', '%' . INST_FIELD_ID_ACC => $instaAccArr, '%' . INST_FIELD_ID_ADR => $instaAccArr],
+			'select' => SELECT_ARR['LEAD']
+		],
+		'CONTACT' => [
+			'filter' => ['LOGIC' => 'OR', '%' . INST_FIELD_ID_ACC_CON => $instaAccArr, '%' . INST_FIELD_ID_ADR_CON => $instaAccArr],
+			'select' => SELECT_ARR['CONTACT']
+		],
+		'COMPANY' => [
+			'filter' => ['LOGIC' => 'OR', '%' . INST_FIELD_ID_ACC_COMP => $instaAccArr, '%' . INST_FIELD_ID_ADR_COMP => $instaAccArr],
+			'select' => SELECT_ARR['COMPANY']
+		]
+	];
 
-	// ------------------------------- //
+	$tryAcc = makeListQueries(__FUNCTION__, 'INSTA', $requestParamsArr);
 
-	$requestParamsArr['LEAD'] = array(
-		'filter' => array(
-			'LOGIC' => 'OR',
-			'%' . INST_FIELD_ID_ACC => $instaAccArr,
-			'%' . INST_FIELD_ID_ADR => $instaAccArr,
-		),
-		'select' => SELECT_ARR['LEAD']
-	);
+	if (isset($tryWeb) and $tryAcc != null) {
+		$result = array_merge($tryWeb, $tryAcc);
+	} elseif ($tryWeb != null) {
+		$result = $tryAcc;
+	} elseif ($tryAcc != null) {
+		$result = $tryAcc;
+	} else {
+		$result = null;
+	}
 
-	$requestParamsArr['CONTACT'] = array(
-		'filter' => array(
-			'LOGIC' => 'OR',
-			'%' . INST_FIELD_ID_ACC_CON => $instaAccArr,
-			'%' . INST_FIELD_ID_ADR_CON => $instaAccArr,
-		),
-		'select' => SELECT_ARR['CONTACT']
-	);
-
-	$requestParamsArr['COMPANY'] = array(
-		'filter' => array(
-			'LOGIC' => 'OR',
-			'%' . INST_FIELD_ID_ACC_COMP => $instaAccArr,
-			'%' . INST_FIELD_ID_ADR_COMP => $instaAccArr,
-		),
-		'select' => SELECT_ARR['COMPANY']
-	);
-
-	return array_merge(makeListQueries(__FUNCTION__, 'INSTA_W', $requestParamsArrWeb), makeListQueries(__FUNCTION__, 'INSTA', $requestParamsArr));
+	return $result;
 }
