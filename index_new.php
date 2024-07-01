@@ -36,15 +36,15 @@ define('SELECT_ARR', ['LEAD' => ['ID', 'TITLE'], 'COMPANY' => ['ID', 'TITLE'], '
 /**
  * Ссылка на портал для создания задач
  */
-define('DOMAIN', 'https://djemdecor.bitrix24.ru');
+define('DOMAIN', 'https://UUUUUU.bitrix24.ru');
 /**
  * Пользователь в системе на кого будут ставится задачи
  */
-define('USER_ID', 13);
+define('USER_ID', 99);
 /**
  * Тестовый пользователь в системе на кого будут ставится задачи, если в комментарии к сущности указано: "TEST"
  */
-define('USER_ID_TEST', 11327);
+define('USER_ID_TEST', 99);
 /**
  * Путь к файлу логов для запросов
  */
